@@ -1,0 +1,56 @@
+---
+import Base from '../layouts/Base.astro';
+import StandingsTable from '../components/StandingsTable.astro';
+import league from '../data/league.json';
+import standingsData from '../data/standings.json';
+import history from '../data/history.json';
+import { buildStorylines, hasPlayed } from '../lib/insights.js';
+
+const standings = standingsData.standings || [];
+const lastCompleted = history.seasons.find((s) => s.status === 'complete');
+const storylines = buildStorylines({
+  standings,
+  lastChampion: lastCompleted?.champion || null,
+  status: league.status,
+});
+
+const seasonStarted = hasPlayed(standings);
+// Once matchup data is fetched per week this becomes a real week list; for now
+// we surface the season-to-date view.
+const weekLabel = seasonStarted ? 'Season to date' : 'Preseason';
+---
+<Base page="insights" title="Weekly Insights" description="Storylines and standings for the current week.">
+  <div class="eyebrow">Weekly Insights</div>
+  <h1>{weekLabel}</h1>
+  <p class="lead">
+    Auto-generated storylines from the latest league data, refreshed daily from Sleeper.
+  </p>
+
+  <div class="selector" style="margin-top:20px;">
+    <span class="btn active">{weekLabel}</span>
+    {!seasonStarted && (
+      <span style="color:var(--ink-soft);font-size:13px;">
+        Per-week breakdowns unlock once the season starts.
+      </span>
+    )}
+  </div>
+
+  <div class="grid" style="margin-bottom:24px;">
+    {storylines.map((s) => (
+      <div class="card storyline">
+        <div class="kicker">{s.kicker}</div>
+        <h2>{s.headline}</h2>
+        <p style="margin:0;color:var(--ink-soft);">{s.detail}</p>
+      </div>
+    ))}
+  </div>
+
+  <div class="card">
+    <h2>Standings</h2>
+    {standings.length ? (
+      <StandingsTable rows={standings} />
+    ) : (
+      <p class="empty">Standings will appear here once rosters are finalized.</p>
+    )}
+  </div>
+</Base>

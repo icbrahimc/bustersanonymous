@@ -1,0 +1,70 @@
+---
+import Base from '../layouts/Base.astro';
+import StandingsTable from '../components/StandingsTable.astro';
+import { href } from '../lib/url.js';
+import league from '../data/league.json';
+import standingsData from '../data/standings.json';
+import history from '../data/history.json';
+import { buildStorylines } from '../lib/insights.js';
+
+const standings = standingsData.standings || [];
+const lastCompleted = history.seasons.find((s) => s.status === 'complete');
+const lastChampion = lastCompleted?.champion || null;
+
+const storylines = buildStorylines({
+  standings,
+  lastChampion,
+  status: league.status,
+});
+const hero = storylines[0];
+
+const statusLabel =
+  {
+    pre_draft: 'Pre-Draft',
+    drafting: 'Draft in Progress',
+    in_season: 'In Season',
+    complete: 'Season Complete',
+  }[league.status] || league.status;
+---
+<Base page="home" title="Home" description={`${league.name} — the official league homepage.`}>
+  <section class="hero">
+    <span class="week-pill">{league.season} Season · {statusLabel}</span>
+    <div class="eyebrow">{hero.kicker}</div>
+    <h1>{hero.headline}</h1>
+    <p class="lead">{hero.detail}</p>
+  </section>
+
+  <div class="grid two" style="margin-top:24px;">
+    <div class="card">
+      <h2>Latest Insight <a href={href('/insights')}>All insights →</a></h2>
+      {storylines[1] ? (
+        <div class="storyline">
+          <div class="kicker">{storylines[1].kicker}</div>
+          <h2 style="font-size:18px;margin:4px 0 6px;">{storylines[1].headline}</h2>
+          <p style="margin:0;color:var(--ink-soft);">{storylines[1].detail}</p>
+        </div>
+      ) : (
+        <p class="empty">Storylines appear here once the season is underway.</p>
+      )}
+    </div>
+
+    <div class="card">
+      <h2>Current Standings <a href={href('/insights')}>Full table →</a></h2>
+      {standings.length ? (
+        <StandingsTable rows={standings} limit={5} showDivision={false} />
+      ) : (
+        <p class="empty">Standings load once rosters are set.</p>
+      )}
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:16px;">
+    <h2 style="margin-bottom:14px;">Quick Links</h2>
+    <div class="quick-links">
+      <a href={href('/rules')}>📕 Rulebook</a>
+      <a href={href('/history')}>🏆 All-Time Records</a>
+      <a href={href('/history')}>📜 Champions</a>
+      <a href={href('/insights')}>📊 Weekly Insights</a>
+    </div>
+  </div>
+</Base>

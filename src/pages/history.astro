@@ -1,0 +1,114 @@
+---
+import Base from '../layouts/Base.astro';
+import StandingsTable from '../components/StandingsTable.astro';
+import allTime from '../data/all-time.json';
+import history from '../data/history.json';
+
+const seasons = history.seasons || [];
+const champions = seasons.filter((s) => s.champion);
+const records = allTime.records || {};
+const mostTitles = records.mostTitles || [];
+const topTitle = mostTitles[0];
+// Season shown first in the standings switcher (most recent).
+const defaultSeason = seasons[0]?.season;
+---
+<Base page="history" title="History" description="Champions, all-time records, and past season standings.">
+  <div class="eyebrow">History</div>
+  <h1>League History</h1>
+  <p class="lead">Every champion, the all-time record book, and full standings from each season.</p>
+
+  <div class="grid two" style="margin-top:24px;">
+    <div class="card">
+      <h2>Champions</h2>
+      {champions.length ? (
+        champions.map((s) => (
+          <div class="champ-row">
+            <span class="yr">{s.season}</span>
+            {s.champion.avatar && <img src={s.champion.avatar} alt="" loading="lazy" width="30" height="30" />}
+            <span>
+              <span class="name" style="font-weight:700;">{s.champion.teamName}</span><br />
+              <span class="mgr" style="color:var(--ink-soft);font-size:13px;">{s.champion.manager}</span>
+            </span>
+            <span class="badge gold" style="margin-left:auto;">🏆 Champion</span>
+          </div>
+        ))
+      ) : (
+        <p class="empty">No completed seasons yet — the first champion will be crowned this year.</p>
+      )}
+    </div>
+
+    <div class="card">
+      <h2>All-Time Records</h2>
+      <div class="champ-row">
+        <span>
+          <strong>Most points, single season</strong><br />
+          <span class="mgr" style="color:var(--ink-soft);font-size:13px;">
+            {records.mostPF ? `${records.mostPF.teamName} — ${records.mostPF.manager}` : '—'}
+          </span>
+        </span>
+        <span class="badge" style="margin-left:auto;">
+          {records.mostPF ? `${records.mostPF.fpts.toFixed(1)} · ${records.mostPF.season}` : '—'}
+        </span>
+      </div>
+      <div class="champ-row">
+        <span>
+          <strong>Most wins, single season</strong><br />
+          <span class="mgr" style="color:var(--ink-soft);font-size:13px;">
+            {records.mostWins ? `${records.mostWins.teamName} — ${records.mostWins.manager}` : '—'}
+          </span>
+        </span>
+        <span class="badge" style="margin-left:auto;">
+          {records.mostWins ? `${records.mostWins.wins} wins · ${records.mostWins.season}` : '—'}
+        </span>
+      </div>
+      <div class="champ-row">
+        <span>
+          <strong>Most titles</strong><br />
+          <span class="mgr" style="color:var(--ink-soft);font-size:13px;">
+            {topTitle ? topTitle.manager : 'Up for grabs'}
+          </span>
+        </span>
+        <span class="badge gold" style="margin-left:auto;">
+          {topTitle ? `${topTitle.count} 🏆` : '—'}
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:16px;">
+    <h2 style="margin-bottom:16px;">Season Standings</h2>
+    {seasons.length ? (
+      <>
+        <div class="selector" data-season-selector>
+          {seasons.map((s) => (
+            <button class:list={['btn', { active: s.season === defaultSeason }]} data-season-btn={s.season}>
+              {s.season}
+            </button>
+          ))}
+        </div>
+        {seasons.map((s) => (
+          <div data-season-panel={s.season} style={s.season === defaultSeason ? '' : 'display:none;'}>
+            <StandingsTable rows={s.standings} />
+          </div>
+        ))}
+      </>
+    ) : (
+      <p class="empty">No seasons to show yet.</p>
+    )}
+  </div>
+</Base>
+
+<script>
+  // Season switcher: toggle which season's standings table is visible.
+  const buttons = document.querySelectorAll('[data-season-btn]');
+  const panels = document.querySelectorAll('[data-season-panel]');
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const season = btn.getAttribute('data-season-btn');
+      buttons.forEach((b) => b.classList.toggle('active', b === btn));
+      panels.forEach((p) => {
+        p.style.display = p.getAttribute('data-season-panel') === season ? '' : 'none';
+      });
+    });
+  });
+</script>

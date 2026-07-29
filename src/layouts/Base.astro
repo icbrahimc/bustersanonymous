@@ -1,0 +1,39 @@
+---
+import '../styles/global.css';
+import Nav from '../components/Nav.astro';
+import league from '../data/league.json';
+
+// Works both as a normal Astro layout (props) and as a Markdown page layout
+// (Astro passes markdown frontmatter under `frontmatter`).
+const props = Astro.props.frontmatter ?? Astro.props;
+const { title, page = 'home', description } = props;
+
+const generated = new Date(league.generatedAt);
+const generatedLabel = isNaN(generated.getTime())
+  ? '—'
+  : generated.toISOString().slice(0, 10);
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title ? `${title} · ${league.name}` : league.name}</title>
+    {description && <meta name="description" content={description} />}
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body>
+    <Nav page={page} />
+    <main>
+      <div class="wrap">
+        <slot />
+      </div>
+    </main>
+    <footer>
+      <div class="wrap">
+        <span>{league.name} · {league.season}</span>
+        <span>Data from the <code>Sleeper</code> API · updated {generatedLabel}</span>
+      </div>
+    </footer>
+  </body>
+</html>

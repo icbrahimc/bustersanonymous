@@ -1,0 +1,90 @@
+name: Daily data + deploy
+
+on:
+  # Requirement (1): run once a day. 07:15 UTC ~= early morning US.
+  schedule:
+    - cron: '15 7 * * *'
+  # Rebuild on every push to main (content/code changes).
+  push:
+    branches: [main]
+  # Let you trigger it by hand from the Actions tab.
+  workflow_dispatch:
+
+# Needed to commit refreshed data back and to publish to Pages.
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Only one deploy at a time; don't cancel an in-progress data commit.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      # Requirement (1) heartbeat + (2) pull latest data from Sleeper.
+      - name: Refresh league data from Sleeper
+        run: npm run cron
+
+      # Commit the refreshed data on scheduled/manual runs so the daily update
+      # shows up in git history. Skipped on push to avoid a commit loop.
+      - name: Commit refreshed data
+        if: github.event_name != 'push'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data data/heartbeat.log
+          if git diff --staged --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "chore: daily Sleeper data refresh [skip ci]"
+            git push
+          fi
+
+      # Compute Pages URLs. Project repos deploy under /<repo>; a
+      # <owner>.github.io repo (or custom domain) deploys at the root.
+      - name: Resolve site + base path
+        id: paths
+        run: |
+          owner="${{ github.repository_owner }}"
+          repo="${{ github.event.repository.name }}"
+          if [ "$repo" = "${owner}.github.io" ]; then
+            echo "site=https://${owner}.github.io"  >> "$GITHUB_OUTPUT"
+            echo "base=/"                            >> "$GITHUB_OUTPUT"
+          else
+            echo "site=https://${owner}.github.io"   >> "$GITHUB_OUTPUT"
+            echo "base=/${repo}"                      >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build site
+        env:
+          SITE_URL: ${{ steps.paths.outputs.site }}
+          BASE_PATH: ${{ steps.paths.outputs.base }}
+        run: npm run build
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

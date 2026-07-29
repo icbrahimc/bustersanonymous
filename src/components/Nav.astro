@@ -1,0 +1,35 @@
+---
+import { href } from '../lib/url.js';
+import league from '../data/league.json';
+
+const { page = 'home' } = Astro.props;
+const links = [
+  { id: 'home', label: 'Home', path: '/' },
+  { id: 'rules', label: 'Rules', path: '/rules' },
+  { id: 'insights', label: 'Weekly Insights', path: '/insights' },
+  { id: 'history', label: 'History', path: '/history' },
+];
+// Crest initials from the league name (e.g. "Busters Anonymous" -> "BA").
+const initials = (league.name || 'League')
+  .split(/\s+/)
+  .slice(0, 2)
+  .map((w) => w[0])
+  .join('')
+  .toUpperCase();
+---
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href={href('/')}>
+      <span class="crest">{initials}</span>
+      <span class="title">
+        {league.name}
+        <small>Est. Fantasy League &middot; {league.season} Season</small>
+      </span>
+    </a>
+    <nav class="links">
+      {links.map((l) => (
+        <a href={href(l.path)} class={page === l.id ? 'active' : ''}>{l.label}</a>
+      ))}
+    </nav>
+  </div>
+</header>

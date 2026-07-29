@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-07-29T04:40:56.255Z",
+  "records": {
+    "mostPF": {
+      "rosterId": 2,
+      "ownerId": "1132877923033391104",
+      "teamName": "briangalvan1",
+      "manager": "briangalvan1",
+      "avatar": "https://sleepercdn.com/avatars/thumbs/b319fdf8b7b5b0359d3c78622ba4d70c",
+      "division": 2,
+      "wins": 8,
+      "losses": 6,
+      "ties": 0,
+      "fpts": 2201.2,
+      "fptsAgainst": 2128.38,
+      "season": "2024"
+    },
+    "mostWins": {
+      "rosterId": 8,
+      "ownerId": "1134715278987943936",
+      "teamName": "NBA Younghoe",
+      "manager": "adambarner111",
+      "avatar": "https://sleepercdn.com/uploads/b93bc9fd7bc9dedab3480d82f004e729.jpg",
+      "division": 2,
+      "wins": 11,
+      "losses": 3,
+      "ties": 0,
+      "fpts": 2100.28,
+      "fptsAgainst": 1913.82,
+      "season": "2024"
+    },
+    "mostTitles": [
+      {
+        "manager": "Tyrique14",
+        "count": 1
+      },
+      {
+        "manager": "Alxgalvn",
+        "count": 1
+      }
+    ]
+  }
+}

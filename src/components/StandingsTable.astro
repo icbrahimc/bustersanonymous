@@ -1,0 +1,49 @@
+---
+import league from '../data/league.json';
+
+// rows: array of team objects from the data files.
+// limit: optional cap (e.g. top 5 on the home page).
+const { rows = [], limit = null, showDivision = true } = Astro.props;
+const data = limit ? rows.slice(0, limit) : rows;
+const divisions = league.divisions || {};
+const divName = (d) => (d ? divisions[d] || `Div ${d}` : null);
+const hasDivisions = showDivision && data.some((t) => t.division);
+---
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr>
+        <th class="rank">#</th>
+        <th>Team</th>
+        {hasDivisions && <th>Division</th>}
+        <th class="num">W</th>
+        <th class="num">L</th>
+        <th class="num">PF</th>
+        <th class="num">PA</th>
+      </tr>
+    </thead>
+    <tbody>
+      {data.map((t, i) => (
+        <tr>
+          <td class="rank">{i + 1}</td>
+          <td>
+            <span class="team">
+              {t.avatar && <img src={t.avatar} alt="" loading="lazy" width="26" height="26" />}
+              <span>
+                <span class="name">{t.teamName}</span><br />
+                <span class="mgr">{t.manager}</span>
+              </span>
+            </span>
+          </td>
+          {hasDivisions && (
+            <td>{divName(t.division) ? <span class="badge div">{divName(t.division)}</span> : '—'}</td>
+          )}
+          <td class="num">{t.wins}</td>
+          <td class="num">{t.losses}</td>
+          <td class="num">{t.fpts.toFixed(1)}</td>
+          <td class="num">{t.fptsAgainst.toFixed(1)}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>

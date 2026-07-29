@@ -1,0 +1,16 @@
+{
+  "name": "busters-league",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "fetch-data": "node scripts/fetch-sleeper.mjs",
+    "cron": "node scripts/cron.mjs"
+  },
+  "dependencies": {
+    "astro": "^4.16.0"
+  }
+}
