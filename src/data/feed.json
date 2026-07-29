@@ -1,5 +1,7 @@
 {
-  "generatedAt": "2026-07-29T17:35:52.816Z",
+  "date": "2026-07-29",
+  "season": "2026",
+  "generatedAt": "2026-07-29T17:49:00.703Z",
   "model": "claude-sonnet-5",
   "mode": "ai",
   "keyPresent": true,
@@ -14,8 +16,8 @@
       },
       "meta": "Preseason",
       "kicker": "TITLE DEFENSE PRESSURE",
-      "headline": "#FreeMaxx Champions💍 have the ring, but their own history says the encore is a disaster waiting to happen.",
-      "detail": "Tyrique14 won it all in 2025, yet a career average finish of 5.5 and a worst finish of 8 across just two seasons screams one-hit wonder. Rings mean nothing on draft night — prove it wasn't a fluke."
+      "headline": "The ring is real but the résumé is thin — #FreeMaxx Champions have one championship and a career average finish of 5.5, so this 'dynasty' talk needs to cool off.",
+      "detail": "Tyrique14 won it all in 2025, but a 14-14 career record and a worst finish of 8th prove this team is closer to boom-or-bust than bulletproof. Repeat or it's a one-hit wonder."
     },
     {
       "author": {
@@ -24,9 +26,9 @@
         "avatar": "https://sleepercdn.com/uploads/b93bc9fd7bc9dedab3480d82f004e729.jpg"
       },
       "meta": "Preseason",
-      "kicker": "RINGLESS ROYALTY",
-      "headline": "Put it in Ra is the best team in Busters Anonymous history to NEVER win the whole thing, and that's a problem.",
-      "detail": "A 20-8 career record, a .714 win pct, and an average finish of 1.5 is video-game numbers — but zero titles in two seasons means adambarner111 is officially this league's Buffalo Bills. Time to stop choking at the finish line."
+      "kicker": "COWBOYS SYNDROME",
+      "headline": "Put it in Ra has the best résumé in the league and zero rings to show for it — that's the definition of choking when it matters.",
+      "detail": "A 20-8 career record and a 1.5 average finish with back-to-back top-2 seasons is video-game stuff, but adambarner111 still has that donut in the titles column. All that pedigree means nothing until it means everything."
     },
     {
       "author": {
@@ -36,8 +38,8 @@
       },
       "meta": "Preseason",
       "kicker": "BASEMENT DWELLERS",
-      "headline": "talentedtenthh finished dead last in their only season and nobody should expect anything different in 2026.",
-      "detail": "A 4-10 record and a 12th-place finish out of 12 teams isn't bad luck, it's a pattern. Until they show otherwise, this roster is a preseason punchline."
+      "headline": "talentedtenthh finished dead last at 12th place with a 4-10 record, and nothing about this offseason suggests that changes.",
+      "detail": "A .286 win pct and a season that ended in the actual cellar is the kind of track record that gets a fanbase renamed. Prove-it szn starts now, or it's just more of the same."
     },
     {
       "author": {
@@ -46,9 +48,9 @@
         "avatar": "https://sleepercdn.com/uploads/358b8dbec979b3e9a70702f1cf1da078.jpg"
       },
       "meta": "Preseason",
-      "kicker": "FORGOTTEN CHAMPION",
-      "headline": "Sasinci's World has a title in the trophy case but plays like a team that's forgotten how to win.",
-      "detail": "Alxgalvn's squad owns a championship yet sports a losing 13-15 career record and a worst finish of 8 — that's not contender behavior, that's a fluke wearing a crown. The league isn't scared, and it should be worried why not."
+      "kicker": "QUIET CONTENDER",
+      "headline": "Sasinci's World has a championship banner hanging but a mediocre 13-15 career mark — which is it, contender or pretender?",
+      "detail": "Alxgalvn's squad owns a title yet has an average finish of 5.5 and once bottomed out at 8th, proving that ring came with some serious asterisks. The league won't fear you until you do it twice."
     },
     {
       "author": {
@@ -57,9 +59,9 @@
         "avatar": "https://sleepercdn.com/avatars/thumbs/de502fad9fab52c466ad0020ae7f46ac"
       },
       "meta": "Preseason",
-      "kicker": "NEWEST DOORMAT",
-      "headline": "SwooshAnoosh is the freshest bottom-feeder in the league and draft season hasn't even humbled them yet.",
-      "detail": "A rookie campaign that ended 5-9 with an 11th-place finish out of 12 is about as inauspicious a debut as it gets. Until SwooshAnoosh proves otherwise, they're penciled in for another year in the cellar."
+      "kicker": "CELLAR RESIDENT",
+      "headline": "SwooshAnoosh's rookie season ended at 11th place with a 5-9 record — welcome to the league, now welcome to the basement.",
+      "detail": "A .357 win pct in year one isn't exactly a warning shot to the rest of Titty Committee. Until this changes, SwooshAnoosh is just happy to be here."
     }
   ]
 }
