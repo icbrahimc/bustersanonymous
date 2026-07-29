@@ -6,18 +6,14 @@ import { href } from '../lib/url.js';
 import league from '../data/league.json';
 import standingsData from '../data/standings.json';
 import history from '../data/history.json';
-import { buildStorylines } from '../lib/insights.js';
+import feed from '../data/feed.json';
 
 const standings = standingsData.standings || [];
 const lastCompleted = history.seasons.find((s) => s.status === 'complete');
 const lastChampion = lastCompleted?.champion || null;
 
-const storylines = buildStorylines({
-  standings,
-  lastChampion,
-  status: league.status,
-  leagueName: league.name,
-});
+// AI-generated hot takes (built server-side in the daily cron → feed.json).
+const storylines = feed.posts || [];
 
 const statusLabel =
   {

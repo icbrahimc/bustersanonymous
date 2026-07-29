@@ -8,9 +8,11 @@
     "build": "astro build",
     "preview": "astro preview",
     "fetch-data": "node scripts/fetch-sleeper.mjs",
+    "generate-feed": "node scripts/generate-feed.mjs",
     "cron": "node scripts/cron.mjs"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.115.0",
     "astro": "^4.16.0"
   }
 }

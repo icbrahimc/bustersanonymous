@@ -34,8 +34,10 @@ async function heartbeat() {
 
 async function main() {
   await heartbeat();
-  // Then pull fresh Sleeper data into src/data/.
+  // Pull fresh Sleeper data into src/data/.
   await run(process.execPath, [join(__dirname, 'fetch-sleeper.mjs')]);
+  // Regenerate the AI hot-take feed from the fresh data.
+  await run(process.execPath, [join(__dirname, 'generate-feed.mjs')]);
 }
 
 main().catch((err) => {

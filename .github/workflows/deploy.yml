@@ -34,11 +34,15 @@ jobs:
 
       - run: npm ci
 
-      # Requirement (1) heartbeat + (2) pull latest data from Sleeper.
-      # Non-blocking: if Sleeper is down, keep the last-good committed data and
-      # still build/deploy the site rather than failing the whole run.
-      - name: Refresh league data from Sleeper
+      # Requirement (1) heartbeat + (2) pull latest data from Sleeper +
+      # generate the AI hot-take feed with Claude. The API key is a repo secret,
+      # injected server-side here — it is never shipped to the browser.
+      # Non-blocking: if Sleeper or Claude is down, keep the last-good committed
+      # data/feed and still build/deploy rather than failing the whole run.
+      - name: Refresh data + generate AI feed
         continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: npm run cron
 
       # Commit the refreshed data on scheduled/manual runs so the daily update

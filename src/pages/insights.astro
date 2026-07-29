@@ -5,17 +5,12 @@ import StandingsWidget from '../components/StandingsWidget.astro';
 import StandingsTable from '../components/StandingsTable.astro';
 import league from '../data/league.json';
 import standingsData from '../data/standings.json';
-import history from '../data/history.json';
-import { buildStorylines, hasPlayed } from '../lib/insights.js';
+import feed from '../data/feed.json';
+import { hasPlayed } from '../lib/insights.js';
 
 const standings = standingsData.standings || [];
-const lastCompleted = history.seasons.find((s) => s.status === 'complete');
-const storylines = buildStorylines({
-  standings,
-  lastChampion: lastCompleted?.champion || null,
-  status: league.status,
-  leagueName: league.name,
-});
+// AI-generated hot takes (built server-side in the daily cron → feed.json).
+const storylines = feed.posts || [];
 
 const seasonStarted = hasPlayed(standings);
 const weekLabel = seasonStarted ? 'Season to date' : 'Preseason';
