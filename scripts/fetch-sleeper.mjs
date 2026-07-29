@@ -17,10 +17,28 @@ const DATA_DIR = join(__dirname, '..', 'src', 'data');
 const CURRENT_LEAGUE_ID = process.env.LEAGUE_ID || '1387559727071772672';
 const API = 'https://api.sleeper.app/v1';
 
-async function api(path) {
-  const res = await fetch(`${API}${path}`);
-  if (!res.ok) throw new Error(`Sleeper ${path} -> ${res.status} ${res.statusText}`);
-  return res.json();
+// Fetch with retry + backoff so a transient Sleeper hiccup (429 / 5xx / network
+// blip) doesn't fail the whole run.
+async function api(path, attempts = 4) {
+  let lastErr;
+  for (let i = 1; i <= attempts; i++) {
+    try {
+      const res = await fetch(`${API}${path}`, { signal: AbortSignal.timeout(15000) });
+      if (res.status === 429 || res.status >= 500) {
+        throw new Error(`Sleeper ${path} -> ${res.status} ${res.statusText}`);
+      }
+      if (!res.ok) throw new Error(`Sleeper ${path} -> ${res.status} ${res.statusText}`);
+      return await res.json();
+    } catch (err) {
+      lastErr = err;
+      if (i < attempts) {
+        const wait = 500 * 2 ** (i - 1);
+        console.warn(`  retry ${i}/${attempts - 1} for ${path} in ${wait}ms (${err.message})`);
+        await new Promise((r) => setTimeout(r, wait));
+      }
+    }
+  }
+  throw lastErr;
 }
 
 // Sleeper stores avatars two ways: a full URL in user.metadata.avatar, or a

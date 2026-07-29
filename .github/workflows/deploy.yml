@@ -35,7 +35,10 @@ jobs:
       - run: npm ci
 
       # Requirement (1) heartbeat + (2) pull latest data from Sleeper.
+      # Non-blocking: if Sleeper is down, keep the last-good committed data and
+      # still build/deploy the site rather than failing the whole run.
       - name: Refresh league data from Sleeper
+        continue-on-error: true
         run: npm run cron
 
       # Commit the refreshed data on scheduled/manual runs so the daily update
