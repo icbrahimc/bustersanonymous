@@ -45,10 +45,10 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: npm run cron
 
-      # Commit the refreshed data on scheduled/manual runs so the daily update
-      # shows up in git history. Skipped on push to avoid a commit loop.
+      # Commit the refreshed data + generated feed back so the daily update
+      # shows up in git history. The "[skip ci]" in the message stops GitHub
+      # from triggering another run for this commit (no loop).
       - name: Commit refreshed data
-        if: github.event_name != 'push'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -56,7 +56,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No data changes to commit."
           else
-            git commit -m "chore: daily Sleeper data refresh [skip ci]"
+            git commit -m "chore: daily data + feed refresh [skip ci]"
             git push
           fi
 
