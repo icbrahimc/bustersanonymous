@@ -1,7 +1,9 @@
 {
-  "generatedAt": "2026-07-29T16:25:43.242Z",
-  "model": null,
-  "mode": "fallback",
+  "generatedAt": "2026-07-29T16:39:00.026Z",
+  "model": "claude-sonnet-5",
+  "mode": "ai",
+  "keyPresent": true,
+  "diagnostic": null,
   "meta": "Preseason",
   "posts": [
     {
@@ -11,20 +13,53 @@
         "avatar": "https://sleepercdn.com/uploads/6f71546c196c795ccd2c78af7d3e2b27.jpg"
       },
       "meta": "Preseason",
-      "kicker": "Title Defense",
-      "headline": "#FreeMaxx Champions💍 enters as reigning champ",
-      "detail": "Tyrique14 took home the ring last season. Everyone else is drafting to dethrone them. 💍"
+      "kicker": "TITLE DEFENSE",
+      "headline": "#FreeMaxx Champions💍 aren't just defending a title, they're defending an entire era, and Tyrique14 knows the target on his back is bigger than the ring itself.",
+      "detail": "Every single Booty Warriors and Titty Committee GM is drafting this year with one goal: dethrone the 2025 champs. Good luck — reigning champs don't blink on draft night.eadline"
     },
     {
       "author": {
-        "name": "Busters Anonymous",
-        "handle": "commish",
-        "avatar": null
+        "name": "parkcity0613",
+        "handle": "parkcity0613",
+        "avatar": "https://sleepercdn.com/avatars/thumbs/d55d1f7075eda01948318de4af616075"
       },
       "meta": "Preseason",
-      "kicker": "Offseason",
-      "headline": "The draft is on the clock",
-      "detail": "Live standings and weekly storylines fill in automatically once the games start — the site refreshes from Sleeper every day."
+      "kicker": "IDENTITY CRISIS",
+      "headline": "A team literally named after its own manager's username has zero excuses left when the losses pile up.",
+      "detail": "parkcity0613 by parkcity0613 — there's no mystery GM to blame, no clever team-name gimmick to hide behind. This is the most exposed roster in the league before a single pick is even made."
+    },
+    {
+      "author": {
+        "name": "BIBLE OR THE BELT",
+        "handle": "BigBoiEmos",
+        "avatar": "https://sleepercdn.com/uploads/f60b8d9886c8a48de12f6e8e9a6ce2d6.jpg"
+      },
+      "meta": "Preseason",
+      "kicker": "DIVISION BEEF",
+      "headline": "BIBLE OR THE BELT is coming for the Booty Warriors crown, and I don't think anyone's ready for that kind of energy on draft night.",
+      "detail": "BigBoiEmos is sitting in the same division as the reigning champs, and a name like that screams 'no in-between' — either righteous glory or a total mid-season sermon on what went wrong."
+    },
+    {
+      "author": {
+        "name": "Sasinci’s World",
+        "handle": "Alxgalvn",
+        "avatar": "https://sleepercdn.com/uploads/358b8dbec979b3e9a70702f1cf1da078.jpg"
+      },
+      "meta": "Preseason",
+      "kicker": "BOLD PREDICTION",
+      "headline": "Sasinci's World takes over the Titty Committee, and Alxgalvn becomes this year's breakout GM story.",
+      "detail": "With zero points on the board and a clean slate, Sasinci's World has nothing to lose and everything to prove against established Titty Committee names like Peacemakers 🙏 and Put it in Ra."
+    },
+    {
+      "author": {
+        "name": "Easy way or the Hard Way",
+        "handle": "Pharaoh23",
+        "avatar": "https://sleepercdn.com/uploads/776598392ae349b7177dcdefd1b1df1e.jpg"
+      },
+      "meta": "Preseason",
+      "kicker": "DRAFT WARNING",
+      "headline": "Easy Way or the Hard Way is about to learn there's only one way to draft a championship roster, and it's not by overthinking every pick.",
+      "detail": "Pharaoh23 sits in the same tough Booty Warriors division as the defending champs #FreeMaxx Champions💍 — hesitate on draft night and this team's season is over before Week 1."
     }
   ]
 }
