@@ -163,19 +163,23 @@ function fallbackPosts() {
 async function main() {
   await mkdir(DATA_DIR, { recursive: true });
 
+  const keyPresent = !!process.env.ANTHROPIC_API_KEY;
   let posts;
   let mode;
-  if (process.env.ANTHROPIC_API_KEY) {
+  let diagnostic = null; // non-secret: presence flag + error message only
+  if (keyPresent) {
     try {
       posts = await generateWithClaude();
       mode = 'ai';
       console.log(`Generated ${posts.length} hot takes with ${MODEL}.`);
     } catch (err) {
+      diagnostic = `generation error: ${err.message}`;
       console.warn(`Claude generation failed (${err.message}); using deterministic fallback.`);
       posts = fallbackPosts();
       mode = 'fallback';
     }
   } else {
+    diagnostic = 'ANTHROPIC_API_KEY not set in this environment';
     console.log('No ANTHROPIC_API_KEY set; writing deterministic fallback feed.');
     posts = fallbackPosts();
     mode = 'fallback';
@@ -185,6 +189,8 @@ async function main() {
     generatedAt: new Date().toISOString(),
     model: mode === 'ai' ? MODEL : null,
     mode,
+    keyPresent,
+    diagnostic,
     meta,
     posts,
   };
