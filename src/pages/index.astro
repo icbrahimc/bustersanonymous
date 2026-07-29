@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
-import StandingsTable from '../components/StandingsTable.astro';
+import Post from '../components/Post.astro';
+import StandingsWidget from '../components/StandingsWidget.astro';
 import { href } from '../lib/url.js';
 import league from '../data/league.json';
 import standingsData from '../data/standings.json';
@@ -15,8 +16,8 @@ const storylines = buildStorylines({
   standings,
   lastChampion,
   status: league.status,
+  leagueName: league.name,
 });
-const hero = storylines[0];
 
 const statusLabel =
   {
@@ -26,45 +27,39 @@ const statusLabel =
     complete: 'Season Complete',
   }[league.status] || league.status;
 ---
-<Base page="home" title="Home" description={`${league.name} — the official league homepage.`}>
-  <section class="hero">
-    <span class="week-pill">{league.season} Season · {statusLabel}</span>
-    <div class="eyebrow">{hero.kicker}</div>
-    <h1>{hero.headline}</h1>
-    <p class="lead">{hero.detail}</p>
-  </section>
-
-  <div class="grid two" style="margin-top:24px;">
-    <div class="card">
-      <h2>Latest Insight <a href={href('/insights')}>All insights →</a></h2>
-      {storylines[1] ? (
-        <div class="storyline">
-          <div class="kicker">{storylines[1].kicker}</div>
-          <h2 style="font-size:18px;margin:4px 0 6px;">{storylines[1].headline}</h2>
-          <p style="margin:0;color:var(--ink-soft);">{storylines[1].detail}</p>
+<Base page="home" title="Home" description={`${league.name} — the official league feed.`}>
+  <div class="layout">
+    <div>
+      <div class="feed-head">
+        <h1>Home</h1>
+        <p class="sub">{league.name} · {league.season} · {statusLabel}</p>
+        <div class="tabs">
+          <span class="tab active">For You</span>
+          <span class="tab">Latest</span>
         </div>
-      ) : (
-        <p class="empty">Storylines appear here once the season is underway.</p>
-      )}
+      </div>
+
+      <div class="feed">
+        {storylines.map((s, i) => (
+          <Post
+            {...s}
+            pinned={i === 0}
+            badge={i === 0 && lastChampion ? '🏆 Reigning Champ' : undefined}
+          />
+        ))}
+      </div>
     </div>
 
-    <div class="card">
-      <h2>Current Standings <a href={href('/insights')}>Full table →</a></h2>
-      {standings.length ? (
-        <StandingsTable rows={standings} limit={5} showDivision={false} />
-      ) : (
-        <p class="empty">Standings load once rosters are set.</p>
-      )}
-    </div>
-  </div>
-
-  <div class="card" style="margin-top:16px;">
-    <h2 style="margin-bottom:14px;">Quick Links</h2>
-    <div class="quick-links">
-      <a href={href('/rules')}>📕 Rulebook</a>
-      <a href={href('/history')}>🏆 All-Time Records</a>
-      <a href={href('/history')}>📜 Champions</a>
-      <a href={href('/insights')}>📊 Weekly Insights</a>
-    </div>
+    <aside class="sidebar">
+      <StandingsWidget rows={standings} title="Standings" moreHref="/insights" />
+      <section class="widget">
+        <h2>League</h2>
+        <nav class="quick-links">
+          <a href={href('/rules')}>📕 Rulebook</a>
+          <a href={href('/history')}>🏆 Champions & Records</a>
+          <a href={href('/insights')}>📊 Weekly Insights</a>
+        </nav>
+      </section>
+    </aside>
   </div>
 </Base>

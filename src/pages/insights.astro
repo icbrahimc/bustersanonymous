@@ -1,5 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
+import Post from '../components/Post.astro';
+import StandingsWidget from '../components/StandingsWidget.astro';
 import StandingsTable from '../components/StandingsTable.astro';
 import league from '../data/league.json';
 import standingsData from '../data/standings.json';
@@ -12,45 +14,40 @@ const storylines = buildStorylines({
   standings,
   lastChampion: lastCompleted?.champion || null,
   status: league.status,
+  leagueName: league.name,
 });
 
 const seasonStarted = hasPlayed(standings);
-// Once matchup data is fetched per week this becomes a real week list; for now
-// we surface the season-to-date view.
 const weekLabel = seasonStarted ? 'Season to date' : 'Preseason';
 ---
 <Base page="insights" title="Weekly Insights" description="Storylines and standings for the current week.">
-  <div class="eyebrow">Weekly Insights</div>
-  <h1>{weekLabel}</h1>
-  <p class="lead">
-    Auto-generated storylines from the latest league data, refreshed daily from Sleeper.
-  </p>
-
-  <div class="selector" style="margin-top:20px;">
-    <span class="btn active">{weekLabel}</span>
-    {!seasonStarted && (
-      <span style="color:var(--ink-soft);font-size:13px;">
-        Per-week breakdowns unlock once the season starts.
-      </span>
-    )}
-  </div>
-
-  <div class="grid" style="margin-bottom:24px;">
-    {storylines.map((s) => (
-      <div class="card storyline">
-        <div class="kicker">{s.kicker}</div>
-        <h2>{s.headline}</h2>
-        <p style="margin:0;color:var(--ink-soft);">{s.detail}</p>
+  <div class="layout">
+    <div>
+      <div class="feed-head">
+        <h1>Weekly Insights</h1>
+        <p class="sub">Auto-generated from the latest Sleeper data · refreshed daily</p>
+        <div class="tabs">
+          <span class="tab active">{weekLabel}</span>
+          {!seasonStarted && <span class="tab">Weeks unlock at kickoff</span>}
+        </div>
       </div>
-    ))}
-  </div>
 
-  <div class="card">
-    <h2>Standings</h2>
-    {standings.length ? (
-      <StandingsTable rows={standings} />
-    ) : (
-      <p class="empty">Standings will appear here once rosters are finalized.</p>
-    )}
+      <div class="feed">
+        {storylines.map((s) => <Post {...s} />)}
+      </div>
+
+      <section class="widget" style="margin-top:20px;">
+        <h2>Full Standings</h2>
+        {standings.length ? (
+          <div style="padding: 0 8px 8px;"><StandingsTable rows={standings} /></div>
+        ) : (
+          <p class="empty">Standings will appear once rosters are finalized.</p>
+        )}
+      </section>
+    </div>
+
+    <aside class="sidebar">
+      <StandingsWidget rows={standings} title="Standings" limit={6} moreHref="/insights" moreLabel="See all teams" />
+    </aside>
   </div>
 </Base>

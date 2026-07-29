@@ -1,0 +1,41 @@
+---
+import { href } from '../lib/url.js';
+
+// Compact standings list for the sidebar, X "trends"-style.
+// Props: rows, title, limit, moreHref, moreLabel.
+const {
+  rows = [],
+  title = 'Standings',
+  limit = 5,
+  moreHref = '/insights',
+  moreLabel = 'View full standings',
+} = Astro.props;
+const data = rows.slice(0, limit);
+const initials = (name = '?') =>
+  name.split(/\s+/).slice(0, 2).map((w) => w[0]).join('').toUpperCase();
+---
+<section class="widget">
+  <h2>{title}</h2>
+  {data.length ? (
+    <>
+      {data.map((t, i) => (
+        <div class="w-row">
+          <span class="w-rank">{i + 1}</span>
+          {t.avatar ? (
+            <img class="avatar" src={t.avatar} alt="" loading="lazy" width="34" height="34" />
+          ) : (
+            <span class="avatar">{initials(t.teamName)}</span>
+          )}
+          <span class="w-team">
+            <span class="name">{t.teamName}</span>
+            <span class="sub">@{(t.manager || '').replace(/[^a-zA-Z0-9_]/g, '')}</span>
+          </span>
+          <span class="w-rec">{t.wins}-{t.losses} · {t.fpts.toFixed(0)} PF</span>
+        </div>
+      ))}
+      <a class="w-more" href={href(moreHref)}>{moreLabel}</a>
+    </>
+  ) : (
+    <p class="empty">No standings yet.</p>
+  )}
+</section>

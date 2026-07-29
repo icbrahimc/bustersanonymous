@@ -1,0 +1,38 @@
+---
+// A single feed item, styled like an X post.
+// Props: author {name, handle, avatar}, kicker, headline, detail, meta,
+//        pinned (bool), badge (string).
+const { author = {}, kicker, headline, detail, meta, pinned = false, badge } = Astro.props;
+const initials = (author.name || '?')
+  .split(/\s+/)
+  .slice(0, 2)
+  .map((w) => w[0])
+  .join('')
+  .toUpperCase();
+---
+<article class={`post${pinned ? ' pinned' : ''}`}>
+  {pinned && <div class="pin">📌 Pinned storyline</div>}
+  <div>
+    {author.avatar ? (
+      <img class="avatar" src={author.avatar} alt="" loading="lazy" width="44" height="44" />
+    ) : (
+      <span class="avatar">{initials}</span>
+    )}
+  </div>
+  <div class="post-main">
+    <div class="post-meta">
+      <span class="name">{author.name}</span>
+      <span class="handle">@{author.handle}</span>
+      {meta && <><span class="dot">·</span><span class="time">{meta}</span></>}
+      {badge && <span class="badge gold" style="margin-left:6px;">{badge}</span>}
+    </div>
+    {kicker && <span class="post-kicker">{kicker}</span>}
+    {headline && <p class="post-headline">{headline}</p>}
+    {detail && <p class="post-body">{detail}</p>}
+    <div class="post-actions">
+      <span>💬 League chat</span>
+      <span>🔁 Share</span>
+      <span>📊 Stats</span>
+    </div>
+  </div>
+</article>

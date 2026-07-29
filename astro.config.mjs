@@ -7,7 +7,7 @@ import { defineConfig } from 'astro/config';
 // or a custom domain, set BASE_PATH="/" instead.
 // Both are overridable via env so the workflow can inject the right values.
 const SITE = process.env.SITE_URL || 'https://your-username.github.io';
-const BASE = process.env.BASE_PATH || '/busters-league';
+const BASE = process.env.BASE_PATH || '/bustersanonymous';
 
 // https://astro.build/config
 export default defineConfig({

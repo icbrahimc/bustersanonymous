@@ -74,7 +74,11 @@ jobs:
           BASE_PATH: ${{ steps.paths.outputs.base }}
         run: npm run build
 
+      # enablement:true turns on GitHub Pages via the API on first run, so you
+      # don't have to flip "Source: GitHub Actions" in Settings by hand.
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist

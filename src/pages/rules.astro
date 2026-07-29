@@ -2,28 +2,28 @@
 import Base from '../layouts/Base.astro';
 import { Content, getHeadings, frontmatter } from '../content/rules.md';
 
-// Build the table of contents from the top-level (##) headings.
 const toc = getHeadings().filter((h) => h.depth === 2);
 const amended = frontmatter.lastAmended;
 ---
 <Base page="rules" title="Rules" description="The official league rulebook.">
-  <div class="eyebrow">Rulebook</div>
-  <h1>League Rules</h1>
+  <div class="layout">
+    <div>
+      <div class="feed-head">
+        <h1>Rulebook</h1>
+        <p class="sub">The official rules of the league{amended ? ` · last amended ${amended}` : ''}</p>
+      </div>
+      <article class="prose" style="padding-top:18px;">
+        <Content />
+      </article>
+    </div>
 
-  <nav class="toc">
-    <strong>Jump to</strong>
-    {toc.map((h, i) => (
-      <>{i > 0 && ' / '}<a href={`#${h.slug}`}>{h.text}</a></>
-    ))}
-  </nav>
-
-  <article class="prose">
-    <Content />
-  </article>
-
-  {amended && (
-    <p style="color:var(--ink-soft);font-size:13px;margin-top:24px;">
-      Last amended: {amended}
-    </p>
-  )}
+    <aside class="sidebar">
+      <section class="widget">
+        <h2>Contents</h2>
+        <nav class="quick-links">
+          {toc.map((h) => <a href={`#${h.slug}`}>{h.text}</a>)}
+        </nav>
+      </section>
+    </aside>
+  </div>
 </Base>
