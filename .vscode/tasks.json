@@ -1,0 +1,20 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Sync main with origin",
+      "detail": "Pulls the latest main so the daily cron's committed feed/data don't leave your branch behind.",
+      "type": "shell",
+      "command": "bash scripts/sync-main.sh",
+      "options": { "cwd": "${workspaceFolder}" },
+      "runOptions": { "runOn": "folderOpen" },
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared",
+        "clear": false,
+        "close": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}

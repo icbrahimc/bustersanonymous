@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PROJECT_DIR:-.}/scripts/sync-main.sh\"",
+            "statusMessage": "Syncing main with origin…",
+            "timeout": 45
+          }
+        ]
+      }
+    ]
+  }
+}

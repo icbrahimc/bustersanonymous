@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "fetch-data": "node scripts/fetch-sleeper.mjs",
     "generate-feed": "node scripts/generate-feed.mjs",
-    "cron": "node scripts/cron.mjs"
+    "cron": "node scripts/cron.mjs",
+    "sync": "bash scripts/sync-main.sh"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.115.0",
