@@ -1,0 +1,32 @@
+---
+import { href } from '../lib/url.js';
+import archive from '../data/feeds/index.json';
+
+// Lists past daily editions, newest first. `current` highlights the active day;
+// `limit` caps how many to show (with a "view all" affordance later if needed).
+const { current = null, limit = 30, title = 'Past Editions' } = Astro.props;
+const editions = (archive || []).slice(0, limit);
+const label = (d) =>
+  new Date(`${d}T00:00:00Z`).toLocaleDateString('en-US', {
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric',
+    timeZone: 'UTC',
+  });
+---
+<section class="widget">
+  <h2>{title}</h2>
+  {editions.length ? (
+    editions.map((e) => (
+      <a class="w-row" href={href(`/feed/${e.date}`)} style={`text-decoration:none;color:inherit;${e.date === current ? 'background:var(--surface-hover);' : ''}`}>
+        <span class="w-team">
+          <span class="name">{label(e.date)}</span>
+          <span class="sub">{e.postCount} takes · {e.season}{e.mode === 'fallback' ? ' · auto' : ''}</span>
+        </span>
+        <span class="w-rec">→</span>
+      </a>
+    ))
+  ) : (
+    <p class="empty">No archived editions yet.</p>
+  )}
+</section>

@@ -42,6 +42,9 @@ scripts/
   generate-feed.mjs   # Claude writes Skip-style hot takes → src/data/feed.json
 src/
   data/*.json         # generated league data (committed, read at build time)
+  data/feed.json      # latest daily hot-take edition
+  data/feeds/         # dated archive: <YYYY-MM-DD>.json per day + index.json
+  pages/feed/[date].astro  # one retrievable page per archived edition
   content/rules.md    # the rulebook — edit this to change the Rules page
   layouts/Base.astro  # shared shell (nav + footer)
   components/         # Nav, StandingsTable

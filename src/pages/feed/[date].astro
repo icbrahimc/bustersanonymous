@@ -1,0 +1,50 @@
+---
+import Base from '../../layouts/Base.astro';
+import Post from '../../components/Post.astro';
+import ArchiveWidget from '../../components/ArchiveWidget.astro';
+import { href } from '../../lib/url.js';
+
+// One statically-rendered page per archived daily edition.
+const feedMods = import.meta.glob('../../data/feeds/*.json', { eager: true });
+
+export function getStaticPaths() {
+  const mods = import.meta.glob('../../data/feeds/*.json', { eager: true });
+  return Object.entries(mods)
+    .filter(([path]) => !path.endsWith('/index.json'))
+    .map(([, mod]) => {
+      const feed = mod.default;
+      return { params: { date: feed.date }, props: { feed } };
+    });
+}
+
+const { feed } = Astro.props;
+const posts = feed.posts || [];
+const dateLabel = new Date(`${feed.date}T00:00:00Z`).toLocaleDateString('en-US', {
+  weekday: 'long',
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+  timeZone: 'UTC',
+});
+---
+<Base page="insights" title={`The Daily Take — ${feed.date}`}>
+  <div class="layout">
+    <div>
+      <div class="feed-head">
+        <a href={href('/insights')} style="display:inline-block;font-size:13px;color:var(--text-soft);text-decoration:none;margin-bottom:2px;">← Back to latest</a>
+        <h1>The Daily Take</h1>
+        <p class="sub">{dateLabel} · {feed.season} season · archived edition</p>
+      </div>
+      <div class="feed">
+        {posts.length ? (
+          posts.map((p) => <Post {...p} />)
+        ) : (
+          <p class="empty">No takes archived for this day.</p>
+        )}
+      </div>
+    </div>
+    <aside class="sidebar">
+      <ArchiveWidget current={feed.date} />
+    </aside>
+  </div>
+</Base>

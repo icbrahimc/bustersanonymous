@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import Post from '../components/Post.astro';
 import StandingsWidget from '../components/StandingsWidget.astro';
 import StandingsTable from '../components/StandingsTable.astro';
+import ArchiveWidget from '../components/ArchiveWidget.astro';
 import league from '../data/league.json';
 import standingsData from '../data/standings.json';
 import feed from '../data/feed.json';
@@ -20,7 +21,7 @@ const weekLabel = seasonStarted ? 'Season to date' : 'Preseason';
     <div>
       <div class="feed-head">
         <h1>Weekly Insights</h1>
-        <p class="sub">Auto-generated from the latest Sleeper data · refreshed daily</p>
+        <p class="sub">The Daily Take{feed.date ? ` · ${feed.date}` : ''} · refreshed every day</p>
         <div class="tabs">
           <span class="tab active">{weekLabel}</span>
           {!seasonStarted && <span class="tab">Weeks unlock at kickoff</span>}
@@ -43,6 +44,7 @@ const weekLabel = seasonStarted ? 'Season to date' : 'Preseason';
 
     <aside class="sidebar">
       <StandingsWidget rows={standings} title="Standings" limit={6} moreHref="/insights" moreLabel="See all teams" />
+      <ArchiveWidget current={feed.date} title="Past Editions" />
     </aside>
   </div>
 </Base>

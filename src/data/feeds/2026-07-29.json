@@ -1,0 +1,34 @@
+{
+  "date": "2026-07-29",
+  "season": "2026",
+  "generatedAt": "2026-07-29T17:41:52.315Z",
+  "model": null,
+  "mode": "fallback",
+  "keyPresent": false,
+  "diagnostic": "ANTHROPIC_API_KEY not set in this environment",
+  "meta": "Preseason",
+  "posts": [
+    {
+      "author": {
+        "name": "#FreeMaxx Champions💍",
+        "handle": "Tyrique14",
+        "avatar": "https://sleepercdn.com/uploads/6f71546c196c795ccd2c78af7d3e2b27.jpg"
+      },
+      "meta": "Preseason",
+      "kicker": "Title Defense",
+      "headline": "#FreeMaxx Champions💍 enters as reigning champ",
+      "detail": "Tyrique14 took home the ring last season. Everyone else is drafting to dethrone them. 💍"
+    },
+    {
+      "author": {
+        "name": "Busters Anonymous",
+        "handle": "commish",
+        "avatar": null
+      },
+      "meta": "Preseason",
+      "kicker": "Offseason",
+      "headline": "The draft is on the clock",
+      "detail": "Live standings and weekly storylines fill in automatically once the games start — the site refreshes from Sleeper every day."
+    }
+  ]
+}

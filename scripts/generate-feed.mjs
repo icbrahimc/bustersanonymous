@@ -9,7 +9,7 @@
 // back to the deterministic storylines in src/lib/insights.js so the site
 // always has a feed and the build never breaks.
 
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, writeFile, readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { createRequire } from 'node:module';
@@ -253,8 +253,12 @@ async function main() {
     mode = 'fallback';
   }
 
+  const generatedAt = new Date().toISOString();
+  const date = generatedAt.slice(0, 10); // YYYY-MM-DD (UTC), one edition per day
   const feed = {
-    generatedAt: new Date().toISOString(),
+    date,
+    season: league.season,
+    generatedAt,
     model: mode === 'ai' ? MODEL : null,
     mode,
     keyPresent,
@@ -262,8 +266,29 @@ async function main() {
     meta,
     posts,
   };
+
+  // 1) Latest edition — what the Home / Weekly Insights pages render.
   await writeFile(join(DATA_DIR, 'feed.json'), JSON.stringify(feed, null, 2) + '\n');
-  console.log(`Wrote src/data/feed.json (${mode}, ${posts.length} posts).`);
+
+  // 2) Dated archive snapshot — one file per day, kept forever so past editions
+  //    stay retrievable once the season is underway.
+  const FEEDS_DIR = join(DATA_DIR, 'feeds');
+  await mkdir(FEEDS_DIR, { recursive: true });
+  await writeFile(join(FEEDS_DIR, `${date}.json`), JSON.stringify(feed, null, 2) + '\n');
+
+  // 3) Archive index (newest first) so the site can list past editions cheaply.
+  let index = [];
+  try {
+    index = JSON.parse(await readFile(join(FEEDS_DIR, 'index.json'), 'utf8'));
+  } catch {
+    /* first run — no index yet */
+  }
+  index = index.filter((e) => e.date !== date); // re-running the same day replaces it
+  index.push({ date, season: league.season, status: league.status, mode, generatedAt, postCount: posts.length });
+  index.sort((a, b) => (a.date < b.date ? 1 : -1));
+  await writeFile(join(FEEDS_DIR, 'index.json'), JSON.stringify(index, null, 2) + '\n');
+
+  console.log(`Wrote feed.json + feeds/${date}.json (${mode}, ${posts.length} posts). Archive: ${index.length} edition(s).`);
 }
 
 main().catch((err) => {
