@@ -35,6 +35,59 @@ const lastChampion = lastCompleted?.champion || null;
 
 const teamById = new Map(standings.map((t) => [t.rosterId, t]));
 const handle = (name = '') => name.replace(/[^a-zA-Z0-9_]/g, '') || 'manager';
+
+// Aggregate each manager's track record across COMPLETED seasons, keyed by the
+// stable Sleeper owner id. Standings in history.json are already sorted best →
+// worst, so a team's finish is its index + 1.
+function ownerCareer() {
+  const map = new Map();
+  for (const s of history.seasons || []) {
+    if (s.status !== 'complete') continue;
+    s.standings.forEach((t, i) => {
+      const c = map.get(t.ownerId) || { seasons: 0, wins: 0, losses: 0, ties: 0, titles: 0, finishes: [] };
+      c.seasons += 1;
+      c.wins += t.wins;
+      c.losses += t.losses;
+      c.ties += t.ties || 0;
+      c.finishes.push(i + 1);
+      if (s.champion && s.champion.ownerId === t.ownerId) c.titles += 1;
+      map.set(t.ownerId, c);
+    });
+  }
+  return map;
+}
+const career = ownerCareer();
+const leagueSize = league.numTeams || standings.length || 12;
+
+// Turn a manager's career into a pedigree/expectation profile the persona can
+// weaponize: contenders get held to a higher standard, bottom-feeders get roasted.
+function pedigreeFor(ownerId) {
+  const c = career.get(ownerId);
+  if (!c || c.seasons === 0) {
+    return { tier: 'newcomer', titles: 0, seasons: 0, note: 'no track record in this league yet' };
+  }
+  const games = c.wins + c.losses + c.ties;
+  const winPct = games ? c.wins / games : 0;
+  const avgFinish = c.finishes.reduce((a, b) => a + b, 0) / c.finishes.length;
+  const bestFinish = Math.min(...c.finishes);
+  const worstFinish = Math.max(...c.finishes);
+  // Cowboys tier: a ring or consistently near the top → sky-high expectations.
+  // Browns tier: no rings and living in the basement → franchise futility.
+  let tier;
+  if (c.titles >= 1 || avgFinish <= leagueSize * 0.3) tier = 'contender';
+  else if (c.titles === 0 && avgFinish >= leagueSize * 0.7) tier = 'bottom-feeder';
+  else tier = 'middle';
+  return {
+    tier,
+    titles: c.titles,
+    seasons: c.seasons,
+    careerRecord: `${c.wins}-${c.losses}${c.ties ? `-${c.ties}` : ''}`,
+    winPct: Number(winPct.toFixed(3)),
+    avgFinish: Number(avgFinish.toFixed(1)),
+    bestFinish,
+    worstFinish,
+  };
+}
 const authorFor = (team) => ({
   name: team.teamName,
   handle: handle(team.manager),
@@ -46,13 +99,20 @@ const authorFor = (team) => ({
 const SYSTEM = `You are THE UNDISPUTED BUSTERS TAKE — the resident hot-take artist for the "${league.name}" fantasy football league. You write in the bombastic, provocative style of a brash sports-debate TV host: bold declarations, manufactured beef between teams, unshakable confidence, hyperbole, and the occasional ALL-CAPS word for emphasis.
 
 Hard rules:
-- Every take MUST be grounded in the real data provided. Reference actual team names, managers, records, and point totals — never invent stats.
-- Entertaining and provocative, but NEVER profane, cruel, or bigoted. This is a public site for a league of friends. Punch at fantasy performance, not people.
+- Every take MUST be grounded in the real data provided. Reference actual team names, managers, records, point totals, and TRACK RECORD — never invent stats.
+- Entertaining and provocative, but NEVER profane, cruel, or bigoted. This is a public site for a league of friends. Punch at fantasy performance and expectations, not people.
 - Each take is tied to exactly one real team by its rosterId from the provided roster.
 - "kicker": a 2-4 word ALL-CAPS label (e.g. "TITLE DEFENSE", "DRAFT WARNING", "DISRESPECT ALERT").
 - "headline": ONE punchy, opinionated sentence — the hot take itself.
-- "detail": 1-2 sentences backing it up with the actual numbers or context.
-- Produce exactly ${TAKE_COUNT} takes, each about a DIFFERENT team, covering different angles.`;
+- "detail": 1-2 sentences backing it up with the actual numbers or history.
+- Produce exactly ${TAKE_COUNT} takes, each about a DIFFERENT team, covering different angles.
+
+TONE — weight every take by PEDIGREE and EXPECTATIONS, like a real sports-debate show. Each team carries a "pedigree" object (tier, titles, career record, average finish):
+- tier "contender" (a ring, or consistently near the top): treat them like the DALLAS COWBOYS — enormous reputation, sky-high expectations, and a target on their back. Hold them to their own hype and roast any sign they'll fall short of it. Invoke their past glory as PRESSURE ("all that pedigree and…", "rings mean nothing if…"). Doubt is the default; make them prove it.
+- tier "bottom-feeder" (no titles, a history of finishing near the bottom): DOG them like the CLEVELAND BROWNS — lean into the franchise futility, the losing culture, the "here we go again" energy. Pile on the track record of disappointment.
+- tier "middle": faint praise or "prove-it" skepticism — respectable but forgettable, nobody's scared of them.
+- tier "newcomer" (no league history): unproven — question whether they belong or hype them as a wildcard.
+Reference the actual pedigree numbers (titles, average finish, career record) so the shade lands. Spread the ${TAKE_COUNT} takes across tiers — at least one Cowboys-style shot at a contender and one Browns-style burial of a bottom-feeder.`;
 
 function userPrompt() {
   const teams = standings.map((t) => ({
@@ -62,6 +122,7 @@ function userPrompt() {
     record: `${t.wins}-${t.losses}${t.ties ? `-${t.ties}` : ''}`,
     pointsFor: t.fpts,
     division: t.division ? league.divisions?.[t.division] || `Division ${t.division}` : null,
+    pedigree: pedigreeFor(t.ownerId), // career track record → expectation level
   }));
 
   return JSON.stringify(
