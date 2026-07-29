@@ -1,7 +1,7 @@
 {
   "date": "2026-07-29",
   "season": "2026",
-  "generatedAt": "2026-07-29T17:49:00.703Z",
+  "generatedAt": "2026-07-29T18:32:16.150Z",
   "model": "claude-sonnet-5",
   "mode": "ai",
   "keyPresent": true,
@@ -15,9 +15,9 @@
         "avatar": "https://sleepercdn.com/uploads/6f71546c196c795ccd2c78af7d3e2b27.jpg"
       },
       "meta": "Preseason",
-      "kicker": "TITLE DEFENSE PRESSURE",
-      "headline": "The ring is real but the résumé is thin — #FreeMaxx Champions have one championship and a career average finish of 5.5, so this 'dynasty' talk needs to cool off.",
-      "detail": "Tyrique14 won it all in 2025, but a 14-14 career record and a worst finish of 8th prove this team is closer to boom-or-bust than bulletproof. Repeat or it's a one-hit wonder."
+      "kicker": "TITLE DEFENSE",
+      "headline": "Tyrique14 finally has a ring, but a 14-14 career record and an average finish of 5.5 says #FreeMaxx Champions is one hot streak away from being a one-hit wonder.",
+      "detail": "Winning it all in 2025 buys you exactly zero credibility for 2026 — this is a .500 franchise with a title, and the league is coming for it."
     },
     {
       "author": {
@@ -26,9 +26,9 @@
         "avatar": "https://sleepercdn.com/uploads/b93bc9fd7bc9dedab3480d82f004e729.jpg"
       },
       "meta": "Preseason",
-      "kicker": "COWBOYS SYNDROME",
-      "headline": "Put it in Ra has the best résumé in the league and zero rings to show for it — that's the definition of choking when it matters.",
-      "detail": "A 20-8 career record and a 1.5 average finish with back-to-back top-2 seasons is video-game stuff, but adambarner111 still has that donut in the titles column. All that pedigree means nothing until it means everything."
+      "kicker": "NO RING, NO RESPECT",
+      "headline": "Put it in Ra has the gaudiest resume in the league — a 20-8 record and back-to-back top-2 finishes — and STILL no championship to show for it.",
+      "detail": "A 1.5 average finish over two seasons is video-game numbers, but until adambarner111 actually hoists the trophy, this is the best team that hasn't won anything."
     },
     {
       "author": {
@@ -38,8 +38,8 @@
       },
       "meta": "Preseason",
       "kicker": "BASEMENT DWELLERS",
-      "headline": "talentedtenthh finished dead last at 12th place with a 4-10 record, and nothing about this offseason suggests that changes.",
-      "detail": "A .286 win pct and a season that ended in the actual cellar is the kind of track record that gets a fanbase renamed. Prove-it szn starts now, or it's just more of the same."
+      "headline": "talentedtenthh is the most misleadingly named team in Busters Anonymous history — a 4-10 record and a dead-last 12th place finish is the opposite of talented.",
+      "detail": "With a .286 win percentage in their lone season, this roster hasn't earned the right to talk trash to anybody in this league yet."
     },
     {
       "author": {
@@ -48,9 +48,9 @@
         "avatar": "https://sleepercdn.com/uploads/358b8dbec979b3e9a70702f1cf1da078.jpg"
       },
       "meta": "Preseason",
-      "kicker": "QUIET CONTENDER",
-      "headline": "Sasinci's World has a championship banner hanging but a mediocre 13-15 career mark — which is it, contender or pretender?",
-      "detail": "Alxgalvn's squad owns a title yet has an average finish of 5.5 and once bottomed out at 8th, proving that ring came with some serious asterisks. The league won't fear you until you do it twice."
+      "kicker": "FLUKE OR FORCE?",
+      "headline": "Sasinci's World has a championship banner but a losing 13-15 career record — that title looks more like a lucky bounce than a dynasty in the making.",
+      "detail": "An average finish of 5.5 with a worst finish of 8th means Alxgalvn's crown is sitting on a shaky throne heading into 2026."
     },
     {
       "author": {
@@ -59,9 +59,9 @@
         "avatar": "https://sleepercdn.com/avatars/thumbs/de502fad9fab52c466ad0020ae7f46ac"
       },
       "meta": "Preseason",
-      "kicker": "CELLAR RESIDENT",
-      "headline": "SwooshAnoosh's rookie season ended at 11th place with a 5-9 record — welcome to the league, now welcome to the basement.",
-      "detail": "A .357 win pct in year one isn't exactly a warning shot to the rest of Titty Committee. Until this changes, SwooshAnoosh is just happy to be here."
+      "kicker": "DRAFT DAY DOUBT",
+      "headline": "SwooshAnoosh finished dead last in the entire league last year, and nothing about a 5-9 record suggests that's about to change.",
+      "detail": "An 11th place finish and a .357 win percentage is the definition of a team nobody in Busters Anonymous is losing sleep over."
     }
   ]
 }
