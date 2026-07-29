@@ -130,6 +130,13 @@ async function generateWithClaude() {
   const { posts } = JSON.parse(text);
   if (!Array.isArray(posts) || posts.length === 0) throw new Error('No posts generated');
 
+  // Occasionally a structured-output run glues a schema field name onto the end
+  // of a value (e.g. "...draft night.eadline"). Strip that trailing artifact
+  // only when it's fused directly onto sentence-ending punctuation, so real
+  // prose is never clipped.
+  const clean = (s = '') =>
+    s.trim().replace(/([.!?"'”’])\s*(h?eadline|detail|kicker)$/i, '$1');
+
   // Resolve each take's author from the real roster; drop any bad rosterId.
   const resolved = posts
     .map((p) => {
@@ -138,9 +145,9 @@ async function generateWithClaude() {
       return {
         author: authorFor(team),
         meta,
-        kicker: p.kicker,
-        headline: p.headline,
-        detail: p.detail,
+        kicker: clean(p.kicker),
+        headline: clean(p.headline),
+        detail: clean(p.detail),
       };
     })
     .filter(Boolean);
