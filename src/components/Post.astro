@@ -9,6 +9,17 @@ const initials = (author.name || '?')
   .map((w) => w[0])
   .join('')
   .toUpperCase();
+
+// Plain-text version of the take for the Share button to copy to clipboard —
+// paste-ready for the group chat.
+const shareText = [
+  kicker ? `${kicker}` : null,
+  headline,
+  detail,
+  author.name ? `— ${author.name}${author.handle ? ` (@${author.handle})` : ''} · THE UNDISPUTED BUSTERS TAKE` : null,
+]
+  .filter(Boolean)
+  .join('\n');
 ---
 <article class={`post${pinned ? ' pinned' : ''}`}>
   {pinned && <div class="pin">📌 Pinned storyline</div>}
@@ -31,8 +42,62 @@ const initials = (author.name || '?')
     {detail && <p class="post-body">{detail}</p>}
     <div class="post-actions">
       <span>💬 League chat</span>
-      <span>🔁 Share</span>
+      <span class="share-btn" role="button" tabindex="0" data-share={shareText} aria-label="Copy this take to clipboard">🔁 Share</span>
       <span>📊 Stats</span>
     </div>
   </div>
 </article>
+
+<style>
+  .share-btn { cursor: pointer; transition: color 0.15s ease; }
+  .share-btn:hover { color: var(--text); }
+  .share-btn.copied { color: #16a34a; }
+</style>
+
+<script>
+  // Copy a take's text to the clipboard when its Share button is used. One
+  // delegated listener covers every Post on the page (feed, history, etc.).
+  async function copyShare(el: HTMLElement) {
+    const text = el.getAttribute('data-share');
+    if (!text) return;
+    try {
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(text);
+      } else {
+        // Fallback for older / non-secure contexts.
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+      }
+      const original = el.textContent;
+      el.classList.add('copied');
+      el.textContent = '✅ Copied';
+      window.setTimeout(() => {
+        el.textContent = original;
+        el.classList.remove('copied');
+      }, 1400);
+    } catch {
+      el.textContent = '⚠️ Press Ctrl+C';
+      window.setTimeout(() => (el.textContent = '🔁 Share'), 1600);
+    }
+  }
+
+  document.addEventListener('click', (e) => {
+    const btn = (e.target as HTMLElement)?.closest('.share-btn');
+    if (btn) copyShare(btn as HTMLElement);
+  });
+  // Keyboard access: Enter / Space on the focused Share button.
+  document.addEventListener('keydown', (e) => {
+    const target = e.target as HTMLElement;
+    if (!target?.classList?.contains('share-btn')) return;
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      copyShare(target);
+    }
+  });
+</script>
