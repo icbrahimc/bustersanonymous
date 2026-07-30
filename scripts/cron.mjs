@@ -36,6 +36,15 @@ async function main() {
   await heartbeat();
   // Pull fresh Sleeper data into src/data/.
   await run(process.execPath, [join(__dirname, 'fetch-sleeper.mjs')]);
+  // Backfill season storylines for any newly-COMPLETED season. Idempotent:
+  // seasons already in season-stories.json are skipped (no API calls), so this
+  // only does work the first time a season flips to complete. Non-fatal — a
+  // hiccup here must never block the daily feed below.
+  try {
+    await run(process.execPath, [join(__dirname, 'generate-season-stories.mjs')]);
+  } catch (err) {
+    console.warn(`season-stories generation failed (non-fatal): ${err.message}`);
+  }
   // Regenerate the AI hot-take feed from the fresh data.
   await run(process.execPath, [join(__dirname, 'generate-feed.mjs')]);
 }

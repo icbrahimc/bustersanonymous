@@ -4,6 +4,7 @@ import Post from '../components/Post.astro';
 import StandingsTable from '../components/StandingsTable.astro';
 import allTime from '../data/all-time.json';
 import history from '../data/history.json';
+import seasonStories from '../data/season-stories.json';
 
 const seasons = history.seasons || [];
 const champions = seasons.filter((s) => s.champion);
@@ -13,6 +14,21 @@ const topTitle = mostTitles[0];
 const defaultSeason = seasons[0]?.season;
 
 const handle = (name = '') => name.replace(/[^a-zA-Z0-9_]/g, '');
+
+// Join each season's authored storylines to that season's final standings, in
+// finish order, so every card carries the real team/manager/avatar + finish.
+const storiesBySeason = seasonStories.seasons || {};
+function storylinesFor(season) {
+  const bySeason = storiesBySeason[season.season] || {};
+  return season.standings
+    .map((t, i) => {
+      const story = bySeason[t.ownerId];
+      if (!story) return null;
+      return { team: t, finish: i + 1, ...story };
+    })
+    .filter(Boolean);
+}
+const medal = (n) => (n === 1 ? '🥇' : n === 2 ? '🥈' : n === 3 ? '🥉' : `#${n}`);
 ---
 <Base page="history" title="History" description="Champions, all-time records, and past season standings.">
   <div class="layout">
@@ -56,6 +72,23 @@ const handle = (name = '') => name.replace(/[^a-zA-Z0-9_]/g, '');
             </div>
             {seasons.map((s) => (
               <div data-season-panel={s.season} style={s.season === defaultSeason ? '' : 'display:none;'}>
+                {storylinesFor(s).length > 0 && (
+                  <div class="season-stories">
+                    <h3 class="stories-head">📖 {s.season} Storylines</h3>
+                    <div class="feed">
+                      {storylinesFor(s).map((st) => (
+                        <Post
+                          author={{ name: st.team.teamName, handle: handle(st.team.manager), avatar: st.team.avatar }}
+                          meta={`${s.season} · ${st.team.wins}-${st.team.losses}${st.team.ties ? `-${st.team.ties}` : ''}`}
+                          kicker={st.kicker}
+                          headline={st.headline}
+                          detail={st.detail}
+                          badge={`${medal(st.finish)}${st.team.ownerId === s.champion?.ownerId ? ' 🏆' : ''}`}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                )}
                 <StandingsTable rows={s.standings} />
               </div>
             ))}
@@ -94,6 +127,16 @@ const handle = (name = '') => name.replace(/[^a-zA-Z0-9_]/g, '');
     </aside>
   </div>
 </Base>
+
+<style>
+  .season-stories { margin: 8px 0 18px; }
+  .stories-head {
+    font-size: 15px;
+    margin: 6px 2px 10px;
+    opacity: 0.85;
+  }
+  .season-stories + :global(.standings) { margin-top: 8px; }
+</style>
 
 <script>
   const buttons = document.querySelectorAll('[data-season-btn]');

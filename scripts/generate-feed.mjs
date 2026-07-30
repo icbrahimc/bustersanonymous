@@ -15,6 +15,7 @@ import { dirname, join } from 'node:path';
 import { createRequire } from 'node:module';
 import Anthropic from '@anthropic-ai/sdk';
 import { buildStorylines, hasPlayed } from '../src/lib/insights.js';
+import { slanderFor } from '../src/lib/slander.js';
 
 const require = createRequire(import.meta.url);
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -112,7 +113,13 @@ TONE — weight every take by PEDIGREE and EXPECTATIONS, like a real sports-deba
 - tier "bottom-feeder" (no titles, a history of finishing near the bottom): DOG them like the CLEVELAND BROWNS — lean into the franchise futility, the losing culture, the "here we go again" energy. Pile on the track record of disappointment.
 - tier "middle": faint praise or "prove-it" skepticism — respectable but forgettable, nobody's scared of them.
 - tier "newcomer" (no league history): unproven — question whether they belong or hype them as a wildcard.
-Reference the actual pedigree numbers (titles, average finish, career record) so the shade lands. Spread the ${TAKE_COUNT} takes across tiers — at least one Cowboys-style shot at a contender and one Browns-style burial of a bottom-feeder.`;
+Reference the actual pedigree numbers (titles, average finish, career record) so the shade lands. Spread the ${TAKE_COUNT} takes across tiers — at least one Cowboys-style shot at a contender and one Browns-style burial of a bottom-feeder.
+
+SLANDER — some teams carry a "slander" object with league in-joke nicknames (names), a running bit (angle), and sometimes an emoji. These are inside jokes only this league knows, so they make the shot land HARD. But slander is EARNED, not spammed — deploy it WEIGHTED BY PERFORMANCE (past + present), exactly like pedigree:
+- Losing / bottom-feeder / underachieving: unload the nickname with no mercy — the slander is the whole point of the take (e.g. a "Bald Fraud" living down to the name).
+- Contender falling short of their hype: use the nickname as PRESSURE ("all that pedigree and still just <nickname>").
+- Actually winning / performing well right now: dial the slander WAY back or flip it to grudging respect / irony — do NOT roast a manager with their nickname as if they were losing when they're not.
+When you do use a slander name, prefer it over the plain manager handle, and include its emoji if one is given. Only use nicknames that are actually provided for that team — never invent one. Not every take needs slander; use it where the performance justifies it.`;
 
 function userPrompt() {
   const teams = standings.map((t) => ({
@@ -123,6 +130,7 @@ function userPrompt() {
     pointsFor: t.fpts,
     division: t.division ? league.divisions?.[t.division] || `Division ${t.division}` : null,
     pedigree: pedigreeFor(t.ownerId), // career track record → expectation level
+    slander: slanderFor(t.ownerId), // league in-joke nickname(s), if any → deploy weighted by performance
   }));
 
   return JSON.stringify(

@@ -9,6 +9,11 @@ on:
     branches: [main]
   # Let you trigger it by hand from the Actions tab.
   workflow_dispatch:
+    inputs:
+      force_season_stories:
+        description: 'Regenerate ALL season storylines with Claude (overwrites the committed ones)'
+        type: boolean
+        default: false
 
 # Needed to commit refreshed data back and to publish to Pages.
 permissions:
@@ -43,6 +48,10 @@ jobs:
         continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Only set by a manual "Run workflow" with the toggle on; forces every
+          # completed season's storylines to be regenerated. Empty (falsy) on
+          # scheduled/push runs, so those stay idempotent.
+          FORCE_SEASON_STORIES: ${{ github.event.inputs.force_season_stories }}
         run: npm run cron
 
       # Commit the refreshed data + generated feed back so the daily update

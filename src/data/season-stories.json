@@ -1,0 +1,110 @@
+{
+  "generatedAt": "2026-07-30T00:00:00.000Z",
+  "note": "Per-manager storylines for COMPLETED seasons. Keyed by season -> stable Sleeper ownerId. Static archive (past results never change); the history page joins these to history.json standings for author/finish/record. Regenerate/extend with scripts/generate-season-stories.mjs.",
+  "seasons": {
+    "2025": {
+      "1132933728533270528": {
+        "kicker": "REGULAR SEASON MIRAGE",
+        "headline": "The Alaskan Bull Worm 🏔️🪱 bullied the whole league for 14 weeks — then vanished the second a ring was on the line.",
+        "detail": "A league-best 10-4 and the top seed in 2025, and it was THICKS lifting the trophy. All that regular-season muscle, zero hardware."
+      },
+      "1134715278987943936": {
+        "kicker": "A NUT SHORT",
+        "headline": "One Nut Barner put together a 9-5 season and still came up a nut short of the title.",
+        "detail": "Second in the standings with 1737 points for, but the ring went elsewhere. Respectable — and totally forgettable."
+      },
+      "784624291579854848": {
+        "kicker": "RING SZN",
+        "headline": "THICKS snuck in as the 3-seed and walked out with the entire thing — your 2025 champion.",
+        "detail": "Just 1643 points for, the fewest of any contender, but he peaked when it mattered and took the ring. Ugly? Sure. Champions don't apologize."
+      },
+      "1116599370310356992": {
+        "kicker": "FRAUD ALERT",
+        "headline": "The African Bald Fraud led the ENTIRE league in scoring and somehow couldn't crack the top three.",
+        "detail": "A league-high 1860 points for in 2025 and a 4th-place finish to show for it. All that offense, all that hairline, no ring. Fraudulent."
+      },
+      "1132905719180943360": {
+        "kicker": "PERFECTLY MEDIOCRE",
+        "headline": "The Ultimate Light Skin finished dead even at 7-7 — the living definition of 'fine, I guess.'",
+        "detail": "1756 points for and a fifth-place finish. Nobody feared him, nobody pitied him. He was just... there."
+      },
+      "1132877923033391104": {
+        "kicker": "STOMACH FOR NOTHING",
+        "headline": "Bubble Guts churned out another flavorless 7-7 in 2025.",
+        "detail": "Sixth place, 1686 points for, no pulse in the playoff race. That all-time points record he owns felt like a lifetime ago."
+      },
+      "1265145602090483712": {
+        "kicker": "FRAUD, SOUTH BRANCH",
+        "headline": "The Mexican Bald Fraud went a lukewarm 7-7 — proof the Bald Fraud disease crosses borders.",
+        "detail": "Seventh at 1581 points for, the lowest of the entire .500 pack. Him and MJ should start a support group."
+      },
+      "474461892971065344": {
+        "kicker": "TITLE DEFENSE DENIED",
+        "headline": "The Milk Man defended his crown by, uh, missing the playoffs entirely at 6-8.",
+        "detail": "The reigning 2024 champ curdled to eighth with just 1563 points for. From ring to wreck in one season — Megamind outsmarted only himself."
+      },
+      "1264710608129884160": {
+        "kicker": "DEFECTOR DOWN BAD",
+        "headline": "Our resident DPRK defector defected from contention by midseason, sliding to 6-8 and ninth.",
+        "detail": "1549 points for and buried in the standings before the leaves turned. The Supreme Leader would not be pleased."
+      },
+      "1265163251033849856": {
+        "kicker": "AUNTIE'S OFF SZN",
+        "headline": "Auntie Thomas cooked up a cold 6-8 and a tenth-place finish in 2025.",
+        "detail": "1509 points for, third-worst in the league. The easy way and the hard way both led straight to the lottery."
+      },
+      "1265186290593189888": {
+        "kicker": "NO KINGDOM",
+        "headline": "The Prince of Persia ruled over nothing but the basement at 5-9.",
+        "detail": "1464 points for and eleventh place. A prince with no throne, no playoffs, and no answers."
+      },
+      "1265060864969424896": {
+        "kicker": "BASEMENT ROYALTY",
+        "headline": "Chauncey face-planted to dead last at 4-10 — worst offense AND most points allowed in the whole league.",
+        "detail": "A league-low 1430 points for against a league-worst 1696 against. 'Talented tenth'? More like the talented last."
+      }
+    },
+    "2024": {
+      "1134715278987943936": {
+        "kicker": "REG SEASON BULLY",
+        "headline": "One Nut Barner bulldozed 2024 to an 11-3 record — still the most wins this league has EVER seen — and got nothing for it.",
+        "detail": "2100 points for and the top seed, and the ring still slipped away. The greatest regular season in Busters history, trophy case empty."
+      },
+      "1132877923033391104": {
+        "kicker": "POINTS, NO PRIZE",
+        "headline": "Bubble Guts dropped a franchise-record 2201 points in 2024 — and finished second with nothing to hug at night.",
+        "detail": "The most points anyone has ever scored in a Busters season, wasted on an 8-6 finish. All-you-can-eat, still went home hungry."
+      },
+      "474461892971065344": {
+        "kicker": "MILK MAN DELIVERS",
+        "headline": "The Milk Man snuck in at 7-7 and delivered the 2024 title right to his own doorstep.",
+        "detail": "Just a .500 regular season and third in points among the contenders, but Megamind's big head made the biggest plays when it counted. Ring earned."
+      },
+      "1116599370310356992": {
+        "kicker": "EARLY FRAUD SIGHTING",
+        "headline": "The African Bald Fraud's origin story: a thoroughly average 7-7 way back in 2024.",
+        "detail": "1988 points for and a fourth-place finish. The fraud was already in full bloom — we just didn't have the name for it yet."
+      },
+      "1127784442816344064": {
+        "kicker": "GONE BUT CHARTED",
+        "headline": "Triciagloston scrapped to a 6-7-1 in 2024 before exiting the league — a Buster we hardly knew.",
+        "detail": "2094 points for and a fifth-place finish, then off into the sunset. The seat was needed for fresher slander."
+      },
+      "1132905719180943360": {
+        "kicker": "MEH SKIN",
+        "headline": "The Ultimate Light Skin tied his way to a 6-7-1, sixth-place snooze in 2024.",
+        "detail": "2047 points for and stuck square in the muddled middle. Even the ties couldn't break the monotony."
+      },
+      "1132933728533270528": {
+        "kicker": "ROBBED BY THE SCHEDULE",
+        "headline": "The Alaskan Bull Worm 🏔️🪱 scored the third-most points in 2024 and STILL got buried at 5-9.",
+        "detail": "2139 points for — but a league-worst 2262 against. The worm got stepped on nearly every week. Genuinely, cosmically unlucky."
+      },
+      "784624291579854848": {
+        "kicker": "FROM WORST TO FIRST",
+        "headline": "Before the ring, THICKS — back when he was 'Sticks' — bottomed out in dead last in 2024 at 5-9.",
+        "detail": "A league-low 1767 points for and the cellar all to himself. One year later he'd be the champ. Never forget the basement, Thicks."
+      }
+    }
+  }
+}
