@@ -1,7 +1,7 @@
 {
   "date": "2026-07-30",
   "season": "2026",
-  "generatedAt": "2026-07-30T17:50:45.016Z",
+  "generatedAt": "2026-07-30T17:53:12.978Z",
   "model": "claude-sonnet-5",
   "mode": "ai",
   "keyPresent": true,
@@ -16,52 +16,8 @@
       },
       "meta": "Preseason",
       "kicker": "TITLE DEFENSE PRESSURE",
-      "headline": "The Thicks strut in with a ring, but a 5.5 average finish says the champagne was flatter than their season-long consistency.",
-      "detail": "Tyrique14 won it all in 2025, but the career resume still reads a best finish of 3rd and a worst of 8th — that's not a dynasty, that's a lucky bounce, and this league remembers."
-    },
-    {
-      "author": {
-        "name": "Put it in Ra",
-        "handle": "adambarner111",
-        "avatar": "https://sleepercdn.com/uploads/b93bc9fd7bc9dedab3480d82f004e729.jpg"
-      },
-      "meta": "Preseason",
-      "kicker": "CHOKE WATCH",
-      "headline": "One Nut Barner has the best resume in the building and still ZERO rings to show for it.",
-      "detail": "Put it in Ra owns a ridiculous 20-8 career record and a 1.5 average finish — best in the league — but no titles means all that regular-season swagger has meant nothing when it counts... yet."
-    },
-    {
-      "author": {
-        "name": "talentedtenthh",
-        "handle": "talentedtenthh",
-        "avatar": "https://sleepercdn.com/avatars/thumbs/f903bdd4f4782520bfea9c88929a138e"
-      },
-      "meta": "Preseason",
-      "kicker": "HERE WE GO AGAIN",
-      "headline": "Chauncey finished dead last a year ago and nothing on this roster suggests the basement lease is up.",
-      "detail": "talentedtenthh posted a 4-10 record and a league-worst 12th place finish in Season 1 — the definition of a bottom-feeder walking straight back into the fire."
-    },
-    {
-      "author": {
-        "name": "Sasinci’s World",
-        "handle": "Alxgalvn",
-        "avatar": "https://sleepercdn.com/uploads/358b8dbec979b3e9a70702f1cf1da078.jpg"
-      },
-      "meta": "Preseason",
-      "kicker": "RING DOESN'T LIE... OR DOES IT?",
-      "headline": "Megamind's got a championship on the shelf but a losing career record — explain that one.",
-      "detail": "Sasinci's World is 13-15 all-time with a 5.5 average finish despite the title, proving that one hot month can paper over a whole lot of mediocrity."
-    },
-    {
-      "author": {
-        "name": "SwooshAnoosh",
-        "handle": "SwooshAnoosh",
-        "avatar": "https://sleepercdn.com/avatars/thumbs/de502fad9fab52c466ad0020ae7f46ac"
-      },
-      "meta": "Preseason",
-      "kicker": "PRINCE OF NOTHING",
-      "headline": "The Prince of Persia reigns over a kingdom of 11th-place finishes and nobody's trembling.",
-      "detail": "SwooshAnoosh limped to a 5-9 record and dead-last-adjacent 11th place finish in their debut season — royalty in name only."
+      "headline": "Tyrique14 finally got the ring, but the Thicks' own career mark of 14-14 says this",
+      "detail": "placeholder"
     }
   ]
 }
