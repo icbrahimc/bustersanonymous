@@ -1,11 +1,11 @@
 {
   "date": "2026-07-30",
   "season": "2026",
-  "generatedAt": "2026-07-30T18:08:18.627Z",
-  "model": null,
-  "mode": "fallback",
+  "generatedAt": "2026-07-30T18:26:11.373Z",
+  "model": "claude-sonnet-5",
+  "mode": "ai",
   "keyPresent": true,
-  "diagnostic": "generation error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CdYgusSeVCbX8bEv6qZjL\"}",
+  "diagnostic": null,
   "meta": "Preseason",
   "posts": [
     {
@@ -15,20 +15,53 @@
         "avatar": "https://sleepercdn.com/uploads/6f71546c196c795ccd2c78af7d3e2b27.jpg"
       },
       "meta": "Preseason",
-      "kicker": "Title Defense",
-      "headline": "#FreeMaxx Champions💍 enters as reigning champ",
-      "detail": "Tyrique14 took home the ring last season. Everyone else is drafting to dethrone them. 💍"
+      "kicker": "TITLE DEFENSE PRESSURE",
+      "headline": "Tyrique14 finally has the ring, but the Thicks have to prove one championship wasn't a fluke.",
+      "detail": "A 14-14 career record and an average finish of 5.5 says this is a middling roster that got hot once — the league's reigning champs are the most beatable"
     },
     {
       "author": {
-        "name": "Busters Anonymous",
-        "handle": "commish",
-        "avatar": null
+        "name": "Put it in Ra",
+        "handle": "adambarner111",
+        "avatar": "https://sleepercdn.com/uploads/b93bc9fd7bc9dedab3480d82f004e729.jpg"
       },
       "meta": "Preseason",
-      "kicker": "Offseason",
-      "headline": "The draft is on the clock",
-      "detail": "Live standings and weekly storylines fill in automatically once the games start — the site refreshes from Sleeper every day."
+      "kicker": "COWBOYS OF THE COMMITTEE",
+      "headline": "Put it in Ra is the best team without a ring in this league, and that's the most Cowboys thing imaginable.",
+      "detail": "A 20-8 career record, a 1.5 average finish, and back-to-back top-2 finishes — One Nut Barner has done everything except close the deal, and until he does, that title-less resume is a glaring hole in the trophy case."
+    },
+    {
+      "author": {
+        "name": "talentedtenthh",
+        "handle": "talentedtenthh",
+        "avatar": "https://sleepercdn.com/avatars/thumbs/f903bdd4f4782520bfea9c88929a138e"
+      },
+      "meta": "Preseason",
+      "kicker": "HERE WE GO AGAIN",
+      "headline": "talentedtenthh is drafting into the exact same disaster that produced a 4-10 season and a league-worst 12th place finish.",
+      "detail": "Chauncey's lone season on record is the definition of bottom-feeder futility — a .286 win percentage and dead last finish, so any preseason confidence here is pure delusion."
+    },
+    {
+      "author": {
+        "name": "Sasinci’s World",
+        "handle": "Alxgalvn",
+        "avatar": "https://sleepercdn.com/uploads/358b8dbec979b3e9a70702f1cf1da078.jpg"
+      },
+      "meta": "Preseason",
+      "kicker": "RINGS MEAN NOTHING IF...",
+      "headline": "Sasinci's World has a title, but Megamind's 13-15 career mark says that ring might be the last good thing that ever happens to this roster.",
+      "detail": "One championship two seasons ago is aging fast next to a below-.500 career record and a 5.5 average finish — Big Head needs a big draft or this becomes a one-hit wonder story."
+    },
+    {
+      "author": {
+        "name": "Championshipsovercoochie",
+        "handle": "mjwithgoldhoops",
+        "avatar": "https://sleepercdn.com/uploads/73dcdaa5a7838b7523d8fda4290ec09d.jpg"
+      },
+      "meta": "Preseason",
+      "kicker": "BALD FRAUD SZN",
+      "headline": "Championshipsovercoochie has never finished better than 4th, and the African Bald Fraud nickname is starting to feel generous.",
+      "detail": "A dead-even 15-13 career record with a suspiciously flat avgFinish of exactly 4.0 across two seasons screams 'permanently average' — draft day is this fraud's only chance to break the pattern."
     }
   ]
 }
