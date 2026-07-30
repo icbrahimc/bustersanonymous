@@ -182,7 +182,10 @@ async function generateWithClaude() {
 
   const response = await client.messages.create({
     model: MODEL,
-    max_tokens: 2000,
+    // Headroom for ${TAKE_COUNT} takes plus the richer pedigree/slander
+    // guidance — too tight and the JSON gets truncated mid-take (which the
+    // structured-output decoder then force-closes into a broken stub post).
+    max_tokens: 4000,
     thinking: { type: 'disabled' }, // short creative task — keep it fast/cheap
     system: SYSTEM,
     messages: [{ role: 'user', content: userPrompt() }],
@@ -191,6 +194,11 @@ async function generateWithClaude() {
 
   if (response.stop_reason === 'refusal') {
     throw new Error('Claude declined the request (refusal)');
+  }
+  // Truncated output = a half-written, schema-force-closed feed. Reject it so we
+  // fall back to the full deterministic feed rather than ship a stub.
+  if (response.stop_reason === 'max_tokens') {
+    throw new Error('Claude response hit max_tokens (truncated)');
   }
 
   const text = response.content.find((b) => b.type === 'text')?.text;
@@ -222,6 +230,12 @@ async function generateWithClaude() {
     .filter(Boolean);
 
   if (resolved.length === 0) throw new Error('No takes referenced a valid team');
+  // Expect a full slate of takes. A short result means the generation was
+  // truncated or malformed — fall back to the deterministic feed rather than
+  // ship a sparse one-post feed.
+  if (resolved.length < TAKE_COUNT) {
+    throw new Error(`Only ${resolved.length}/${TAKE_COUNT} valid takes generated`);
+  }
   return resolved;
 }
 
