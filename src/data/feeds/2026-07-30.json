@@ -1,11 +1,11 @@
 {
   "date": "2026-07-30",
   "season": "2026",
-  "generatedAt": "2026-07-30T17:53:12.978Z",
-  "model": "claude-sonnet-5",
-  "mode": "ai",
+  "generatedAt": "2026-07-30T18:08:18.627Z",
+  "model": null,
+  "mode": "fallback",
   "keyPresent": true,
-  "diagnostic": null,
+  "diagnostic": "generation error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CdYgusSeVCbX8bEv6qZjL\"}",
   "meta": "Preseason",
   "posts": [
     {
@@ -15,9 +15,20 @@
         "avatar": "https://sleepercdn.com/uploads/6f71546c196c795ccd2c78af7d3e2b27.jpg"
       },
       "meta": "Preseason",
-      "kicker": "TITLE DEFENSE PRESSURE",
-      "headline": "Tyrique14 finally got the ring, but the Thicks' own career mark of 14-14 says this",
-      "detail": "placeholder"
+      "kicker": "Title Defense",
+      "headline": "#FreeMaxx Champions💍 enters as reigning champ",
+      "detail": "Tyrique14 took home the ring last season. Everyone else is drafting to dethrone them. 💍"
+    },
+    {
+      "author": {
+        "name": "Busters Anonymous",
+        "handle": "commish",
+        "avatar": null
+      },
+      "meta": "Preseason",
+      "kicker": "Offseason",
+      "headline": "The draft is on the clock",
+      "detail": "Live standings and weekly storylines fill in automatically once the games start — the site refreshes from Sleeper every day."
     }
   ]
 }

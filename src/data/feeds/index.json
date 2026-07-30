@@ -3,9 +3,9 @@
     "date": "2026-07-30",
     "season": "2026",
     "status": "pre_draft",
-    "mode": "ai",
-    "generatedAt": "2026-07-30T17:53:12.978Z",
-    "postCount": 1
+    "mode": "fallback",
+    "generatedAt": "2026-07-30T18:08:18.627Z",
+    "postCount": 2
   },
   {
     "date": "2026-07-29",
