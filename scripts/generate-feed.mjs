@@ -9,7 +9,7 @@
 // back to the deterministic storylines in src/lib/insights.js so the site
 // always has a feed and the build never breaks.
 
-import { mkdir, writeFile, readFile } from 'node:fs/promises';
+import { mkdir, writeFile, readFile, readdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { createRequire } from 'node:module';
@@ -23,6 +23,11 @@ const DATA_DIR = join(__dirname, '..', 'src', 'data');
 
 const MODEL = 'claude-sonnet-5';
 const TAKE_COUNT = 5;
+// How many past editions to feed back in as story memory. Enough to carry a
+// running feud across a week without bloating the prompt.
+const LOOKBACK_DAYS = 5;
+
+const FEEDS_DIR = join(DATA_DIR, 'feeds');
 
 const league = require('../src/data/league.json');
 const standingsData = require('../src/data/standings.json');
@@ -95,6 +100,44 @@ const authorFor = (team) => ({
   avatar: team.avatar,
 });
 
+// Read the last few archived editions so the persona can CONTINUE storylines
+// across the season — running feuds, callbacks, escalating beef — instead of
+// firing off a disconnected fresh batch each day. The committed feeds/*.json
+// files ARE the memory; no database needed. Excludes `today` so a same-day
+// re-run never feeds the current edition back into itself.
+async function recentEditions(today) {
+  let files;
+  try {
+    files = await readdir(FEEDS_DIR);
+  } catch {
+    return []; // no archive yet (first ever run)
+  }
+  const dates = files
+    .filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f))
+    .map((f) => f.slice(0, 10))
+    .filter((d) => d < today)
+    .sort((a, b) => (a < b ? 1 : -1)) // newest first
+    .slice(0, LOOKBACK_DAYS);
+
+  const editions = [];
+  for (const d of dates) {
+    try {
+      const edition = JSON.parse(await readFile(join(FEEDS_DIR, `${d}.json`), 'utf8'));
+      editions.push({
+        date: d,
+        takes: (edition.posts || []).map((p) => ({
+          manager: p.author?.handle,
+          kicker: p.kicker,
+          headline: p.headline,
+        })),
+      });
+    } catch {
+      /* skip an unreadable edition file */
+    }
+  }
+  return editions;
+}
+
 // ---- persona ----------------------------------------------------------------
 
 const SYSTEM = `You are THE UNDISPUTED BUSTERS TAKE — the resident hot-take artist for the "${league.name}" fantasy football league. You write in the bombastic, provocative style of a brash sports-debate TV host: bold declarations, manufactured beef between teams, unshakable confidence, hyperbole, and the occasional ALL-CAPS word for emphasis.
@@ -119,9 +162,16 @@ SLANDER — some teams carry a "slander" object with league in-joke nicknames (n
 - Losing / bottom-feeder / underachieving: unload the nickname with no mercy — the slander is the whole point of the take (e.g. a "Bald Fraud" living down to the name).
 - Contender falling short of their hype: use the nickname as PRESSURE ("all that pedigree and still just <nickname>").
 - Actually winning / performing well right now: dial the slander WAY back or flip it to grudging respect / irony — do NOT roast a manager with their nickname as if they were losing when they're not.
-When you do use a slander name, prefer it over the plain manager handle, and include its emoji if one is given. Only use nicknames that are actually provided for that team — never invent one. Not every take needs slander; use it where the performance justifies it.`;
+When you do use a slander name, prefer it over the plain manager handle, and include its emoji if one is given. Only use nicknames that are actually provided for that team — never invent one. Not every take needs slander; use it where the performance justifies it.
 
-function userPrompt() {
+CONTINUITY — you are writing an ONGOING column across a season, NOT disconnected daily blasts. A "recentEditions" list may be provided: the last few days of your own takes (date, manager, kicker, headline), newest first. Treat it as the story so far and BUILD ON IT:
+- Do NOT repeat a previous headline or angle — ADVANCE it. If yesterday's numbers/records are unchanged, find a fresh angle on the same team rather than restating the old take.
+- Turn past takes into running storylines: a manager you warned is now proving you right (or making you eat your words), a feud you started that's escalating, a bold prediction inching toward coming true — or blowing up in your face.
+- When a through-line lands, reference it out loud so readers feel the serialized drama ("Told you three days ago…", "The Bald Fraud saga rolls on…", "Remember when I said…").
+- It's fine to stay on a team across multiple days while their arc develops, but keep spreading takes across the league over the week — don't tunnel on one manager every single day.
+- When "recentEditions" is empty or absent, this is the SEASON OPENER — set the storylines and rivalries up so future editions have something to escalate.`;
+
+function userPrompt(recentEds = []) {
   const teams = standings.map((t) => ({
     rosterId: t.rosterId,
     teamName: t.teamName,
@@ -144,9 +194,12 @@ function userPrompt() {
         ? { teamName: lastChampion.teamName, manager: lastChampion.manager, season: lastCompleted.season }
         : null,
       teams,
+      // The story so far — your own takes from the last few days, newest first.
+      // Advance these storylines; do not repeat them. Empty on the season opener.
+      recentEditions: recentEds,
       guidance: seasonStarted
-        ? 'The season is underway — argue about who is for real, who is a fraud, and who is choking, using the records and points-for.'
-        : 'It is the PRESEASON (pre-draft). No games played yet, so all records are 0-0. Hype the title defense, stir up draft-night beef, manufacture division rivalries, and issue bold predictions. Do NOT cite win/loss records as if games were played.',
+        ? 'The season is underway — argue about who is for real, who is a fraud, and who is choking, using the records and points-for. Continue the storylines in recentEditions instead of starting from scratch.'
+        : 'It is the PRESEASON (pre-draft). No games played yet, so all records are 0-0. Hype the title defense, stir up draft-night beef, manufacture division rivalries, and issue bold predictions. Do NOT cite win/loss records as if games were played. Build on any beef already started in recentEditions.',
     },
     null,
     2
@@ -177,7 +230,7 @@ const SCHEMA = {
 
 // ---- generation -------------------------------------------------------------
 
-async function generateWithClaude() {
+async function generateWithClaude(recentEds = []) {
   const client = new Anthropic(); // reads ANTHROPIC_API_KEY from the environment
 
   const response = await client.messages.create({
@@ -188,7 +241,7 @@ async function generateWithClaude() {
     max_tokens: 4000,
     thinking: { type: 'disabled' }, // short creative task — keep it fast/cheap
     system: SYSTEM,
-    messages: [{ role: 'user', content: userPrompt() }],
+    messages: [{ role: 'user', content: userPrompt(recentEds) }],
     output_config: { format: { type: 'json_schema', schema: SCHEMA } },
   });
 
@@ -253,13 +306,23 @@ function fallbackPosts() {
 async function main() {
   await mkdir(DATA_DIR, { recursive: true });
 
+  const generatedAt = new Date().toISOString();
+  const date = generatedAt.slice(0, 10); // YYYY-MM-DD (UTC), one edition per day
+
+  // Load the last few editions as story memory so the persona continues
+  // storylines instead of starting cold. Excludes today's edition.
+  const recent = await recentEditions(date);
+  if (recent.length) {
+    console.log(`Loaded ${recent.length} past edition(s) as storyline context.`);
+  }
+
   const keyPresent = !!process.env.ANTHROPIC_API_KEY;
   let posts;
   let mode;
   let diagnostic = null; // non-secret: presence flag + error message only
   if (keyPresent) {
     try {
-      posts = await generateWithClaude();
+      posts = await generateWithClaude(recent);
       mode = 'ai';
       console.log(`Generated ${posts.length} hot takes with ${MODEL}.`);
     } catch (err) {
@@ -275,8 +338,6 @@ async function main() {
     mode = 'fallback';
   }
 
-  const generatedAt = new Date().toISOString();
-  const date = generatedAt.slice(0, 10); // YYYY-MM-DD (UTC), one edition per day
   const feed = {
     date,
     season: league.season,
@@ -294,7 +355,6 @@ async function main() {
 
   // 2) Dated archive snapshot — one file per day, kept forever so past editions
   //    stay retrievable once the season is underway.
-  const FEEDS_DIR = join(DATA_DIR, 'feeds');
   await mkdir(FEEDS_DIR, { recursive: true });
   await writeFile(join(FEEDS_DIR, `${date}.json`), JSON.stringify(feed, null, 2) + '\n');
 
