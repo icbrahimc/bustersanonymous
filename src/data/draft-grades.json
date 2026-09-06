@@ -1,4 +1,83 @@
 {
-  "generatedAt": null,
-  "seasons": {}
+  "generatedAt": "2026-09-06T17:39:38.580Z",
+  "seasons": {
+    "2026": {
+      "draftId": "1387559727088553984",
+      "generatedAt": "2026-09-06T17:39:38.580Z",
+      "grades": {
+        "1": {
+          "grade": "B+",
+          "kicker": "WR FACTORY DELUXE",
+          "headline": "Puka at 1.02 anchors a receiver-rich haul that got greedy at RB late but loaded up on WR depth nobody else touched.",
+          "detail": "Puka Nacua, Zay Flowers, Brian Thomas, Marvin Harrison, Jayden Reed and Quentin Johnston is an absurd WR wall, and stealing Jayden Daniels as basically a QB2/luxury flier in Round 6 is filthy value even if the RB room (Skattebo, Rodriguez, Spears) is thin."
+        },
+        "2": {
+          "grade": "C+",
+          "kicker": "BUBBLE GUTS BACKFIELD",
+          "headline": "Cook and Brown to open is fine value but this roster leaked value everywhere else, just like the man himself once leaked in public.",
+          "detail": "James Cook Round 1 and Chase Brown Round 2 is a nice foundation, but Kenny Gainwell, Jake Ferguson and two kickers-adjacent dead pick zones (Rounds 7-12) sink this — Travis Hunter as a Round 15 DB flier is a nice consolation prize though."
+        },
+        "3": {
+          "grade": "A-",
+          "kicker": "BIJAN AND BROTHERS",
+          "headline": "Bijan at 1.04 into A.J. Brown and Waddle is a load-bearing WR/RB core that only sinned by double-dipping Vikings QBs.",
+          "detail": "Bijan Robinson, A.J. Brown, Etienne and Egbuka give this roster serious top-end juice, and George Kittle in Round 8 is a robbery — the Kyler Murray/Caleb Williams/Mahomes QB hoarding late is the only clutter here, a very biblical excess of quarterbacks."
+        },
+        "4": {
+          "grade": "B",
+          "kicker": "PACKER BOY SPECIAL",
+          "headline": "Jonathan Taylor plus Justin Jefferson at picks 10-15 is an Alaskan Bull Worm sized haul that thinned out badly by midrounds.",
+          "detail": "JT and JJettas is a top-five pairing that any team would kill for, but David Montgomery, Bhayshul Tuten and Dalton Kincaid are all fine-not-great, and this Packers superfan somehow let Jordan Love fall to Round 10 as his only real QB swing."
+        },
+        "5": {
+          "grade": "A",
+          "kicker": "BALD FRAUD, GOLDEN TOUCH",
+          "headline": "Ja'Marr Chase and CeeDee Lamb back-to-back is a WR core that makes the rest of this draft look easy, no fraud detected here.",
+          "detail": "Chase at 1.09 into Lamb at 2.16 is an elite start, Bucky Irving Round 3 and Tyler Warren Round 5 add sneaky ceiling, and stacking Caleb Williams AND Drake Maye as QB lottery tickets shows real depth-chart foresight."
+        },
+        "6": {
+          "grade": "A-",
+          "kicker": "MILK MAN GOES RB HEAVY",
+          "headline": "Ashton Jeanty at 1.03 headlines a running-back-obsessed draft that could've used one more receiver arm.",
+          "detail": "Jeanty, Kyren Williams and Jeremiyah Love in the first three rounds is a monster ground-game core, and Travis Kelce falling to Round 10 as a TE2 flier is pure gravy, but this Big Head build is light at WR after Davante Adams."
+        },
+        "7": {
+          "grade": "A-",
+          "kicker": "DEFECTOR DOES WORK",
+          "headline": "Christian McCaffrey at 1.05 into Drake London and Trey McBride is a clean, well-balanced haul with almost no wasted picks.",
+          "detail": "CMC, London, McBride and Jalen Hurts by Round 4 is efficient roster-building, and Xavier Worthy sliding to Round 13 is a legitimate steal for a team that didn't reach once."
+        },
+        "8": {
+          "grade": "B+",
+          "kicker": "ONE NUT, TWO STUDS",
+          "headline": "Amon-Ra and Saquon at 1.11/2.14 is textbook value, and this team even remembered to draft a backup QB early.",
+          "detail": "St. Brown, Barkley, Nabers and Lamar Jackson through four rounds is loaded, though the Cal grad's homework got sloppy late with Mike Washington and Kenyon Sadiq as afterthought fliers."
+        },
+        "9": {
+          "grade": "C",
+          "kicker": "UNTALENTED TENTH, LIVE UP TO IT",
+          "headline": "Breece Hall at 1.08 was solid but taking Brock Purdy in Round 2 over available difference-makers was a certified reach.",
+          "detail": "Colston Loveland Round 3 and Rashee Rice Round 4 have upside, but rostering two kickers (Bates and Boswell) and Dak Prescott as QB depth screams a draft board with no plan — the Talented Tenth remains, sadly, untalented."
+        },
+        "10": {
+          "grade": "B",
+          "kicker": "BALD FRAUD, MEXICAN EDITION",
+          "headline": "JSN at 1.07 was a fine anchor but this roster is stuffed with hurt-prone names in Achane, Swift and Dobbins.",
+          "detail": "Ladd McConkey Round 4 and Harold Fannin Round 6 show a nice eye for value, but leaning on Javonte Williams, D'Andre Swift and J.K. Dobbins as your RB depth is a fraud risk this bald manager should know better than to take."
+        },
+        "11": {
+          "grade": "A-",
+          "kicker": "AUNTIE THOMAS COOKS",
+          "headline": "Omarion Hampton at 1.06 into George Pickens and Nico Collins is a smooth, well-paced draft with no real reaches.",
+          "detail": "Hampton, Pickens, Collins and Justin Herbert as a QB1 in Round 4 is disciplined value drafting, and TreVeyon Henderson Round 5 gives this roster real RB juice beyond the rookie headliner."
+        },
+        "12": {
+          "grade": "B-",
+          "kicker": "PRINCE OF PANIC",
+          "headline": "Jahmyr Gibbs at 1.01 is the safest pick in the draft, but waiting on WR and doubling up aging Derrick Henry left this thin at the skill positions.",
+          "detail": "Gibbs is a certified building block, but taking Josh Allen at 2.24 over top WRs still on the board and pairing Derrick Henry with Josh Jacobs by Round 4 is a run-game-only approach that ignored a shrinking WR pool."
+        }
+      }
+    }
+  }
 }

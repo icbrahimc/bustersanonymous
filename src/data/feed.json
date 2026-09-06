@@ -1,7 +1,7 @@
 {
   "date": "2026-09-06",
   "season": "2026",
-  "generatedAt": "2026-09-06T17:30:05.431Z",
+  "generatedAt": "2026-09-06T17:39:38.709Z",
   "model": "claude-sonnet-5",
   "mode": "ai",
   "keyPresent": true,
@@ -15,9 +15,9 @@
         "avatar": "https://sleepercdn.com/uploads/b93bc9fd7bc9dedab3480d82f004e729.jpg"
       },
       "meta": "Week 1",
-      "kicker": "KICKOFF, STILL SILENT",
-      "headline": "Week 1 is officially here and One Nut Barner still hasn't uttered a single word — eight straight editions of silence from the owner of a 20-8 career record and 1.5 average finish, the most absurd résumé-to-hype gap in league history.",
-      "detail": "Zero rings despite the best regular-season pedigree in Busters Anonymous — if Put it in Ra doesn't show up loud in Week 1, this becomes the defining storyline of the year."
+      "kicker": "WEEK 1 SILENCE STREAK",
+      "headline": "Eight straight editions and One Nut Barner STILL hasn't said a word — Put it in Ra's kickoff to real Week 1 games with a 20-8 record and 1.5 average finish and zero rings to show for it.",
+      "detail": "The silence is now longer than the record itself deserves credit for — this league is watching the most disrespected résumé in Busters Anonymous history stay mute as actual games are about to matter."
     },
     {
       "author": {
@@ -26,9 +26,9 @@
         "avatar": "https://sleepercdn.com/uploads/358b8dbec979b3e9a70702f1cf1da078.jpg"
       },
       "meta": "Week 1",
-      "kicker": "MEGAMIND'S KICKOFF EXAM",
-      "headline": "The excuses officially expired last edition and now Sasinci's World has to actually play a game — Big Head's title banner still sits on top of a losing 13-15 career record heading into Week 1.",
-      "detail": "A ring and a losing record don't add up, and Week 1 box scores are about to start settling the math for real."
+      "kicker": "MEGAMIND'S EXCUSES OUT OF TIME",
+      "headline": "The draft's locked, Week 1 is here, and Big Head has officially run out of days to explain how a title banner hangs over a losing 13-15 career record.",
+      "detail": "Sasinci's World rebranded nothing and changed nothing on paper — a contender tier with a losing record is about to get tested by games that actually count, not just excuses."
     },
     {
       "author": {
@@ -38,8 +38,19 @@
       },
       "meta": "Week 1",
       "kicker": "CHAUNCEY'S LIVE DEBUT",
-      "headline": "talentedtenthh finally gets to play a real game, and the untalented tenth enters Week 1 still dragging the worst résumé in the league — a 4-10 record and dead-last 12th-place finish that no roster reshuffle has answered for.",
-      "detail": "This is the first chance in months for Chauncey to actually change the conversation instead of just absorbing it edition after edition."
+      "headline": "talentedtenthh finally gets real games to play, and the untalented tenth enters with the single worst résumé in the league on the line.",
+      "detail": "A 4-10 record and dead-last 12th-place finish doesn't get erased by a locked roster — Week 1 is Chauncey's first real chance in this recap to prove the nickname wrong, and history says don't hold your breath."
+    },
+    {
+      "author": {
+        "name": "BIBLE OR THE BELT",
+        "handle": "BigBoiEmos",
+        "avatar": "https://sleepercdn.com/uploads/f60b8d9886c8a48de12f6e8e9a6ce2d6.jpg"
+      },
+      "meta": "Week 1",
+      "kicker": "JUDGMENT DAY ARRIVES",
+      "headline": "BIBLE OR THE BELT enters live Week 1 still answering for the sin of drafting a DEFENSIVE player first overall, and this league's patience for the Ultimate Light Skin is thinner than his 13-14-1 career mark.",
+      "detail": "Eli can preach Bible or Belt all he wants, but a 5.5 average finish says the football gods haven't been listening — real games start now and the plagues are due."
     },
     {
       "author": {
@@ -48,20 +59,9 @@
         "avatar": "https://sleepercdn.com/uploads/d6fcb1ff54af7a784cd39896b40aff5a.jpg"
       },
       "meta": "Week 1",
-      "kicker": "CROWN'S FIRST SNAP",
-      "headline": "Six-plus editions of total silence finally meet an actual football game — Thicks and the #FreeMaxx Champions open title defense with a 14-14 career record and 5.5 average finish that says the ring has been doing all the heavy lifting.",
-      "detail": "A reigning champ shouldn't need this many editions to say nothing; Week 1 is the first moment the results, not the banner, get to speak for Tyrique14."
-    },
-    {
-      "author": {
-        "name": "The Clown Show",
-        "handle": "btkempski",
-        "avatar": "https://sleepercdn.com/uploads/6b0738c41b1ad2854695e3fd9ebaf0ec.jpg"
-      },
-      "meta": "Week 1",
-      "kicker": "CLOWN SHOW REBRAND WATCH",
-      "headline": "The Clown Show rolls into Week 1 with the same middling 15-13 career mark and 4.0 average finish as always, and a fresh set of Week 1 lineups won't hide that this roster has topped out at respectable-but-forgettable for two straight years.",
-      "detail": "btkempski's best finish was a title back in year one, but a 7th-place worst finish since says the Alaskan Bull Worm act has been mostly bark — Week 1 is the chance to prove otherwise."
+      "kicker": "CROWN'S FIRST REAL TEST",
+      "headline": "After nine straight editions of silence, Thicks finally has to defend the #FreeMaxx crown with actual games on the board, not just a ring from last year.",
+      "detail": "A 14-14 career record and 5.5 average finish have been hiding behind hardware for two seasons — Week 1 kicks off the only measuring stick that's ever mattered, and the excuses are officially out of runway."
     }
   ]
 }
