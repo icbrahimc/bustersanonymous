@@ -18,11 +18,20 @@ function authorFrom(team) {
     : null;
 }
 
+// Sleeper flips status to in_season the moment the draft finishes, but
+// records stay 0-0 until the first week of games actually posts.
+function isDraftComplete(status) {
+  return !['pre_draft', 'drafting'].includes(status);
+}
+
 export function buildStorylines({ standings = [], lastChampion = null, status = '', leagueName = 'The League' }) {
   const leagueAuthor = { name: leagueName, handle: 'commish', avatar: null };
-  const meta = hasPlayed(standings) ? 'Season to date' : 'Preseason';
+  const draftComplete = isDraftComplete(status);
+  const meta = hasPlayed(standings) ? 'Season to date' : draftComplete ? 'Week 1' : 'Preseason';
 
-  // Preseason / no games played yet: talk about the champion and what's next.
+  // No games played yet: talk about the champion and what's next. Distinguish
+  // "still drafting" from "drafted, Week 1 just hasn't posted results yet" —
+  // the latter is NOT the offseason.
   if (!hasPlayed(standings)) {
     const items = [];
     if (lastChampion) {
@@ -31,17 +40,21 @@ export function buildStorylines({ standings = [], lastChampion = null, status = 
         meta,
         kicker: 'Title Defense',
         headline: `${lastChampion.teamName} enters as reigning champ`,
-        detail: `${lastChampion.manager} took home the ring last season. Everyone else is drafting to dethrone them. 💍`,
+        detail: `${lastChampion.manager} took home the ring last season. Everyone else drafted to dethrone them. 💍`,
       });
     }
     items.push({
       author: leagueAuthor,
       meta,
-      kicker: 'Offseason',
-      headline:
-        status === 'pre_draft' ? 'The draft is on the clock' : 'Season hasn’t kicked off yet',
-      detail:
-        'Live standings and weekly storylines fill in automatically once the games start — the site refreshes from Sleeper every day.',
+      kicker: draftComplete ? 'Week 1' : 'Offseason',
+      headline: draftComplete
+        ? 'Week 1 is underway'
+        : status === 'pre_draft'
+        ? 'The draft is on the clock'
+        : 'Season hasn’t kicked off yet',
+      detail: draftComplete
+        ? 'Rosters are locked in and Week 1 games are being played right now — standings and weekly storylines populate automatically once scores post. The site refreshes from Sleeper every day.'
+        : 'Live standings and weekly storylines fill in automatically once the games start — the site refreshes from Sleeper every day.',
     });
     return items;
   }

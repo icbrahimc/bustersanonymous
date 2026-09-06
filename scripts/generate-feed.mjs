@@ -35,7 +35,11 @@ const history = require('../src/data/history.json');
 
 const standings = standingsData.standings || [];
 const seasonStarted = hasPlayed(standings);
-const meta = seasonStarted ? 'Season to date' : 'Preseason';
+// Sleeper flips league.status to in_season the moment the draft finishes, but
+// rosters/records stay 0-0 until the first week of games actually posts —
+// don't mistake that data lag for the offseason.
+const draftComplete = !['pre_draft', 'drafting'].includes(league.status);
+const meta = seasonStarted ? 'Season to date' : draftComplete ? 'Week 1' : 'Preseason';
 const lastCompleted = (history.seasons || []).find((s) => s.status === 'complete');
 const lastChampion = lastCompleted?.champion || null;
 
@@ -189,6 +193,7 @@ function userPrompt(recentEds = []) {
       season: league.season,
       status: league.status,
       seasonStarted,
+      draftComplete,
       divisions: league.divisions,
       reigningChampion: lastChampion
         ? { teamName: lastChampion.teamName, manager: lastChampion.manager, season: lastCompleted.season }
@@ -199,6 +204,8 @@ function userPrompt(recentEds = []) {
       recentEditions: recentEds,
       guidance: seasonStarted
         ? 'The season is underway — argue about who is for real, who is a fraud, and who is choking, using the records and points-for. Continue the storylines in recentEditions instead of starting from scratch.'
+        : draftComplete
+        ? 'The DRAFT IS DONE and rosters are locked in — this is NOT the offseason anymore, it is Week 1. Records are still 0-0 only because games have not posted results yet (a data lag, not a real 0-0 season) — do not call this preseason or say the draft is upcoming. Instead: react to each team\'s fresh roster and current name as this year\'s real, live movements (a manager who rebranded their team is a target — call it out), hype up who looks scary or overrated based on their draft, and set up Week 1 storylines/rivalries for the results to pay off once scores post. Build on any beef already started in recentEditions.'
         : 'It is the PRESEASON (pre-draft). No games played yet, so all records are 0-0. Hype the title defense, stir up draft-night beef, manufacture division rivalries, and issue bold predictions. Do NOT cite win/loss records as if games were played. Build on any beef already started in recentEditions.',
     },
     null,
