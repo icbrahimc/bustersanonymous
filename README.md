@@ -5,7 +5,7 @@ Built with [Astro](https://astro.build), hosted free on **GitHub Pages**, and
 refreshed **once a day** from the public [Sleeper](https://sleeper.com) API by a
 scheduled GitHub Action.
 
-Four pages: **Home**, **Rules**, **Weekly Insights**, **History**.
+Five pages: **Home**, **Rules**, **Draft Grades**, **Weekly Insights**, **History**.
 
 ---
 
@@ -37,19 +37,24 @@ Four pages: **Home**, **Rules**, **Weekly Insights**, **History**.
 
 ```
 scripts/
-  cron.mjs            # daily entry point: heartbeat + fetch + generate feed
-  fetch-sleeper.mjs   # pulls league/rosters/users, walks past seasons → src/data/*.json
-  generate-feed.mjs   # Claude writes Skip-style hot takes → src/data/feed.json
+  cron.mjs                    # daily entry point: heartbeat + fetch + generate feed
+  fetch-sleeper.mjs           # pulls league/rosters/users, walks past seasons → src/data/*.json
+  fetch-draft.mjs             # pulls this season's draft picks → src/data/draft.json
+  generate-feed.mjs           # Claude writes Skip-style hot takes → src/data/feed.json
+  generate-season-stories.mjs # Claude writes past-season retrospectives (once per completed season)
+  generate-draft-grades.mjs   # Claude grades every team's draft (once per season, on completion)
 src/
   data/*.json         # generated league data (committed, read at build time)
   data/feed.json      # latest daily hot-take edition
   data/feeds/         # dated archive: <YYYY-MM-DD>.json per day + index.json
+  data/draft.json         # this season's pick-by-pick draft board
+  data/draft-grades.json  # AI draft grades, keyed by season
   pages/feed/[date].astro  # one retrievable page per archived edition
   content/rules.md    # the rulebook — edit this to change the Rules page
   layouts/Base.astro  # shared shell (nav + footer)
   components/         # Nav, StandingsTable
   lib/               # url + storyline helpers
-  pages/             # index (Home), rules, insights, history
+  pages/             # index (Home), rules, draft-grades, insights, history
 .github/workflows/deploy.yml   # cron + build + deploy
 ```
 
@@ -92,6 +97,8 @@ name the repo `<your-user>.github.io` or attach a custom domain.
 | Change what the daily heartbeat writes | `heartbeat()` in `scripts/cron.mjs` |
 | Adjust colors / styling | `src/styles/global.css` |
 | Change the cron time | the `schedule:` line in `.github/workflows/deploy.yml` |
+| Tune the draft-grading voice/scale | `SYSTEM`/`SCHEMA` in `scripts/generate-draft-grades.mjs` |
+| Force draft grades to regenerate | `npm run generate-draft-grades -- --force`, or the "Run workflow" toggle in Actions |
 
 ## Roadmap
 

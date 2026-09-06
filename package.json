@@ -8,8 +8,10 @@
     "build": "astro build",
     "preview": "astro preview",
     "fetch-data": "node scripts/fetch-sleeper.mjs",
+    "fetch-draft": "node scripts/fetch-draft.mjs",
     "generate-feed": "node scripts/generate-feed.mjs",
     "generate-season-stories": "node scripts/generate-season-stories.mjs",
+    "generate-draft-grades": "node scripts/generate-draft-grades.mjs",
     "cron": "node scripts/cron.mjs",
     "sync": "bash scripts/sync-main.sh"
   },

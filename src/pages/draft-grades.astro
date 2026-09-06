@@ -1,0 +1,120 @@
+---
+import Base from '../layouts/Base.astro';
+import Post from '../components/Post.astro';
+import StandingsWidget from '../components/StandingsWidget.astro';
+import league from '../data/league.json';
+import standingsData from '../data/standings.json';
+import draftData from '../data/draft.json';
+import draftGradesData from '../data/draft-grades.json';
+
+const standings = standingsData.standings || [];
+const teamById = new Map(standings.map((t) => [t.rosterId, t]));
+const picksByRoster = new Map((draftData.teams || []).map((t) => [t.rosterId, t.picks || []]));
+
+const seasonGrades = (draftGradesData.seasons || {})[draftData.season] || null;
+const grades = seasonGrades?.grades || {};
+
+// Standard report-card order so the field reads best -> worst.
+const GRADE_ORDER = ['A+', 'A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'C-', 'D+', 'D', 'D-', 'F'];
+const gradeRank = (g) => {
+  const i = GRADE_ORDER.indexOf(g);
+  return i === -1 ? GRADE_ORDER.length : i;
+};
+
+const cards = Object.entries(grades)
+  .map(([rosterId, g]) => {
+    const team = teamById.get(Number(rosterId));
+    if (!team) return null;
+    return { team, picks: picksByRoster.get(Number(rosterId)) || [], ...g };
+  })
+  .filter(Boolean)
+  .sort((a, b) => gradeRank(a.grade) - gradeRank(b.grade));
+
+const draftStatusLabel =
+  {
+    pre_draft: 'The draft hasn’t started yet',
+    drafting: 'Draft in progress — grades post once it wraps',
+    paused: 'Draft paused — grades post once it wraps',
+    complete: null,
+  }[draftData.status] ?? 'Grades post once the draft wraps up';
+
+const handle = (name = '') => name.replace(/[^a-zA-Z0-9_]/g, '') || 'manager';
+---
+<Base page="draft-grades" title="Draft Grades" description="Every team's fantasy football draft, graded.">
+  <div class="layout">
+    <div>
+      <div class="feed-head">
+        <h1>Draft Grades</h1>
+        <p class="sub">
+          {draftData.season ? `${draftData.season} draft` : 'This season’s draft'}
+          {draftData.rounds ? ` · ${draftData.rounds} rounds` : ''}
+          {cards.length ? ` · ${cards.length} teams graded` : ''}
+        </p>
+      </div>
+
+      {cards.length ? (
+        <div class="feed">
+          {cards.map((c) => (
+            <>
+              <Post
+                author={{ name: c.team.teamName, handle: handle(c.team.manager), avatar: c.team.avatar }}
+                meta={`${draftData.season} Draft`}
+                badge={`Grade: ${c.grade}`}
+                kicker={c.kicker}
+                headline={c.headline}
+                detail={c.detail}
+              />
+              {c.picks.length > 0 && (
+                <details class="draft-board">
+                  <summary>📋 {c.team.teamName}'s full draft ({c.picks.length} picks)</summary>
+                  <div class="table-wrap">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th class="rank">Rd</th>
+                          <th class="rank">Pick</th>
+                          <th>Player</th>
+                          <th>Pos</th>
+                          <th>NFL</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {c.picks.map((p) => (
+                          <tr>
+                            <td class="rank">{p.round}</td>
+                            <td class="rank">{p.pickNo}</td>
+                            <td>{p.name}</td>
+                            <td>{p.position || '—'}</td>
+                            <td>{p.team || '—'}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </details>
+              )}
+            </>
+          ))}
+        </div>
+      ) : (
+        <p class="empty">
+          {draftStatusLabel || 'Draft grades are being written — check back shortly.'}
+        </p>
+      )}
+    </div>
+
+    <aside class="sidebar">
+      <StandingsWidget rows={standings} title="Standings" moreHref="/insights" />
+    </aside>
+  </div>
+</Base>
+
+<style>
+  .draft-board { margin: -6px 0 14px 68px; }
+  .draft-board summary { cursor: pointer; color: var(--text-soft); font-size: 13px; font-weight: 600; padding: 4px 0; list-style: revert; }
+  .draft-board summary:hover { color: var(--text); }
+  .draft-board table { margin-top: 8px; }
+  @media (max-width: 640px) {
+    .draft-board { margin-left: 0; }
+  }
+</style>

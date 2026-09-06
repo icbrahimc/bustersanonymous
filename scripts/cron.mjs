@@ -36,6 +36,13 @@ async function main() {
   await heartbeat();
   // Pull fresh Sleeper data into src/data/.
   await run(process.execPath, [join(__dirname, 'fetch-sleeper.mjs')]);
+  // Pull the current draft board (picks fill in live once drafting starts).
+  // Non-fatal — a Sleeper hiccup here must never block the daily feed below.
+  try {
+    await run(process.execPath, [join(__dirname, 'fetch-draft.mjs')]);
+  } catch (err) {
+    console.warn(`draft fetch failed (non-fatal): ${err.message}`);
+  }
   // Backfill season storylines for any newly-COMPLETED season. Idempotent:
   // seasons already in season-stories.json are skipped (no API calls), so this
   // only does work the first time a season flips to complete. Non-fatal — a
@@ -44,6 +51,14 @@ async function main() {
     await run(process.execPath, [join(__dirname, 'generate-season-stories.mjs')]);
   } catch (err) {
     console.warn(`season-stories generation failed (non-fatal): ${err.message}`);
+  }
+  // Grade the draft once it's complete. Idempotent (same shape as
+  // season-stories): only does work the first time this season's draft
+  // finishes. Non-fatal for the same reason.
+  try {
+    await run(process.execPath, [join(__dirname, 'generate-draft-grades.mjs')]);
+  } catch (err) {
+    console.warn(`draft grades generation failed (non-fatal): ${err.message}`);
   }
   // Regenerate the AI hot-take feed from the fresh data.
   await run(process.execPath, [join(__dirname, 'generate-feed.mjs')]);

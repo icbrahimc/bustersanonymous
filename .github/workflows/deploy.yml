@@ -14,6 +14,10 @@ on:
         description: 'Regenerate ALL season storylines with Claude (overwrites the committed ones)'
         type: boolean
         default: false
+      force_draft_grades:
+        description: 'Regenerate this season''s draft grades with Claude (overwrites the committed ones)'
+        type: boolean
+        default: false
 
 # Needed to commit refreshed data back and to publish to Pages.
 permissions:
@@ -52,6 +56,7 @@ jobs:
           # completed season's storylines to be regenerated. Empty (falsy) on
           # scheduled/push runs, so those stay idempotent.
           FORCE_SEASON_STORIES: ${{ github.event.inputs.force_season_stories }}
+          FORCE_DRAFT_GRADES: ${{ github.event.inputs.force_draft_grades }}
         run: npm run cron
 
       # Commit the refreshed data + generated feed back so the daily update
