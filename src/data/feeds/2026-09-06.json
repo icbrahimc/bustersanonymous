@@ -1,34 +1,23 @@
 {
   "date": "2026-09-06",
   "season": "2026",
-  "generatedAt": "2026-09-06T11:38:28.729Z",
+  "generatedAt": "2026-09-06T17:30:05.431Z",
   "model": "claude-sonnet-5",
   "mode": "ai",
   "keyPresent": true,
   "diagnostic": null,
-  "meta": "Preseason",
+  "meta": "Week 1",
   "posts": [
-    {
-      "author": {
-        "name": "Klint’s Clipboard",
-        "handle": "Tyrique14",
-        "avatar": "https://sleepercdn.com/uploads/d6fcb1ff54af7a784cd39896b40aff5a.jpg"
-      },
-      "meta": "Preseason",
-      "kicker": "CROWN'S EIGHTH SILENT DAY",
-      "headline": "Eight straight editions and still nothing from Thicks — at some point silence stops looking like confidence and starts looking like a defending champ who knows a 14-14 career record and 5.5 average finish can't survive a real title defense.",
-      "detail": "The #FreeMaxx Champions have said nothing since the draft closed, and the ring is doing all the heavy lifting over a pedestrian career mark."
-    },
     {
       "author": {
         "name": "Put it in Ra",
         "handle": "adambarner111",
         "avatar": "https://sleepercdn.com/uploads/b93bc9fd7bc9dedab3480d82f004e729.jpg"
       },
-      "meta": "Preseason",
-      "kicker": "THE INJUSTICE HITS DAY EIGHT",
-      "headline": "Put it in Ra's silence is now a league-wide crime scene — a 20-8 record, a 1.5 average finish, and STILL no rings to show for it, and One Nut Barner won't even show up to defend himself.",
-      "detail": "Two seasons, best-ever average finish in the league, zero titles — the résumé screams while the manager stays mute for the eighth edition running."
+      "meta": "Week 1",
+      "kicker": "KICKOFF, STILL SILENT",
+      "headline": "Week 1 is officially here and One Nut Barner still hasn't uttered a single word — eight straight editions of silence from the owner of a 20-8 career record and 1.5 average finish, the most absurd résumé-to-hype gap in league history.",
+      "detail": "Zero rings despite the best regular-season pedigree in Busters Anonymous — if Put it in Ra doesn't show up loud in Week 1, this becomes the defining storyline of the year."
     },
     {
       "author": {
@@ -36,10 +25,10 @@
         "handle": "Alxgalvn",
         "avatar": "https://sleepercdn.com/uploads/358b8dbec979b3e9a70702f1cf1da078.jpg"
       },
-      "meta": "Preseason",
-      "kicker": "MEGAMIND'S LAST CHANCE",
-      "headline": "The season starts NOW and Big Head has officially run out of days to explain how a title banner hangs over a losing 13-15 career record — put up or the excuses die today.",
-      "detail": "Sasinci's World carries one ring and a below-.500 mark at 0.464 winPct, and this column has given Megamind six straight editions to answer for it with nothing back."
+      "meta": "Week 1",
+      "kicker": "MEGAMIND'S KICKOFF EXAM",
+      "headline": "The excuses officially expired last edition and now Sasinci's World has to actually play a game — Big Head's title banner still sits on top of a losing 13-15 career record heading into Week 1.",
+      "detail": "A ring and a losing record don't add up, and Week 1 box scores are about to start settling the math for real."
     },
     {
       "author": {
@@ -47,21 +36,32 @@
         "handle": "talentedtenthh",
         "avatar": "https://sleepercdn.com/avatars/thumbs/f903bdd4f4782520bfea9c88929a138e"
       },
-      "meta": "Preseason",
-      "kicker": "CHAUNCEY'S NINTH REP",
-      "headline": "talentedtenthh gets a ninth edition and still hasn't lifted a finger to escape being the untalented tenth — a 4-10 record and dead-last 12th-place finish just don't fix themselves.",
-      "detail": "The worst résumé in Busters Anonymous remains untouched, and the name keeps writing its own punchline season after season."
+      "meta": "Week 1",
+      "kicker": "CHAUNCEY'S LIVE DEBUT",
+      "headline": "talentedtenthh finally gets to play a real game, and the untalented tenth enters Week 1 still dragging the worst résumé in the league — a 4-10 record and dead-last 12th-place finish that no roster reshuffle has answered for.",
+      "detail": "This is the first chance in months for Chauncey to actually change the conversation instead of just absorbing it edition after edition."
     },
     {
       "author": {
-        "name": "BIBLE OR THE BELT",
-        "handle": "BigBoiEmos",
-        "avatar": "https://sleepercdn.com/uploads/f60b8d9886c8a48de12f6e8e9a6ce2d6.jpg"
+        "name": "Klint’s Clipboard",
+        "handle": "Tyrique14",
+        "avatar": "https://sleepercdn.com/uploads/d6fcb1ff54af7a784cd39896b40aff5a.jpg"
       },
-      "meta": "Preseason",
-      "kicker": "THE LIGHT SKIN'S RECKONING",
-      "headline": "BIBLE OR THE BELT hasn't been mentioned in three editions, but the Ultimate Light Skin's sins haven't been forgiven — a 13-14-1 record and the eternal shame of drafting a defensive player first overall still hang over Eli's head.",
-      "detail": "A .464 win percentage and a 5.5 average finish are hardly scripture-worthy, and this league remembers every plague."
+      "meta": "Week 1",
+      "kicker": "CROWN'S FIRST SNAP",
+      "headline": "Six-plus editions of total silence finally meet an actual football game — Thicks and the #FreeMaxx Champions open title defense with a 14-14 career record and 5.5 average finish that says the ring has been doing all the heavy lifting.",
+      "detail": "A reigning champ shouldn't need this many editions to say nothing; Week 1 is the first moment the results, not the banner, get to speak for Tyrique14."
+    },
+    {
+      "author": {
+        "name": "The Clown Show",
+        "handle": "btkempski",
+        "avatar": "https://sleepercdn.com/uploads/6b0738c41b1ad2854695e3fd9ebaf0ec.jpg"
+      },
+      "meta": "Week 1",
+      "kicker": "CLOWN SHOW REBRAND WATCH",
+      "headline": "The Clown Show rolls into Week 1 with the same middling 15-13 career mark and 4.0 average finish as always, and a fresh set of Week 1 lineups won't hide that this roster has topped out at respectable-but-forgettable for two straight years.",
+      "detail": "btkempski's best finish was a title back in year one, but a 7th-place worst finish since says the Alaskan Bull Worm act has been mostly bark — Week 1 is the chance to prove otherwise."
     }
   ]
 }
