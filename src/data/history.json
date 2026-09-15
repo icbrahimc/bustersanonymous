@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T14:00:48.711Z",
+  "generatedAt": "2026-09-15T12:39:31.346Z",
   "seasons": [
     {
       "season": "2026",
@@ -7,43 +7,30 @@
       "champion": null,
       "standings": [
         {
-          "rosterId": 1,
-          "ownerId": "784624291579854848",
-          "teamName": "Klint’s Clipboard",
-          "manager": "Tyrique14",
-          "avatar": "https://sleepercdn.com/uploads/d6fcb1ff54af7a784cd39896b40aff5a.jpg",
-          "division": 1,
-          "wins": 0,
-          "losses": 0,
-          "ties": 0,
-          "fpts": 0,
-          "fptsAgainst": 0
-        },
-        {
-          "rosterId": 2,
-          "ownerId": "1132877923033391104",
-          "teamName": "Peacemakers 🙏",
-          "manager": "briangalvan1",
-          "avatar": "https://sleepercdn.com/avatars/thumbs/b319fdf8b7b5b0359d3c78622ba4d70c",
+          "rosterId": 12,
+          "ownerId": "1127784442816344064",
+          "teamName": "Shake N Bakers",
+          "manager": "triciagloston",
+          "avatar": "https://sleepercdn.com/uploads/61c6e7162cf098c1dbae2faf2cb26ab6.jpg",
           "division": 2,
-          "wins": 0,
+          "wins": 1,
           "losses": 0,
           "ties": 0,
-          "fpts": 0,
-          "fptsAgainst": 0
+          "fpts": 201.76,
+          "fptsAgainst": 123.66
         },
         {
-          "rosterId": 3,
-          "ownerId": "1132905719180943360",
-          "teamName": "BIBLE OR THE BELT",
-          "manager": "BigBoiEmos",
-          "avatar": "https://sleepercdn.com/uploads/f60b8d9886c8a48de12f6e8e9a6ce2d6.jpg",
+          "rosterId": 10,
+          "ownerId": "1265145602090483712",
+          "teamName": "tristanthepiston",
+          "manager": "tristanthepiston",
+          "avatar": "https://sleepercdn.com/avatars/thumbs/d55d1f7075eda01948318de4af616075",
           "division": 1,
-          "wins": 0,
+          "wins": 1,
           "losses": 0,
           "ties": 0,
-          "fpts": 0,
-          "fptsAgainst": 0
+          "fpts": 177.8,
+          "fptsAgainst": 72.02
         },
         {
           "rosterId": 4,
@@ -52,11 +39,11 @@
           "manager": "btkempski",
           "avatar": "https://sleepercdn.com/uploads/6b0738c41b1ad2854695e3fd9ebaf0ec.jpg",
           "division": 2,
-          "wins": 0,
+          "wins": 1,
           "losses": 0,
           "ties": 0,
-          "fpts": 0,
-          "fptsAgainst": 0
+          "fpts": 166.98,
+          "fptsAgainst": 101.6
         },
         {
           "rosterId": 5,
@@ -65,37 +52,37 @@
           "manager": "mjwithgoldhoops",
           "avatar": "https://sleepercdn.com/uploads/73dcdaa5a7838b7523d8fda4290ec09d.jpg",
           "division": 1,
-          "wins": 0,
+          "wins": 1,
           "losses": 0,
           "ties": 0,
-          "fpts": 0,
-          "fptsAgainst": 0
+          "fpts": 147.76,
+          "fptsAgainst": 101.02
         },
         {
-          "rosterId": 6,
-          "ownerId": "474461892971065344",
-          "teamName": "Sasinci",
-          "manager": "Alxgalvn",
-          "avatar": "https://sleepercdn.com/uploads/6839eeb9c044f4c8cb72e8a84aa5c79b.jpg",
-          "division": 2,
-          "wins": 0,
-          "losses": 0,
-          "ties": 0,
-          "fpts": 0,
-          "fptsAgainst": 0
-        },
-        {
-          "rosterId": 7,
-          "ownerId": "1264710608129884160",
-          "teamName": "BootyMunchers Inc.",
-          "manager": "parkcity0613",
-          "avatar": "https://sleepercdn.com/avatars/thumbs/d55d1f7075eda01948318de4af616075",
+          "rosterId": 1,
+          "ownerId": "784624291579854848",
+          "teamName": "Klint’s Clipboard",
+          "manager": "Tyrique14",
+          "avatar": "https://sleepercdn.com/uploads/d6fcb1ff54af7a784cd39896b40aff5a.jpg",
           "division": 1,
-          "wins": 0,
+          "wins": 1,
           "losses": 0,
           "ties": 0,
-          "fpts": 0,
-          "fptsAgainst": 0
+          "fpts": 138.94,
+          "fptsAgainst": 81.86
+        },
+        {
+          "rosterId": 9,
+          "ownerId": "1265060864969424896",
+          "teamName": "talentedtenthh",
+          "manager": "talentedtenthh",
+          "avatar": "https://sleepercdn.com/avatars/thumbs/f903bdd4f4782520bfea9c88929a138e",
+          "division": 2,
+          "wins": 1,
+          "losses": 0,
+          "ties": 0,
+          "fpts": 120.4,
+          "fptsAgainst": 95.76
         },
         {
           "rosterId": 8,
@@ -105,36 +92,49 @@
           "avatar": "https://sleepercdn.com/uploads/b93bc9fd7bc9dedab3480d82f004e729.jpg",
           "division": 2,
           "wins": 0,
-          "losses": 0,
+          "losses": 1,
           "ties": 0,
-          "fpts": 0,
-          "fptsAgainst": 0
+          "fpts": 123.66,
+          "fptsAgainst": 201.76
         },
         {
-          "rosterId": 9,
-          "ownerId": "1265060864969424896",
-          "teamName": "talentedtenthh",
-          "manager": "talentedtenthh",
-          "avatar": "https://sleepercdn.com/avatars/thumbs/f903bdd4f4782520bfea9c88929a138e",
+          "rosterId": 6,
+          "ownerId": "474461892971065344",
+          "teamName": "Sasinci",
+          "manager": "Alxgalvn",
+          "avatar": "https://sleepercdn.com/uploads/6839eeb9c044f4c8cb72e8a84aa5c79b.jpg",
           "division": 2,
           "wins": 0,
-          "losses": 0,
+          "losses": 1,
           "ties": 0,
-          "fpts": 0,
-          "fptsAgainst": 0
+          "fpts": 101.6,
+          "fptsAgainst": 166.98
         },
         {
-          "rosterId": 10,
-          "ownerId": "1265145602090483712",
-          "teamName": "tristanthepiston",
-          "manager": "tristanthepiston",
+          "rosterId": 7,
+          "ownerId": "1264710608129884160",
+          "teamName": "BootyMunchers Inc.",
+          "manager": "parkcity0613",
           "avatar": "https://sleepercdn.com/avatars/thumbs/d55d1f7075eda01948318de4af616075",
           "division": 1,
           "wins": 0,
-          "losses": 0,
+          "losses": 1,
           "ties": 0,
-          "fpts": 0,
-          "fptsAgainst": 0
+          "fpts": 101.02,
+          "fptsAgainst": 147.76
+        },
+        {
+          "rosterId": 2,
+          "ownerId": "1132877923033391104",
+          "teamName": "Peacemakers 🙏",
+          "manager": "briangalvan1",
+          "avatar": "https://sleepercdn.com/avatars/thumbs/b319fdf8b7b5b0359d3c78622ba4d70c",
+          "division": 2,
+          "wins": 0,
+          "losses": 1,
+          "ties": 0,
+          "fpts": 95.76,
+          "fptsAgainst": 120.4
         },
         {
           "rosterId": 11,
@@ -144,23 +144,23 @@
           "avatar": "https://sleepercdn.com/uploads/776598392ae349b7177dcdefd1b1df1e.jpg",
           "division": 1,
           "wins": 0,
-          "losses": 0,
+          "losses": 1,
           "ties": 0,
-          "fpts": 0,
-          "fptsAgainst": 0
+          "fpts": 81.86,
+          "fptsAgainst": 138.94
         },
         {
-          "rosterId": 12,
-          "ownerId": "1127784442816344064",
-          "teamName": "Shake N Bakers",
-          "manager": "triciagloston",
-          "avatar": "https://sleepercdn.com/uploads/61c6e7162cf098c1dbae2faf2cb26ab6.jpg",
-          "division": 2,
+          "rosterId": 3,
+          "ownerId": "1132905719180943360",
+          "teamName": "BIBLE OR THE BELT",
+          "manager": "BigBoiEmos",
+          "avatar": "https://sleepercdn.com/uploads/f60b8d9886c8a48de12f6e8e9a6ce2d6.jpg",
+          "division": 1,
           "wins": 0,
-          "losses": 0,
+          "losses": 1,
           "ties": 0,
-          "fpts": 0,
-          "fptsAgainst": 0
+          "fpts": 72.02,
+          "fptsAgainst": 177.8
         }
       ]
     },
