@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T15:24:56.824Z",
+  "generatedAt": "2026-09-29T14:03:16.328Z",
   "seasons": [
     {
       "season": "2026",
@@ -13,24 +13,37 @@
           "manager": "triciagloston",
           "avatar": "https://sleepercdn.com/uploads/61c6e7162cf098c1dbae2faf2cb26ab6.jpg",
           "division": 2,
-          "wins": 2,
+          "wins": 3,
           "losses": 0,
           "ties": 0,
-          "fpts": 344.18,
-          "fptsAgainst": 244.64
+          "fpts": 499.94,
+          "fptsAgainst": 362.92
         },
         {
-          "rosterId": 4,
-          "ownerId": "1132933728533270528",
-          "teamName": "The Clown Show",
-          "manager": "btkempski",
-          "avatar": "https://sleepercdn.com/uploads/6b0738c41b1ad2854695e3fd9ebaf0ec.jpg",
-          "division": 2,
-          "wins": 2,
+          "rosterId": 5,
+          "ownerId": "1116599370310356992",
+          "teamName": "Championshipsovercoochie",
+          "manager": "mjwithgoldhoops",
+          "avatar": "https://sleepercdn.com/uploads/73dcdaa5a7838b7523d8fda4290ec09d.jpg",
+          "division": 1,
+          "wins": 3,
           "losses": 0,
           "ties": 0,
-          "fpts": 292.28,
-          "fptsAgainst": 216
+          "fpts": 409.82,
+          "fptsAgainst": 358.44
+        },
+        {
+          "rosterId": 1,
+          "ownerId": "784624291579854848",
+          "teamName": "Klint’s Clipboard",
+          "manager": "Tyrique14",
+          "avatar": "https://sleepercdn.com/uploads/d6fcb1ff54af7a784cd39896b40aff5a.jpg",
+          "division": 1,
+          "wins": 3,
+          "losses": 0,
+          "ties": 0,
+          "fpts": 403.68,
+          "fptsAgainst": 330.06
         },
         {
           "rosterId": 10,
@@ -40,36 +53,10 @@
           "avatar": "https://sleepercdn.com/avatars/thumbs/d55d1f7075eda01948318de4af616075",
           "division": 1,
           "wins": 2,
-          "losses": 0,
+          "losses": 1,
           "ties": 0,
-          "fpts": 286.56,
-          "fptsAgainst": 156
-        },
-        {
-          "rosterId": 5,
-          "ownerId": "1116599370310356992",
-          "teamName": "Championshipsovercoochie",
-          "manager": "mjwithgoldhoops",
-          "avatar": "https://sleepercdn.com/uploads/73dcdaa5a7838b7523d8fda4290ec09d.jpg",
-          "division": 1,
-          "wins": 2,
-          "losses": 0,
-          "ties": 0,
-          "fpts": 275.38,
-          "fptsAgainst": 225.8
-        },
-        {
-          "rosterId": 1,
-          "ownerId": "784624291579854848",
-          "teamName": "Klint’s Clipboard",
-          "manager": "Tyrique14",
-          "avatar": "https://sleepercdn.com/uploads/d6fcb1ff54af7a784cd39896b40aff5a.jpg",
-          "division": 1,
-          "wins": 2,
-          "losses": 0,
-          "ties": 0,
-          "fpts": 263.62,
-          "fptsAgainst": 197.82
+          "fpts": 419.2,
+          "fptsAgainst": 290.44
         },
         {
           "rosterId": 6,
@@ -78,11 +65,37 @@
           "manager": "Alxgalvn",
           "avatar": "https://sleepercdn.com/uploads/6839eeb9c044f4c8cb72e8a84aa5c79b.jpg",
           "division": 2,
-          "wins": 1,
+          "wins": 2,
           "losses": 1,
           "ties": 0,
-          "fpts": 245.38,
-          "fptsAgainst": 261.66
+          "fpts": 387.28,
+          "fptsAgainst": 371.99
+        },
+        {
+          "rosterId": 4,
+          "ownerId": "1132933728533270528",
+          "teamName": "The Clown Show",
+          "manager": "btkempski",
+          "avatar": "https://sleepercdn.com/uploads/6b0738c41b1ad2854695e3fd9ebaf0ec.jpg",
+          "division": 2,
+          "wins": 2,
+          "losses": 1,
+          "ties": 0,
+          "fpts": 374.46,
+          "fptsAgainst": 355.88
+        },
+        {
+          "rosterId": 2,
+          "ownerId": "1132877923033391104",
+          "teamName": "Peacemakers 🙏",
+          "manager": "briangalvan1",
+          "avatar": "https://sleepercdn.com/avatars/thumbs/b319fdf8b7b5b0359d3c78622ba4d70c",
+          "division": 2,
+          "wins": 1,
+          "losses": 2,
+          "ties": 0,
+          "fpts": 356.62,
+          "fptsAgainst": 345
         },
         {
           "rosterId": 9,
@@ -92,10 +105,23 @@
           "avatar": "https://sleepercdn.com/avatars/thumbs/f903bdd4f4782520bfea9c88929a138e",
           "division": 2,
           "wins": 1,
-          "losses": 1,
+          "losses": 2,
           "ties": 0,
-          "fpts": 215.08,
-          "fptsAgainst": 239.54
+          "fpts": 333.36,
+          "fptsAgainst": 395.3
+        },
+        {
+          "rosterId": 7,
+          "ownerId": "1264710608129884160",
+          "teamName": "BootyMunchers Inc.",
+          "manager": "parkcity0613",
+          "avatar": "https://sleepercdn.com/avatars/thumbs/d55d1f7075eda01948318de4af616075",
+          "division": 1,
+          "wins": 1,
+          "losses": 2,
+          "ties": 0,
+          "fpts": 321.3,
+          "fptsAgainst": 340.38
         },
         {
           "rosterId": 8,
@@ -105,36 +131,10 @@
           "avatar": "https://sleepercdn.com/uploads/b93bc9fd7bc9dedab3480d82f004e729.jpg",
           "division": 2,
           "wins": 0,
-          "losses": 2,
+          "losses": 3,
           "ties": 0,
-          "fpts": 238.06,
-          "fptsAgainst": 327.06
-        },
-        {
-          "rosterId": 7,
-          "ownerId": "1264710608129884160",
-          "teamName": "BootyMunchers Inc.",
-          "manager": "parkcity0613",
-          "avatar": "https://sleepercdn.com/avatars/thumbs/d55d1f7075eda01948318de4af616075",
-          "division": 1,
-          "wins": 0,
-          "losses": 2,
-          "ties": 0,
-          "fpts": 216.98,
-          "fptsAgainst": 272.44
-        },
-        {
-          "rosterId": 2,
-          "ownerId": "1132877923033391104",
-          "teamName": "Peacemakers 🙏",
-          "manager": "briangalvan1",
-          "avatar": "https://sleepercdn.com/avatars/thumbs/b319fdf8b7b5b0359d3c78622ba4d70c",
-          "division": 2,
-          "wins": 0,
-          "losses": 2,
-          "ties": 0,
-          "fpts": 216.74,
-          "fptsAgainst": 262.82
+          "fpts": 348.4,
+          "fptsAgainst": 468.96
         },
         {
           "rosterId": 3,
@@ -144,10 +144,10 @@
           "avatar": "https://sleepercdn.com/uploads/f60b8d9886c8a48de12f6e8e9a6ce2d6.jpg",
           "division": 1,
           "wins": 0,
-          "losses": 2,
+          "losses": 3,
           "ties": 0,
-          "fpts": 196.8,
-          "fptsAgainst": 305.42
+          "fpts": 329.04,
+          "fptsAgainst": 445.48
         },
         {
           "rosterId": 11,
@@ -157,10 +157,10 @@
           "avatar": "https://sleepercdn.com/uploads/776598392ae349b7177dcdefd1b1df1e.jpg",
           "division": 1,
           "wins": 0,
-          "losses": 2,
+          "losses": 3,
           "ties": 0,
-          "fpts": 165.84,
-          "fptsAgainst": 247.7
+          "fpts": 233.78,
+          "fptsAgainst": 352.02
         }
       ]
     },
