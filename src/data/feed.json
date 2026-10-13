@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-12",
+  "date": "2026-10-13",
   "season": "2026",
-  "generatedAt": "2026-10-12T16:42:47.861Z",
+  "generatedAt": "2026-10-13T15:01:41.236Z",
   "model": "claude-sonnet-5",
   "mode": "ai",
   "keyPresent": true,
@@ -15,20 +15,9 @@
         "avatar": "https://sleepercdn.com/uploads/d6fcb1ff54af7a784cd39896b40aff5a.jpg"
       },
       "meta": "Season to date",
-      "kicker": "CROWN ON MUTE, PT. 23",
-      "headline": "Twenty-three editions running and Thicks is STILL the only unbeaten contender at 4-0, but a 14-14 career record and 5.5 average finish means I'm not buying this ring until the schedule bites back.",
-      "detail": "530.16 points through four weeks is solid, not scary — Tyrique14 has a title in the case but a career mark that's basically a coin flip."
-    },
-    {
-      "author": {
-        "name": "Put it in Ra",
-        "handle": "adambarner111",
-        "avatar": "https://sleepercdn.com/uploads/b93bc9fd7bc9dedab3480d82f004e729.jpg"
-      },
-      "meta": "Season to date",
-      "kicker": "THE CRATER FILES CHAPTER 23",
-      "headline": "One Nut Barner's 0-4 freefall has officially outlasted every excuse — a 20-8 career record and league-best 1.5 average finish are now just numbers on a tombstone.",
-      "detail": "adambarner111 built a 20-8 résumé across two seasons and is somehow 0-4 with 453.58 points, the most undefeated losing streak Busters Anonymous has ever seen."
+      "kicker": "CROWN ON MUTE, PT. 24",
+      "headline": "Twenty-four editions and Thicks finally has company at the top — 4-1 after the first loss, and a 14-14 career record with a 5.5 average finish says the ring was always more fragile than the hype.",
+      "detail": "Klint's Clipboard drops its first game of the season and suddenly that 'unbeaten contender' narrative is dead — welcome back to earth, champ."
     },
     {
       "author": {
@@ -37,9 +26,31 @@
         "avatar": "https://sleepercdn.com/avatars/thumbs/f903bdd4f4782520bfea9c88929a138e"
       },
       "meta": "Season to date",
-      "kicker": "UNTALENTED TENTH, PT. 6",
-      "headline": "Chauncey's talentedtenthh falls further into the abyss at 1-3, and a 4-10 career record with a dead-last 12 average finish says this isn't a slump, it's a permanent address.",
-      "detail": "444.18 points for talentedtenthh is middling, but the real story is a career built entirely on finishing last — the name writes itself every single week."
+      "kicker": "UNTALENTED TENTH, PT. 7",
+      "headline": "Chauncey's talentedtenthh is now 1-4 and the 4-10 career record with a dead-last 12 average finish isn't a slump anymore, it's a resume.",
+      "detail": "552.34 points for and a single win on the board — this is bottom-feeder behavior exactly as advertised, week after week."
+    },
+    {
+      "author": {
+        "name": "Put it in Ra",
+        "handle": "adambarner111",
+        "avatar": "https://sleepercdn.com/uploads/b93bc9fd7bc9dedab3480d82f004e729.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "THE CRATER FILES CHAPTER 24",
+      "headline": "One Nut Barner is 1-4 now, and that single win doesn't erase a 20-8 career record and league-best 1.5 average finish turning into rubble in real time.",
+      "detail": "Put it in Ra snapped the losing streak but still sits near the bottom at 596.4 points — the fraud case against this 'contender' only grows stronger."
+    },
+    {
+      "author": {
+        "name": "Shake N Bakers",
+        "handle": "triciagloston",
+        "avatar": "https://sleepercdn.com/uploads/61c6e7162cf098c1dbae2faf2cb26ab6.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "QUIET DOMINANCE, EDITION SIXTEEN",
+      "headline": "Shake N Bakers are the ONLY unbeaten team left in the league at 5-0 with a league-best 788.44 points, and triciagloston still isn't getting her flowers.",
+      "detail": "A 6-7-1 career record be damned — this is the best team in Busters Anonymous right now and nobody's talking about it enough."
     },
     {
       "author": {
@@ -48,20 +59,9 @@
         "avatar": "https://sleepercdn.com/uploads/6839eeb9c044f4c8cb72e8a84aa5c79b.jpg"
       },
       "meta": "Season to date",
-      "kicker": "MEGAMIND'S FREE FALL, PT. 17",
-      "headline": "Sasinci stays stuck at 2-2 and Big Head's 13-15 career mark keeps whispering that this ring was a fluke, not a foundation.",
-      "detail": "491.06 points and a .500 record is fine for most teams, but Alxgalvn's title-winning pedigree demands more than fine — the Milk Man falsetto is still cracking."
-    },
-    {
-      "author": {
-        "name": "The Clown Show",
-        "handle": "btkempski",
-        "avatar": "https://sleepercdn.com/uploads/6b0738c41b1ad2854695e3fd9ebaf0ec.jpg"
-      },
-      "meta": "Season to date",
-      "kicker": "ALASKAN BULL WORM RISING, PT. 2",
-      "headline": "The Clown Show keeps grinding at 3-1 with 509.7 points, and btkempski's delusional Packers-superfan swagger is finally matched by a roster that's actually winning.",
-      "detail": "A 15-13 career record and a 4 average finish make this a prove-it season for btkempski, and so far the Bull Worm is proving it."
+      "kicker": "MEGAMIND'S FREE FALL, PT. 18",
+      "headline": "Sasinci slips to 2-3 and Big Head's 13-15 career mark is proving the ring was a mirage, not a mandate.",
+      "detail": "609.28 points and a losing record for a 'contender' tier team — the Milk Man falsetto is cracking right along with the title defense."
     }
   ]
 }
