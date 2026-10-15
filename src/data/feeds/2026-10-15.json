@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-15",
+  "season": "2026",
+  "generatedAt": "2026-10-15T12:38:18.454Z",
+  "model": "claude-sonnet-5",
+  "mode": "ai",
+  "keyPresent": true,
+  "diagnostic": null,
+  "meta": "Season to date",
+  "posts": [
+    {
+      "author": {
+        "name": "Shake N Bakers",
+        "handle": "triciagloston",
+        "avatar": "https://sleepercdn.com/uploads/61c6e7162cf098c1dbae2faf2cb26ab6.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "QUIET DOMINANCE, EDITION EIGHTEEN",
+      "headline": "Shake N Bakers are the last unbeaten team standing at 5-0 with a league-best 788.44 points, and triciagloston's middling 5.5 career average finish is about to get a total rewrite.",
+      "detail": "Nobody else in this league is undefeated, and the 788.44 points-for gap over the field keeps growing. This isn't a hot streak anymore, it's a statement season."
+    },
+    {
+      "author": {
+        "name": "Klint’s Clipboard",
+        "handle": "Tyrique14",
+        "avatar": "https://sleepercdn.com/uploads/d6fcb1ff54af7a784cd39896b40aff5a.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "CROWN ON MUTE, PT. 26",
+      "headline": "Thicks dropped a game and suddenly the 14-14 career record and 5.5 average finish I've been screaming about for 26 straight editions is the headline instead of the footnote.",
+      "detail": "One ring doesn't erase a .500 career mark, and now that the first loss is on the board at 4-1, every future slip gets measured against that championship pedigree Tyrique14 is supposed to be living up to."
+    },
+    {
+      "author": {
+        "name": "Put it in Ra",
+        "handle": "adambarner111",
+        "avatar": "https://sleepercdn.com/uploads/b93bc9fd7bc9dedab3480d82f004e729.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "THE CRATER FILES CHAPTER 26",
+      "headline": "One Nut Barner is still buried at 1-4 and a franchise with a league-best 1.5 average finish and 20-8 career record has officially become the biggest underachiever in Busters Anonymous history.",
+      "detail": "Put it in Ra built a resume of two straight finishes in the top two, and adambarner111 is currently sitting with the second-worst record in the league to show for it."
+    },
+    {
+      "author": {
+        "name": "Easy way or the Hard Way",
+        "handle": "Pharaoh23",
+        "avatar": "https://sleepercdn.com/uploads/776598392ae349b7177dcdefd1b1df1e.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "AUNTIE THOMAS AUDIT",
+      "headline": "Easy way or the Hard Way is 1-4 with a league-worst 490.18 points, and Pharaoh23's bottom-feeder pedigree of a 10 average finish is playing out exactly on schedule.",
+      "detail": "A career 6-8 record and a dead-last average finish already set the bar on the floor, and this roster is still finding ways to limbo under it."
+    },
+    {
+      "author": {
+        "name": "BIBLE OR THE BELT",
+        "handle": "BigBoiEmos",
+        "avatar": "https://sleepercdn.com/uploads/f60b8d9886c8a48de12f6e8e9a6ce2d6.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "BELT CHOSEN AGAIN, PT. 14",
+      "headline": "BIBLE OR THE BELT is 0-5 and Eli's Ultimate Light Skin is delivering the kind of biblical drought that makes you check if there's a plague clause in the league bylaws.",
+      "detail": "Zero wins, a middling career 13-14-1 mark now trending firmly toward worst-finish territory, and a guy who once drafted a defensive player first overall is out here searching for any gospel that explains a winless start."
+    }
+  ]
+}

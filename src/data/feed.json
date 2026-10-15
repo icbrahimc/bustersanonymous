@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-14",
+  "date": "2026-10-15",
   "season": "2026",
-  "generatedAt": "2026-10-14T12:51:40.192Z",
+  "generatedAt": "2026-10-15T12:38:18.454Z",
   "model": "claude-sonnet-5",
   "mode": "ai",
   "keyPresent": true,
@@ -15,9 +15,9 @@
         "avatar": "https://sleepercdn.com/uploads/61c6e7162cf098c1dbae2faf2cb26ab6.jpg"
       },
       "meta": "Season to date",
-      "kicker": "QUIET DOMINANCE, EDITION SEVENTEEN",
-      "headline": "Shake N Bakers are STILL the only unbeaten team in the league at 5-0, and now the win total matches her name because triciagloston is baking every opponent into dust.",
-      "detail": "788.44 points-for is a league-best by a mile, and yet after 17 editions of me screaming her name, this league still treats her like a middle-tier ghost with a 6-7-1 career record instead of the problem she's become."
+      "kicker": "QUIET DOMINANCE, EDITION EIGHTEEN",
+      "headline": "Shake N Bakers are the last unbeaten team standing at 5-0 with a league-best 788.44 points, and triciagloston's middling 5.5 career average finish is about to get a total rewrite.",
+      "detail": "Nobody else in this league is undefeated, and the 788.44 points-for gap over the field keeps growing. This isn't a hot streak anymore, it's a statement season."
     },
     {
       "author": {
@@ -26,20 +26,9 @@
         "avatar": "https://sleepercdn.com/uploads/d6fcb1ff54af7a784cd39896b40aff5a.jpg"
       },
       "meta": "Season to date",
-      "kicker": "CROWN ON MUTE, PT. 25",
-      "headline": "Twenty-five editions later, Thicks finally has a blemish, and the fraud alarm I've been ringing for over three weeks is starting to look prophetic.",
-      "detail": "4-1 with 624.6 points sounds fine until you remember the 14-14 career record and 5.5 average finish — one ring doesn't erase a history of mediocrity, it just delays the reckoning."
-    },
-    {
-      "author": {
-        "name": "talentedtenthh",
-        "handle": "talentedtenthh",
-        "avatar": "https://sleepercdn.com/avatars/thumbs/f903bdd4f4782520bfea9c88929a138e"
-      },
-      "meta": "Season to date",
-      "kicker": "UNTALENTED TENTH, PT. 8",
-      "headline": "Chauncey's talentedtenthh is a lost cause at 1-4, and the name has officially become the most accurate branding in fantasy football history.",
-      "detail": "A 4-10 career record with a dead-last 12 average finish isn't variance, it's identity — the untalented tenth keeps living down to the name week after week."
+      "kicker": "CROWN ON MUTE, PT. 26",
+      "headline": "Thicks dropped a game and suddenly the 14-14 career record and 5.5 average finish I've been screaming about for 26 straight editions is the headline instead of the footnote.",
+      "detail": "One ring doesn't erase a .500 career mark, and now that the first loss is on the board at 4-1, every future slip gets measured against that championship pedigree Tyrique14 is supposed to be living up to."
     },
     {
       "author": {
@@ -48,20 +37,31 @@
         "avatar": "https://sleepercdn.com/uploads/b93bc9fd7bc9dedab3480d82f004e729.jpg"
       },
       "meta": "Season to date",
-      "kicker": "THE CRATER FILES CHAPTER 25",
-      "headline": "One Nut Barner's 1-4 disaster has now gone on so long it's outlived the shock value — this is just who Put it in Ra is now.",
-      "detail": "A 20-8 career record and league-best 1.5 average finish are being torched in real time, and a 1.9 GPA joke feels almost generous compared to this GM performance."
+      "kicker": "THE CRATER FILES CHAPTER 26",
+      "headline": "One Nut Barner is still buried at 1-4 and a franchise with a league-best 1.5 average finish and 20-8 career record has officially become the biggest underachiever in Busters Anonymous history.",
+      "detail": "Put it in Ra built a resume of two straight finishes in the top two, and adambarner111 is currently sitting with the second-worst record in the league to show for it."
     },
     {
       "author": {
-        "name": "Sasinci",
-        "handle": "Alxgalvn",
-        "avatar": "https://sleepercdn.com/uploads/6839eeb9c044f4c8cb72e8a84aa5c79b.jpg"
+        "name": "Easy way or the Hard Way",
+        "handle": "Pharaoh23",
+        "avatar": "https://sleepercdn.com/uploads/776598392ae349b7177dcdefd1b1df1e.jpg"
       },
       "meta": "Season to date",
-      "kicker": "MEGAMIND'S FREE FALL, PT. 19",
-      "headline": "Sasinci stays mired at 2-3 and Big Head's ring is looking more like a rental than a crown with every passing week.",
-      "detail": "A 13-15 career record and 5.5 average finish mean the Milk Man's title defense has less foundation than his falsetto — all pedigree, no proof this season."
+      "kicker": "AUNTIE THOMAS AUDIT",
+      "headline": "Easy way or the Hard Way is 1-4 with a league-worst 490.18 points, and Pharaoh23's bottom-feeder pedigree of a 10 average finish is playing out exactly on schedule.",
+      "detail": "A career 6-8 record and a dead-last average finish already set the bar on the floor, and this roster is still finding ways to limbo under it."
+    },
+    {
+      "author": {
+        "name": "BIBLE OR THE BELT",
+        "handle": "BigBoiEmos",
+        "avatar": "https://sleepercdn.com/uploads/f60b8d9886c8a48de12f6e8e9a6ce2d6.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "BELT CHOSEN AGAIN, PT. 14",
+      "headline": "BIBLE OR THE BELT is 0-5 and Eli's Ultimate Light Skin is delivering the kind of biblical drought that makes you check if there's a plague clause in the league bylaws.",
+      "detail": "Zero wins, a middling career 13-14-1 mark now trending firmly toward worst-finish territory, and a guy who once drafted a defensive player first overall is out here searching for any gospel that explains a winless start."
     }
   ]
 }
