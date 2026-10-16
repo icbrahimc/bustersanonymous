@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-16",
+  "season": "2026",
+  "generatedAt": "2026-10-16T12:23:18.561Z",
+  "model": "claude-sonnet-5",
+  "mode": "ai",
+  "keyPresent": true,
+  "diagnostic": null,
+  "meta": "Season to date",
+  "posts": [
+    {
+      "author": {
+        "name": "Shake N Bakers",
+        "handle": "triciagloston",
+        "avatar": "https://sleepercdn.com/uploads/61c6e7162cf098c1dbae2faf2cb26ab6.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "QUIET DOMINANCE, EDITION NINETEEN",
+      "headline": "Shake N Bakers remain the ONLY unbeaten team in Busters Anonymous at 5-0 with a league-best 788.44 points, and triciagloston's 5.5 career average finish is getting demolished in real time.",
+      "detail": "Nobody else in the league is unbeaten, nobody else is within 90 points of her, and the quiet dominance is turning into the loudest story of the season whether the league wants to admit it or not."
+    },
+    {
+      "author": {
+        "name": "Klint’s Clipboard",
+        "handle": "Tyrique14",
+        "avatar": "https://sleepercdn.com/uploads/d6fcb1ff54af7a784cd39896b40aff5a.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "CROWN ON MUTE, PT. 27",
+      "headline": "Thicks is 4-1 and still technically on top of the Booty Warriors, but a 14-14 career record and 5.5 average finish says the ring is starting to feel like old news propping up a middling present.",
+      "detail": "One loss already has the fraud talk louder than it's been in 27 editions, and 624.6 points-for isn't exactly inspiring confidence that this crown survives the back half."
+    },
+    {
+      "author": {
+        "name": "Put it in Ra",
+        "handle": "adambarner111",
+        "avatar": "https://sleepercdn.com/uploads/b93bc9fd7bc9dedab3480d82f004e729.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "THE CRATER FILES CHAPTER 27",
+      "headline": "One Nut Barner is still stuck at 1-4 and the gap between a 20-8 career record, a league-best 1.5 average finish, and this disaster of a season has never looked wider.",
+      "detail": "Put it in Ra built the gold standard pedigree in this league over two seasons, and 596.4 points through five weeks says that standard is cracking in full public view."
+    },
+    {
+      "author": {
+        "name": "talentedtenthh",
+        "handle": "talentedtenthh",
+        "avatar": "https://sleepercdn.com/avatars/thumbs/f903bdd4f4782520bfea9c88929a138e"
+      },
+      "meta": "Season to date",
+      "kicker": "UNTALENTED TENTH, PT. 9",
+      "headline": "Chauncey's talentedtenthh drops to 1-4 and a 4-10 career record with a dead-last 12 average finish is no longer a storyline, it's a permanent résumé line.",
+      "detail": "552.34 points-for through five weeks keeps this franchise exactly where the name always promised it would be — at the bottom, living down to the irony."
+    },
+    {
+      "author": {
+        "name": "The Clown Show",
+        "handle": "btkempski",
+        "avatar": "https://sleepercdn.com/uploads/6b0738c41b1ad2854695e3fd9ebaf0ec.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "ALASKAN BULL WORM RISING, PT. 3",
+      "headline": "The Clown Show slipped to 3-2 but btkempski's delusional Packers-superfan swagger still has 665.08 points-for, more than every unbeaten-adjacent team not named Shake N Bakers.",
+      "detail": "A career 15-13 record and a 1-through-7 finish history says this roster has range — the question now is whether the Worm climbs back into contention or slithers back to average."
+    }
+  ]
+}
