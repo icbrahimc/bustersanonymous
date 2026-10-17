@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-17",
+  "season": "2026",
+  "generatedAt": "2026-10-17T11:35:14.818Z",
+  "model": "claude-sonnet-5",
+  "mode": "ai",
+  "keyPresent": true,
+  "diagnostic": null,
+  "meta": "Season to date",
+  "posts": [
+    {
+      "author": {
+        "name": "Shake N Bakers",
+        "handle": "triciagloston",
+        "avatar": "https://sleepercdn.com/uploads/61c6e7162cf098c1dbae2faf2cb26ab6.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "QUIET DOMINANCE, EDITION TWENTY",
+      "headline": "Twenty editions in and Shake N Bakers are STILL the only unbeaten team in Busters Anonymous at 5-0 with a league-best 788.44 points, and triciagloston's 5.5 career average finish is getting buried under a mountain of Ws.",
+      "detail": "Nobody else in this league is undefeated, nobody else has more points, and yet this is somehow still the most underrated story of the season."
+    },
+    {
+      "author": {
+        "name": "Klint’s Clipboard",
+        "handle": "Tyrique14",
+        "avatar": "https://sleepercdn.com/uploads/d6fcb1ff54af7a784cd39896b40aff5a.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "CROWN ON MUTE, PT. 28",
+      "headline": "Thicks sits at 4-1 clinging to the top of the Booty Warriors, but a 14-14 career record and 5.5 average finish means that 2025 ring is starting to look like a museum piece, not a mandate.",
+      "detail": "One title two seasons ago doesn't erase a .500 career mark — the pressure is officially on Tyrique14 to prove this isn't just a crown collecting dust."
+    },
+    {
+      "author": {
+        "name": "Put it in Ra",
+        "handle": "adambarner111",
+        "avatar": "https://sleepercdn.com/uploads/b93bc9fd7bc9dedab3480d82f004e729.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "THE CRATER FILES CHAPTER 28",
+      "headline": "One Nut Barner is still stuck at 1-4, and the gap between a 20-8 career record, a league-best 1.5 average finish, and this current disaster has officially become the biggest fraud case in Busters Anonymous.",
+      "detail": "A franchise built on two straight top-two finishes is now staring up at the entire league standings, and the GPA jokes write themselves at this point."
+    },
+    {
+      "author": {
+        "name": "Easy way or the Hard Way",
+        "handle": "Pharaoh23",
+        "avatar": "https://sleepercdn.com/uploads/776598392ae349b7177dcdefd1b1df1e.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "AUNTIE THOMAS AUDIT, PT. 2",
+      "headline": "Easy way or the Hard Way stays buried at 1-4 with a league-worst-adjacent 490.18 points, and Pharaoh23's bottom-feeder pedigree of a 10 average finish continues to deliver exactly what it promised.",
+      "detail": "A 6-8 career record and dead-last scoring output isn't a slump for Auntie Thomas — it's the franchise identity, right on schedule."
+    },
+    {
+      "author": {
+        "name": "BIBLE OR THE BELT",
+        "handle": "BigBoiEmos",
+        "avatar": "https://sleepercdn.com/uploads/f60b8d9886c8a48de12f6e8e9a6ce2d6.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "BELT CHOSEN AGAIN, PT. 15",
+      "headline": "BIBLE OR THE BELT drops to 0-5 and Eli's Ultimate Light Skin is now delivering a biblical-level drought that's lasted the entire season — the man who drafted a defensive player first overall is reaping exactly what he sowed.",
+      "detail": "A 13-14-1 career record says BigBoiEmos is usually just mediocre, but this 0-5 start is pure fire-and-brimstone territory, and the belt is winning in a landslide."
+    }
+  ]
+}
