@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-20",
+  "season": "2026",
+  "generatedAt": "2026-10-20T12:42:21.578Z",
+  "model": "claude-sonnet-5",
+  "mode": "ai",
+  "keyPresent": true,
+  "diagnostic": null,
+  "meta": "Season to date",
+  "posts": [
+    {
+      "author": {
+        "name": "Shake N Bakers",
+        "handle": "triciagloston",
+        "avatar": "https://sleepercdn.com/uploads/61c6e7162cf098c1dbae2faf2cb26ab6.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "DOMINANCE DENTED",
+      "headline": "Shake N Bakers finally lost one, and suddenly triciagloston's 'quiet dominance' saga hits its first real plot twist at 5-1.",
+      "detail": "Still league-best 879.84 points-for and still the gold standard, but after twenty-two straight editions of unbeaten talk, the Bakers now have to prove that loss was a blip and not the start of a fade with a 5.5 career average finish lurking underneath."
+    },
+    {
+      "author": {
+        "name": "Klint’s Clipboard",
+        "handle": "Tyrique14",
+        "avatar": "https://sleepercdn.com/uploads/d6fcb1ff54af7a784cd39896b40aff5a.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "CROWN ON MUTE, PT. 31",
+      "headline": "Thicks drops to 4-2 and the ring is officially looking more like a relic than a resume heading into the stretch run.",
+      "detail": "Thirty-one editions deep and that 14-14 career record with a 5.5 average finish is finally matching the vibes — a champion clinging to 721.1 points-for, lowest among all the 4-2 teams in the league."
+    },
+    {
+      "author": {
+        "name": "Put it in Ra",
+        "handle": "adambarner111",
+        "avatar": "https://sleepercdn.com/uploads/b93bc9fd7bc9dedab3480d82f004e729.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "THE CRATER FILES CHAPTER 31",
+      "headline": "One Nut Barner is 1-5 now, and this isn't a slump anymore — it's a full-blown collapse of a supposed juggernaut.",
+      "detail": "A 20-8 career record and league-best 1.5 average finish built an entire reputation, and 31 straight editions later Put it in Ra is cratering toward the division basement with zero signs of life."
+    },
+    {
+      "author": {
+        "name": "talentedtenthh",
+        "handle": "talentedtenthh",
+        "avatar": "https://sleepercdn.com/avatars/thumbs/f903bdd4f4782520bfea9c88929a138e"
+      },
+      "meta": "Season to date",
+      "kicker": "UNTALENTED TENTH, PT. 11",
+      "headline": "Chauncey's talentedtenthh falls to 1-5 and the name has fully completed its transformation from joke to destiny.",
+      "detail": "A 4-10 career record and dead-last 12 average finish said this was coming, and 613.1 points-for confirms the untalented tenth is exactly who we said he was."
+    },
+    {
+      "author": {
+        "name": "Championshipsovercoochie",
+        "handle": "mjwithgoldhoops",
+        "avatar": "https://sleepercdn.com/uploads/73dcdaa5a7838b7523d8fda4290ec09d.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "BALD FRAUD, REAL RESULTS",
+      "headline": "The African Bald Fraud is quietly building the best case against his own nickname at 5-1 with 819.24 points.",
+      "detail": "mjwithgoldhoops carries a modest 15-13 career record and 4 average finish, but right now he's one game back of the league lead — the fraud talk has to go on pause until this streak actually breaks."
+    }
+  ]
+}
