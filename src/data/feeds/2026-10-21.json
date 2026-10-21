@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-21",
+  "season": "2026",
+  "generatedAt": "2026-10-21T12:54:56.815Z",
+  "model": "claude-sonnet-5",
+  "mode": "ai",
+  "keyPresent": true,
+  "diagnostic": null,
+  "meta": "Season to date",
+  "posts": [
+    {
+      "author": {
+        "name": "Shake N Bakers",
+        "handle": "triciagloston",
+        "avatar": "https://sleepercdn.com/uploads/61c6e7162cf098c1dbae2faf2cb26ab6.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "QUIET DOMINANCE, VOL 23",
+      "headline": "Shake N Bakers finally bled at 5-1, but with a league-best 879.84 points, triciagloston's revenge tour just got louder, not quieter.",
+      "detail": "The first loss snapped the unbeaten run, yet the scoring gap over the rest of Busters Anonymous actually widened — 879.84 points is the most in the league, loss and all."
+    },
+    {
+      "author": {
+        "name": "Klint’s Clipboard",
+        "handle": "Tyrique14",
+        "avatar": "https://sleepercdn.com/uploads/d6fcb1ff54af7a784cd39896b40aff5a.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "CROWN ON MUTE, PT. 32",
+      "headline": "Thicks is 4-2 and still hanging onto first, but 721.1 points-for is the softest total of any team in a playoff spot in the Booty Warriors.",
+      "detail": "A 2025 ring and a 14-14 career record with a 5.5 average finish bought Tyrique14 patience thirty-one editions ago — the low scoring output says that patience is almost spent."
+    },
+    {
+      "author": {
+        "name": "Put it in Ra",
+        "handle": "adambarner111",
+        "avatar": "https://sleepercdn.com/uploads/b93bc9fd7bc9dedab3480d82f004e729.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "THE CRATER FILES CHAPTER 32",
+      "headline": "One Nut Barner's 'fraud investigation' just found new evidence: 1-5 with a 20-8 career record and a league-best 1.5 average finish sitting in the wreckage.",
+      "detail": "Thirty-plus editions of chronicling this collapse and Put it in Ra still hasn't found the floor — the single best pedigree in the league is now producing one of its worst records."
+    },
+    {
+      "author": {
+        "name": "talentedtenthh",
+        "handle": "talentedtenthh",
+        "avatar": "https://sleepercdn.com/avatars/thumbs/f903bdd4f4782520bfea9c88929a138e"
+      },
+      "meta": "Season to date",
+      "kicker": "UNTALENTED TENTH, PT. 12",
+      "headline": "Chauncey's talentedtenthh is 1-5 and 613.1 points-for confirms this isn't bad luck, it's just bad.",
+      "detail": "A 4-10 career record with a dead-last 12 average finish predicted this exact outcome, and the name keeps collecting receipts to match it."
+    },
+    {
+      "author": {
+        "name": "BIBLE OR THE BELT",
+        "handle": "BigBoiEmos",
+        "avatar": "https://sleepercdn.com/uploads/f60b8d9886c8a48de12f6e8e9a6ce2d6.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "BELT CHOSEN AGAIN, PT. 17",
+      "headline": "BIBLE OR THE BELT is still winless at 0-6, and Eli's Ultimate Light Skin is now in a drought of full Old Testament exile.",
+      "detail": "The man who drafted a defensive player first overall sits at 657.72 points with zero wins — the plagues show no sign of lifting for BigBoiEmos."
+    }
+  ]
+}
