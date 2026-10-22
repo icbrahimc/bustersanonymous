@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-22",
+  "season": "2026",
+  "generatedAt": "2026-10-22T12:57:11.097Z",
+  "model": "claude-sonnet-5",
+  "mode": "ai",
+  "keyPresent": true,
+  "diagnostic": null,
+  "meta": "Season to date",
+  "posts": [
+    {
+      "author": {
+        "name": "Shake N Bakers",
+        "handle": "triciagloston",
+        "avatar": "https://sleepercdn.com/uploads/61c6e7162cf098c1dbae2faf2cb26ab6.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "QUIET DOMINANCE, VOL 24",
+      "headline": "Shake N Bakers bounce right back to the top of the points race at 879.84, and triciagloston's lone blemish is looking more like a speed bump than a crack in the dam.",
+      "detail": "At 5-1 with a league-best scoring total, this is still the standard every other team in Busters Anonymous is chasing — the revenge tour just added another verse."
+    },
+    {
+      "author": {
+        "name": "Put it in Ra",
+        "handle": "adambarner111",
+        "avatar": "https://sleepercdn.com/uploads/b93bc9fd7bc9dedab3480d82f004e729.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "THE CRATER FILES CHAPTER 33",
+      "headline": "One Nut Barner's fraud case goes to trial with a career 20-8 record and a league-best 1.5 average finish laughably mismatched against a 1-5 reality.",
+      "detail": "Thirty-three editions later and the 714 win percentage on his resume is basically a eulogy — Cal Berkeley grad or not, the GPA jokes write themselves right alongside the standings."
+    },
+    {
+      "author": {
+        "name": "Sasinci",
+        "handle": "Alxgalvn",
+        "avatar": "https://sleepercdn.com/uploads/6839eeb9c044f4c8cb72e8a84aa5c79b.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "MEGAMIND'S FREE FALL, PT. 21",
+      "headline": "Sasinci can't buy a win at 2-4, and Big Head's title defense has curdled harder than the Milk Man nickname ever predicted.",
+      "detail": "A reigning-pedigree contender with a 13-15 career record and 5.5 average finish is now staring up at the standings, and the quit-the-league clock has to be ticking."
+    },
+    {
+      "author": {
+        "name": "Klint’s Clipboard",
+        "handle": "Tyrique14",
+        "avatar": "https://sleepercdn.com/uploads/d6fcb1ff54af7a784cd39896b40aff5a.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "CROWN ON MUTE, PT. 33",
+      "headline": "Thicks is still 4-2 up top, but 721.1 points-for remains the flimsiest resume of any first-place team in the league.",
+      "detail": "Thirty-three editions of pointing at that 14-14 career record and 5.5 average finish, and the ring is starting to feel like a rental, not a possession."
+    },
+    {
+      "author": {
+        "name": "talentedtenthh",
+        "handle": "talentedtenthh",
+        "avatar": "https://sleepercdn.com/avatars/thumbs/f903bdd4f4782520bfea9c88929a138e"
+      },
+      "meta": "Season to date",
+      "kicker": "UNTALENTED TENTH, PT. 13",
+      "headline": "Chauncey's talentedtenthh stays buried at 1-5, and a 613.1 scoring total confirms the name isn't irony anymore — it's a diagnosis.",
+      "detail": "A career 4-10 record and dead-last 12 average finish say this isn't a rough patch, it's the whole identity of the franchise."
+    }
+  ]
+}
