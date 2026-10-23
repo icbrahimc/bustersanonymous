@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "season": "2026",
-  "generatedAt": "2026-10-22T12:57:11.097Z",
+  "generatedAt": "2026-10-23T12:36:15.956Z",
   "model": "claude-sonnet-5",
   "mode": "ai",
   "keyPresent": true,
@@ -10,14 +10,14 @@
   "posts": [
     {
       "author": {
-        "name": "Shake N Bakers",
-        "handle": "triciagloston",
-        "avatar": "https://sleepercdn.com/uploads/61c6e7162cf098c1dbae2faf2cb26ab6.jpg"
+        "name": "The Clown Show",
+        "handle": "btkempski",
+        "avatar": "https://sleepercdn.com/uploads/6b0738c41b1ad2854695e3fd9ebaf0ec.jpg"
       },
       "meta": "Season to date",
-      "kicker": "QUIET DOMINANCE, VOL 24",
-      "headline": "Shake N Bakers bounce right back to the top of the points race at 879.84, and triciagloston's lone blemish is looking more like a speed bump than a crack in the dam.",
-      "detail": "At 5-1 with a league-best scoring total, this is still the standard every other team in Busters Anonymous is chasing — the revenge tour just added another verse."
+      "kicker": "WORM TURNS, PT. 1",
+      "headline": "The Clown Show quietly sits at 4-2 with 816.12 points, and btkempski's Alaskan Bull Worm act is somehow backed by actual production for once.",
+      "detail": "A career 15-13 record and average finish of 4 says 'forgettable,' but this scoring total ranks top-three in the league — time to start taking the delusional Packers routine seriously."
     },
     {
       "author": {
@@ -26,20 +26,9 @@
         "avatar": "https://sleepercdn.com/uploads/b93bc9fd7bc9dedab3480d82f004e729.jpg"
       },
       "meta": "Season to date",
-      "kicker": "THE CRATER FILES CHAPTER 33",
-      "headline": "One Nut Barner's fraud case goes to trial with a career 20-8 record and a league-best 1.5 average finish laughably mismatched against a 1-5 reality.",
-      "detail": "Thirty-three editions later and the 714 win percentage on his resume is basically a eulogy — Cal Berkeley grad or not, the GPA jokes write themselves right alongside the standings."
-    },
-    {
-      "author": {
-        "name": "Sasinci",
-        "handle": "Alxgalvn",
-        "avatar": "https://sleepercdn.com/uploads/6839eeb9c044f4c8cb72e8a84aa5c79b.jpg"
-      },
-      "meta": "Season to date",
-      "kicker": "MEGAMIND'S FREE FALL, PT. 21",
-      "headline": "Sasinci can't buy a win at 2-4, and Big Head's title defense has curdled harder than the Milk Man nickname ever predicted.",
-      "detail": "A reigning-pedigree contender with a 13-15 career record and 5.5 average finish is now staring up at the standings, and the quit-the-league clock has to be ticking."
+      "kicker": "THE CRATER FILES CHAPTER 34",
+      "headline": "One Nut Barner's fraud trial just got a guilty verdict — 1-5 is now a full six games of evidence against a franchise that boasts a 20-8 career record.",
+      "detail": "A league-best 1.5 average finish and back-to-back top-2 seasons mean nothing when 681.58 points-for can't buy a single extra win; the pedigree is now just a punchline."
     },
     {
       "author": {
@@ -48,20 +37,31 @@
         "avatar": "https://sleepercdn.com/uploads/d6fcb1ff54af7a784cd39896b40aff5a.jpg"
       },
       "meta": "Season to date",
-      "kicker": "CROWN ON MUTE, PT. 33",
-      "headline": "Thicks is still 4-2 up top, but 721.1 points-for remains the flimsiest resume of any first-place team in the league.",
-      "detail": "Thirty-three editions of pointing at that 14-14 career record and 5.5 average finish, and the ring is starting to feel like a rental, not a possession."
+      "kicker": "CROWN ON MUTE, PT. 34",
+      "headline": "Thicks clings to first in the Booty Warriors at 4-2, but 721.1 points-for is still the lightest resume of any leader I've tracked in 34 straight editions.",
+      "detail": "A 2025 ring and a 14-14 career record only buy so much patience — the standings say contender, the box scores keep whispering fraud."
     },
     {
       "author": {
-        "name": "talentedtenthh",
-        "handle": "talentedtenthh",
-        "avatar": "https://sleepercdn.com/avatars/thumbs/f903bdd4f4782520bfea9c88929a138e"
+        "name": "Easy way or the Hard Way",
+        "handle": "Pharaoh23",
+        "avatar": "https://sleepercdn.com/uploads/776598392ae349b7177dcdefd1b1df1e.jpg"
       },
       "meta": "Season to date",
-      "kicker": "UNTALENTED TENTH, PT. 13",
-      "headline": "Chauncey's talentedtenthh stays buried at 1-5, and a 613.1 scoring total confirms the name isn't irony anymore — it's a diagnosis.",
-      "detail": "A career 4-10 record and dead-last 12 average finish say this isn't a rough patch, it's the whole identity of the franchise."
+      "kicker": "AUNTIE THOMAS AUDIT, PT. 4",
+      "headline": "Easy way or the Hard Way stays buried at 2-4 with a league-low-adjacent 605.56 points, and Pharaoh23's career 10 average finish is tracking right on pace again.",
+      "detail": "A 6-8 career record and a franchise history that's never finished better than dead last make this feel less like a slump and more like a permanent address."
+    },
+    {
+      "author": {
+        "name": "Sasinci",
+        "handle": "Alxgalvn",
+        "avatar": "https://sleepercdn.com/uploads/6839eeb9c044f4c8cb72e8a84aa5c79b.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "MEGAMIND'S FREE FALL, PT. 22",
+      "headline": "Sasinci is 2-4 and Big Head's title defense is now officially in hospice, with the Milk Man curdling right on schedule.",
+      "detail": "A 2025 ring and 13-15 career record were supposed to mean something, but 710.96 points-for hasn't translated into wins — somewhere Megamind is threatening to quit the league again, probably this week."
     }
   ]
 }
