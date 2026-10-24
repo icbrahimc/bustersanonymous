@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-23",
+  "date": "2026-10-24",
   "season": "2026",
-  "generatedAt": "2026-10-23T12:36:15.956Z",
+  "generatedAt": "2026-10-24T11:58:42.455Z",
   "model": "claude-sonnet-5",
   "mode": "ai",
   "keyPresent": true,
@@ -10,25 +10,14 @@
   "posts": [
     {
       "author": {
-        "name": "The Clown Show",
-        "handle": "btkempski",
-        "avatar": "https://sleepercdn.com/uploads/6b0738c41b1ad2854695e3fd9ebaf0ec.jpg"
-      },
-      "meta": "Season to date",
-      "kicker": "WORM TURNS, PT. 1",
-      "headline": "The Clown Show quietly sits at 4-2 with 816.12 points, and btkempski's Alaskan Bull Worm act is somehow backed by actual production for once.",
-      "detail": "A career 15-13 record and average finish of 4 says 'forgettable,' but this scoring total ranks top-three in the league — time to start taking the delusional Packers routine seriously."
-    },
-    {
-      "author": {
         "name": "Put it in Ra",
         "handle": "adambarner111",
         "avatar": "https://sleepercdn.com/uploads/b93bc9fd7bc9dedab3480d82f004e729.jpg"
       },
       "meta": "Season to date",
-      "kicker": "THE CRATER FILES CHAPTER 34",
-      "headline": "One Nut Barner's fraud trial just got a guilty verdict — 1-5 is now a full six games of evidence against a franchise that boasts a 20-8 career record.",
-      "detail": "A league-best 1.5 average finish and back-to-back top-2 seasons mean nothing when 681.58 points-for can't buy a single extra win; the pedigree is now just a punchline."
+      "kicker": "THE CRATER FILES CHAPTER 35",
+      "headline": "One Nut Barner's fraud trial hits its 6th straight guilty verdict and I'm starting to think this 20-8, 1.5-average-finish résumé was forged papers all along.",
+      "detail": "1-5 with 681.58 points-for isn't a slump anymore, it's the identity — a career-best average finish of 1.5 now has six games of hard evidence stacked against it this season alone."
     },
     {
       "author": {
@@ -37,31 +26,42 @@
         "avatar": "https://sleepercdn.com/uploads/d6fcb1ff54af7a784cd39896b40aff5a.jpg"
       },
       "meta": "Season to date",
-      "kicker": "CROWN ON MUTE, PT. 34",
-      "headline": "Thicks clings to first in the Booty Warriors at 4-2, but 721.1 points-for is still the lightest resume of any leader I've tracked in 34 straight editions.",
-      "detail": "A 2025 ring and a 14-14 career record only buy so much patience — the standings say contender, the box scores keep whispering fraud."
+      "kicker": "CROWN ON MUTE, PT. 35",
+      "headline": "Thicks is still squatting in first at 4-2, but 721.1 points-for remains the emptiest calorie total of any leader I've clocked across 35 editions.",
+      "detail": "A 2025 title and a 14-14 career record say contender; a league-thin scoring pace says the Booty Warriors crown is held together with tape heading into the stretch."
     },
     {
       "author": {
-        "name": "Easy way or the Hard Way",
-        "handle": "Pharaoh23",
-        "avatar": "https://sleepercdn.com/uploads/776598392ae349b7177dcdefd1b1df1e.jpg"
+        "name": "talentedtenthh",
+        "handle": "talentedtenthh",
+        "avatar": "https://sleepercdn.com/avatars/thumbs/f903bdd4f4782520bfea9c88929a138e"
       },
       "meta": "Season to date",
-      "kicker": "AUNTIE THOMAS AUDIT, PT. 4",
-      "headline": "Easy way or the Hard Way stays buried at 2-4 with a league-low-adjacent 605.56 points, and Pharaoh23's career 10 average finish is tracking right on pace again.",
-      "detail": "A 6-8 career record and a franchise history that's never finished better than dead last make this feel less like a slump and more like a permanent address."
+      "kicker": "UNTALENTED TENTH, PT. 14",
+      "headline": "Chauncey's talentedtenthh is cooked at 1-5 and the franchise's 4-10 career mark with a 12 average finish says this isn't a down year, it's the whole résumé.",
+      "detail": "613.1 points-for is dead last-adjacent, and the name went from irony to prophecy fourteen editions ago — nothing's changed since."
     },
     {
       "author": {
-        "name": "Sasinci",
-        "handle": "Alxgalvn",
-        "avatar": "https://sleepercdn.com/uploads/6839eeb9c044f4c8cb72e8a84aa5c79b.jpg"
+        "name": "Shake N Bakers",
+        "handle": "triciagloston",
+        "avatar": "https://sleepercdn.com/uploads/61c6e7162cf098c1dbae2faf2cb26ab6.jpg"
       },
       "meta": "Season to date",
-      "kicker": "MEGAMIND'S FREE FALL, PT. 22",
-      "headline": "Sasinci is 2-4 and Big Head's title defense is now officially in hospice, with the Milk Man curdling right on schedule.",
-      "detail": "A 2025 ring and 13-15 career record were supposed to mean something, but 710.96 points-for hasn't translated into wins — somewhere Megamind is threatening to quit the league again, probably this week."
+      "kicker": "QUIET DOMINANCE, VOL 25",
+      "headline": "Shake N Bakers lead the league at 879.84 points and 5-1, and triciagloston's one loss looks more like a typo every single week.",
+      "detail": "With a career 6-7-1 mark coming in, this is the best stretch of her short Busters Anonymous history by a mile — the quiet part is getting loud."
+    },
+    {
+      "author": {
+        "name": "BIBLE OR THE BELT",
+        "handle": "BigBoiEmos",
+        "avatar": "https://sleepercdn.com/uploads/f60b8d9886c8a48de12f6e8e9a6ce2d6.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "BELT CHOSEN AGAIN, PT. 18",
+      "headline": "BIBLE OR THE BELT is still winless at 0-6, and Eli's Ultimate Light Skin has now wandered the desert long enough to make the Israelites look efficient.",
+      "detail": "657.72 points-for isn't even historically bad, which makes 0-6 sting worse — a 13-14-1 career team finding new ways to lose every single week is its own kind of scripture."
     }
   ]
 }
