@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-25",
+  "season": "2026",
+  "generatedAt": "2026-10-25T12:33:01.072Z",
+  "model": "claude-sonnet-5",
+  "mode": "ai",
+  "keyPresent": true,
+  "diagnostic": null,
+  "meta": "Season to date",
+  "posts": [
+    {
+      "author": {
+        "name": "Shake N Bakers",
+        "handle": "triciagloston",
+        "avatar": "https://sleepercdn.com/uploads/61c6e7162cf098c1dbae2faf2cb26ab6.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "QUIET DOMINANCE, VOL 26",
+      "headline": "Shake N Bakers just keep piling up points at a league-best 879.84 while sitting 5-1, and I've spent 25 straight editions waiting for the crack that never comes.",
+      "detail": "triciagloston's only loss is ancient history at this point — with that scoring margin, calling this 'middle tier' pedigree feels like the understatement of the season."
+    },
+    {
+      "author": {
+        "name": "Klint’s Clipboard",
+        "handle": "Tyrique14",
+        "avatar": "https://sleepercdn.com/uploads/d6fcb1ff54af7a784cd39896b40aff5a.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "CROWN ON MUTE, PT. 36",
+      "headline": "Thicks is 4-2 and clinging to first in the Booty Warriors, but a ring from two seasons ago doesn't excuse a 721.1 points-for that's now been mocked for 36 editions straight.",
+      "detail": "Tyrique14's career mark sits at a dead-even 14-14 with a 5.5 average finish — the title is real, but right now the numbers are begging the league to stop calling him a contender."
+    },
+    {
+      "author": {
+        "name": "Put it in Ra",
+        "handle": "adambarner111",
+        "avatar": "https://sleepercdn.com/uploads/b93bc9fd7bc9dedab3480d82f004e729.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "THE CRATER FILES CHAPTER 36",
+      "headline": "One Nut Barner's fraud trial just hit its 7th straight guilty verdict, and a 20-8 career record with a league-best 1.5 average finish is officially unrecognizable in this 1-5 corpse.",
+      "detail": "Put it in Ra once finished 1st or 2nd in back-to-back seasons — now adambarner111 is scraping 681.58 points and has nothing left to show for that résumé but receipts."
+    },
+    {
+      "author": {
+        "name": "talentedtenthh",
+        "handle": "talentedtenthh",
+        "avatar": "https://sleepercdn.com/avatars/thumbs/f903bdd4f4782520bfea9c88929a138e"
+      },
+      "meta": "Season to date",
+      "kicker": "UNTALENTED TENTH, PT. 15",
+      "headline": "Chauncey's talentedtenthh is still buried at 1-5, and a career 4-10 record with a 12 average finish proves this franchise was never talented to begin with — tenth or otherwise.",
+      "detail": "613.1 points-for is the second-lowest in the league, which means the only thing untalented tenth has built consistency in is losing."
+    },
+    {
+      "author": {
+        "name": "BootyMunchers Inc.",
+        "handle": "parkcity0613",
+        "avatar": "https://sleepercdn.com/avatars/thumbs/d55d1f7075eda01948318de4af616075"
+      },
+      "meta": "Season to date",
+      "kicker": "DEFECTOR ON THE RISE",
+      "headline": "BootyMunchers Inc. quietly sits at 4-2 and parkcity0613 is making a mockery of a 6-8 career record that came with a brutal 9 average finish.",
+      "detail": "Nobody expected a bottom-feeder with that pedigree to be hanging in a playoff spot at 669.36 points, but here we are — the defection from the bottom tier might actually be happening."
+    }
+  ]
+}
