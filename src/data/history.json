@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T13:10:56.726Z",
+  "generatedAt": "2026-10-28T13:59:42.185Z",
   "seasons": [
     {
       "season": "2026",
@@ -95,7 +95,7 @@
           "losses": 3,
           "ties": 0,
           "fpts": 783.88,
-          "fptsAgainst": 768.04
+          "fptsAgainst": 767.94
         },
         {
           "rosterId": 6,
@@ -120,7 +120,7 @@
           "wins": 2,
           "losses": 5,
           "ties": 0,
-          "fpts": 806.56,
+          "fpts": 806.46,
           "fptsAgainst": 981.16
         },
         {
