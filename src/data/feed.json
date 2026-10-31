@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-30",
+  "date": "2026-10-31",
   "season": "2026",
-  "generatedAt": "2026-10-30T14:05:38.379Z",
+  "generatedAt": "2026-10-31T13:37:52.087Z",
   "model": "claude-sonnet-5",
   "mode": "ai",
   "keyPresent": true,
@@ -15,9 +15,9 @@
         "avatar": "https://sleepercdn.com/uploads/d6fcb1ff54af7a784cd39896b40aff5a.jpg"
       },
       "meta": "Season to date",
-      "kicker": "CROWN ON MUTE, PT. 41",
-      "headline": "Forty-one editions and counting — Thicks' Klint's Clipboard sits 5-2 but that ring is still a relic when 839.22 points-for ranks him near the bottom of winning teams.",
-      "detail": "A title from two seasons ago bought Tyrique14 zero slack; a career 14-14 record and 5.5 average finish says this 'contender' is coasting on a record win total with middling production."
+      "kicker": "CROWN ON MUTE, PT. 42",
+      "headline": "Forty-two editions deep and Thicks still hasn't earned the right to call that Klint's Clipboard ring anything but a prop — 5-2 with 839.22 points is a pretender's scoreboard.",
+      "detail": "That one title from two seasons ago buys patience, not immunity — a career 14-14 record and 5.5 average finish says this ring was a fluke the stats never confirmed."
     },
     {
       "author": {
@@ -26,9 +26,20 @@
         "avatar": "https://sleepercdn.com/uploads/61c6e7162cf098c1dbae2faf2cb26ab6.jpg"
       },
       "meta": "Season to date",
-      "kicker": "QUIET DOMINANCE, VOL 27",
-      "headline": "Shake N Bakers lead the league in scoring at 957.96 and triciagloston just won't stop proving the doubters wrong.",
-      "detail": "Sitting 5-2 with a career 6-7-1 mark that undersold her, she's now outscoring the entire league including the self-proclaimed contenders — the quiet dominance bit keeps aging well."
+      "kicker": "QUIET DOMINANCE, VOL 28",
+      "headline": "Shake N Bakers refuse to go away — triciagloston's 957.96 points still paces the entire league and the doubters are running out of material.",
+      "detail": "A modest career 6-7-1 mark and 5th-place pedigree never promised this, yet here she sits atop the scoring charts at 5-2 — the quiet part is getting loud."
+    },
+    {
+      "author": {
+        "name": "talentedtenthh",
+        "handle": "talentedtenthh",
+        "avatar": "https://sleepercdn.com/avatars/thumbs/f903bdd4f4782520bfea9c88929a138e"
+      },
+      "meta": "Season to date",
+      "kicker": "UNTALENTED TENTH, PT. 20",
+      "headline": "Chauncey's talentedtenthh is cooked — 1-6 with a league-worst 714.02 points is exactly what a career 12-average-finish résumé should produce.",
+      "detail": "Four wins in a career full of seasons and a 4-10 record don't lie — the name was always a taunt, and the Du Bois irony has never been sharper."
     },
     {
       "author": {
@@ -37,31 +48,20 @@
         "avatar": "https://sleepercdn.com/uploads/b93bc9fd7bc9dedab3480d82f004e729.jpg"
       },
       "meta": "Season to date",
-      "kicker": "THE CRATER FILES CHAPTER 41",
-      "headline": "One Nut Barner's Put it in Ra falls further to 2-5 and the league's best-ever 1.5 average finish is now just a ghost story.",
-      "detail": "A 20-8 career record and back-to-back top-2 finishes built a dynasty narrative that 806.46 points and a sub-.500 record this year is actively torching."
+      "kicker": "THE CRATER FILES CHAPTER 42",
+      "headline": "One Nut Barner's Put it in Ra is now a full-blown archaeological dig — 2-5 with the league's best-ever 1.5 average finish buried somewhere under the rubble.",
+      "detail": "A 20-8 career record and back-to-back title-game pedigree mean nothing when 806.46 points-for looks like a middle-school science project."
     },
     {
       "author": {
-        "name": "BIBLE OR THE BELT",
-        "handle": "BigBoiEmos",
-        "avatar": "https://sleepercdn.com/uploads/f60b8d9886c8a48de12f6e8e9a6ce2d6.jpg"
+        "name": "The Clown Show",
+        "handle": "btkempski",
+        "avatar": "https://sleepercdn.com/uploads/6b0738c41b1ad2854695e3fd9ebaf0ec.jpg"
       },
       "meta": "Season to date",
-      "kicker": "BELT CHOSEN AGAIN, PT. 20",
-      "headline": "BIBLE OR THE BELT hits twenty straight editions of futility, still winless at 0-7, and Eli's Ultimate Light Skin is running out of commandments to break.",
-      "detail": "A career 13-14-1 record was merely mediocre before — now 0-7 with 731.92 points makes this the worst stretch of his two-season tenure, belt fully chosen."
-    },
-    {
-      "author": {
-        "name": "Sasinci",
-        "handle": "Alxgalvn",
-        "avatar": "https://sleepercdn.com/uploads/6839eeb9c044f4c8cb72e8a84aa5c79b.jpg"
-      },
-      "meta": "Season to date",
-      "kicker": "MEGAMIND'S FREE FALL, PT. 26",
-      "headline": "Sasinci stays stuck at 3-4 and Big Head's title defense keeps bleeding out with no signs of a pulse.",
-      "detail": "One ring and a career 5.5 average finish promised a real contender, but 814.86 points and a losing record have the Milk Man singing a much sadder tune than usual."
+      "kicker": "WORM TURNS, PT. 3",
+      "headline": "The Clown Show keeps feeding the Alaskan Bull Worm's delusions — 4-3 with 933.88 points is the second-most in the league, and btkempski is starting to believe his own hype.",
+      "detail": "A career 15-13 record with a best finish of 1st means this guy has actually done it before — the Packers-superfan act might finally have receipts to match the swagger."
     }
   ]
 }
