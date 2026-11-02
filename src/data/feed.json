@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-01",
+  "date": "2026-11-02",
   "season": "2026",
-  "generatedAt": "2026-11-01T14:15:20.869Z",
+  "generatedAt": "2026-11-02T17:01:46.756Z",
   "model": "claude-sonnet-5",
   "mode": "ai",
   "keyPresent": true,
@@ -15,9 +15,9 @@
         "avatar": "https://sleepercdn.com/uploads/d6fcb1ff54af7a784cd39896b40aff5a.jpg"
       },
       "meta": "Season to date",
-      "kicker": "CROWN ON MUTE, PT. 43",
-      "headline": "Forty-three editions and I'm still not budging — Thicks' Klint's Clipboard is 5-2 but 839.22 points-for remains the softest resume of any five-win team in Busters Anonymous history.",
-      "detail": "A ring from two seasons ago doesn't cash in when your career average finish is 5.5 and you're outscored by teams with worse records. Pedigree without production is just a participation trophy with a nicer font."
+      "kicker": "CROWN ON MUTE, PT. 44",
+      "headline": "Forty-four straight editions and Thicks still can't buy me off this take — Klint's Clipboard sits 5-2 but 839.22 points-for is still the flimsiest resume wearing a ring in this league's history.",
+      "detail": "A career 14-14 record and an average finish of 5.5 for a so-called contender says the title was a fluke, not a floor — prove me wrong with points, not record."
     },
     {
       "author": {
@@ -26,9 +26,9 @@
         "avatar": "https://sleepercdn.com/uploads/61c6e7162cf098c1dbae2faf2cb26ab6.jpg"
       },
       "meta": "Season to date",
-      "kicker": "QUIET DOMINANCE, VOL 29",
-      "headline": "Shake N Bakers aren't just quiet anymore — they're the loudest scoring machine in the league and triciagloston deserves her flowers.",
-      "detail": "957.96 points-for leads all of Busters Anonymous outright, and a 5-2 record backs it up. One lone season of history can't explain this kind of production — she's rewriting the book in real time."
+      "kicker": "QUIET DOMINANCE, VOL 30",
+      "headline": "Thirty editions in and I'm out of ways to doubt triciagloston — Shake N Bakers' 957.96 points-for is still the best in Busters Anonymous, period.",
+      "detail": "A career 6-7-1 mark says nothing about this year's 5-2 scoring juggernaut — the Bakers have turned a middling pedigree into the league's most feared offense."
     },
     {
       "author": {
@@ -37,9 +37,20 @@
         "avatar": "https://sleepercdn.com/uploads/b93bc9fd7bc9dedab3480d82f004e729.jpg"
       },
       "meta": "Season to date",
-      "kicker": "THE CRATER FILES CHAPTER 43",
-      "headline": "One Nut Barner's Put it in Ra has officially become the league's cautionary tale — 2-5 is an insult to a 20-8 career record and the best average finish in Busters Anonymous history.",
-      "detail": "A 1.5 average finish over two seasons means back-to-back title-or-runner-up results, and now he's staring up at the standings from 806.46 points. The fraud trial isn't ending — it's getting appealed and losing again."
+      "kicker": "THE CRATER FILES CHAPTER 44",
+      "headline": "One Nut Barner's Put it in Ra is now officially a historical tragedy — 2-5 with a 20-8 career record and the best-ever 1.5 average finish in league history rotting on the bench.",
+      "detail": "Five losses into this disaster and Put it in Ra's 806.46 points-for proves this isn't bad luck, it's a full organizational collapse under a guy who somehow got into Cal Berkeley."
+    },
+    {
+      "author": {
+        "name": "talentedtenthh",
+        "handle": "talentedtenthh",
+        "avatar": "https://sleepercdn.com/avatars/thumbs/f903bdd4f4782520bfea9c88929a138e"
+      },
+      "meta": "Season to date",
+      "kicker": "UNTALENTED TENTH, PT. 21",
+      "headline": "Chauncey's talentedtenthh keeps living down to the name — 1-6 with a league-worst 714.02 points is exactly the outcome a career 12-average-finish résumé guarantees.",
+      "detail": "This isn't a slump, it's destiny — a 4-10 career record was always pointing here, and the untalented tenth keeps delivering on its irony."
     },
     {
       "author": {
@@ -48,20 +59,9 @@
         "avatar": "https://sleepercdn.com/uploads/6839eeb9c044f4c8cb72e8a84aa5c79b.jpg"
       },
       "meta": "Season to date",
-      "kicker": "MEGAMIND'S FREE FALL, PT. 27",
-      "headline": "Sasinci can't climb out of 3-4 and Big Head's title defense is officially flatlined for good this time.",
-      "detail": "A career 5.5 average finish and a real ring from two seasons back promised sustained menace, but 814.86 points and a losing record say Megamind's reign is a memory, not a threat."
-    },
-    {
-      "author": {
-        "name": "BIBLE OR THE BELT",
-        "handle": "BigBoiEmos",
-        "avatar": "https://sleepercdn.com/uploads/f60b8d9886c8a48de12f6e8e9a6ce2d6.jpg"
-      },
-      "meta": "Season to date",
-      "kicker": "BELT CHOSEN AGAIN, PT. 21",
-      "headline": "BIBLE OR THE BELT is still winless at 0-7 and Eli's Ultimate Light Skin has turned this season into its own book of Lamentations.",
-      "detail": "Twenty-one straight editions of futility now, with 731.92 points doing nothing to save a team that drafted a defensive player first overall and has preached scripture ever since without delivering a single win."
+      "kicker": "MEGAMIND'S FREE FALL, PT. 28",
+      "headline": "Sasinci stays stuck at 3-4 and Big Head's title defense has gone from flatlined to downright embalmed.",
+      "detail": "A career 13-15 record and 5.5 average finish were supposed to be the floor for a champion, not the ceiling — Milk Man's 814.86 points-for says the magic left with the trophy."
     }
   ]
 }
