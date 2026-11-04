@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-04",
+  "season": "2026",
+  "generatedAt": "2026-11-04T15:23:36.685Z",
+  "model": "claude-sonnet-5",
+  "mode": "ai",
+  "keyPresent": true,
+  "diagnostic": null,
+  "meta": "Season to date",
+  "posts": [
+    {
+      "author": {
+        "name": "Klint’s Clipboard",
+        "handle": "Tyrique14",
+        "avatar": "https://sleepercdn.com/uploads/d6fcb1ff54af7a784cd39896b40aff5a.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "CROWN ON MUTE, PT. 46",
+      "headline": "Forty-six editions deep and Thicks finally handed me a gift — Klint's Clipboard is still 6-2 and 934.5 points-for, but that's two straight editions of flatlined scoring while the ring collects dust.",
+      "detail": "A title with a 14-14 career record and a 5.5 average finish was always borrowed pedigree, and freezing at 934.5 points for two days running doesn't look like a champion hitting his stride — it looks like a fraud running out the clock."
+    },
+    {
+      "author": {
+        "name": "Shake N Bakers",
+        "handle": "triciagloston",
+        "avatar": "https://sleepercdn.com/uploads/61c6e7162cf098c1dbae2faf2cb26ab6.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "QUIET DOMINANCE, VOL 32",
+      "headline": "Shake N Bakers are no longer a sleeper story, they're just the best team in Busters Anonymous, full stop.",
+      "detail": "triciagloston's 1128.92 points-for leads the league outright at 6-2, a wild leap from a career 6-7-1 mark and a 5th-place average finish — the quiet dominance arc has officially graduated to loud supremacy."
+    },
+    {
+      "author": {
+        "name": "Put it in Ra",
+        "handle": "adambarner111",
+        "avatar": "https://sleepercdn.com/uploads/b93bc9fd7bc9dedab3480d82f004e729.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "THE CRATER FILES CHAPTER 46",
+      "headline": "One Nut Barner's collapse is now the defining storyline of the season — a 1.5 career average finish sinking to 2-6.",
+      "detail": "Put it in Ra's 20-8 career record and back-to-back championship-game appearances mean nothing when 874.16 points-for can't even crack .500, proving that pedigree without production is just a nice résumé on a losing team."
+    },
+    {
+      "author": {
+        "name": "Sasinci",
+        "handle": "Alxgalvn",
+        "avatar": "https://sleepercdn.com/uploads/6839eeb9c044f4c8cb72e8a84aa5c79b.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "MEGAMIND'S FREE FALL, PT. 30",
+      "headline": "Sasinci can't escape 4-4 and Big Head's title defense is now a full-blown cold case.",
+      "detail": "A former champion sitting at 905.74 points-for, second-lowest among .500-or-better teams, is exactly the kind of underwhelming stretch that makes you wonder if Megamind's next threat to quit the league might finally be the real one."
+    },
+    {
+      "author": {
+        "name": "BIBLE OR THE BELT",
+        "handle": "BigBoiEmos",
+        "avatar": "https://sleepercdn.com/uploads/f60b8d9886c8a48de12f6e8e9a6ce2d6.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "BELT CHOSEN AGAIN, PT. 22",
+      "headline": "BIBLE OR THE BELT is still winless at 0-8 and Eli's Ultimate Light Skin has turned this season into a full Old Testament plague cycle.",
+      "detail": "874.99 points-for isn't even the problem — a career 13-14-1 record says this team should be hovering around mediocrity, but 0-8 means the Belt has been chosen again, and again, and again."
+    }
+  ]
+}
