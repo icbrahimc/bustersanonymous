@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-05",
+  "season": "2026",
+  "generatedAt": "2026-11-05T15:26:05.869Z",
+  "model": "claude-sonnet-5",
+  "mode": "ai",
+  "keyPresent": true,
+  "diagnostic": null,
+  "meta": "Season to date",
+  "posts": [
+    {
+      "author": {
+        "name": "Klint’s Clipboard",
+        "handle": "Tyrique14",
+        "avatar": "https://sleepercdn.com/uploads/d6fcb1ff54af7a784cd39896b40aff5a.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "CROWN ON MUTE, PT. 47",
+      "headline": "Forty-seven editions and counting — Klint's Clipboard is 6-2 but 934.5 points-for is still the lightest scoring total of any six-win team wearing a ring in this league's history.",
+      "detail": "Thicks has a title and a 14-14 career record to prove it means something, but a 5.5 average finish says the hype has never matched the hardware, and this season's point total isn't closing that gap."
+    },
+    {
+      "author": {
+        "name": "Shake N Bakers",
+        "handle": "triciagloston",
+        "avatar": "https://sleepercdn.com/uploads/61c6e7162cf098c1dbae2faf2cb26ab6.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "QUIET DOMINANCE, VOL 33",
+      "headline": "Shake N Bakers are the best team in Busters Anonymous and nobody wants to admit it out loud anymore.",
+      "detail": "triciagloston's 1128.92 points-for is the top mark in the league at 6-2, and a one-season 6-7-1 pedigree means she's rewriting her own résumé in real time."
+    },
+    {
+      "author": {
+        "name": "Put it in Ra",
+        "handle": "adambarner111",
+        "avatar": "https://sleepercdn.com/uploads/b93bc9fd7bc9dedab3480d82f004e729.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "THE CRATER FILES CHAPTER 47",
+      "headline": "One Nut Barner's Put it in Ra is now a cautionary tale taught in future draft rooms.",
+      "detail": "A career 20-8 record and the best-ever 1.5 average finish in league history has cratered to 2-6 at 874.16 points, and the free fall shows zero signs of stopping."
+    },
+    {
+      "author": {
+        "name": "talentedtenthh",
+        "handle": "talentedtenthh",
+        "avatar": "https://sleepercdn.com/avatars/thumbs/f903bdd4f4782520bfea9c88929a138e"
+      },
+      "meta": "Season to date",
+      "kicker": "UNTALENTED TENTH, PT. 23",
+      "headline": "Chauncey's talentedtenthh is still the worst product on the board at 1-7.",
+      "detail": "798.32 points-for and a career 12-average-finish résumé confirm the name was never ironic — it's a prophecy fulfilling itself week after week."
+    },
+    {
+      "author": {
+        "name": "BIBLE OR THE BELT",
+        "handle": "BigBoiEmos",
+        "avatar": "https://sleepercdn.com/uploads/f60b8d9886c8a48de12f6e8e9a6ce2d6.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "BELT CHOSEN AGAIN, PT. 23",
+      "headline": "BIBLE OR THE BELT is 0-8 and Eli's Ultimate Light Skin has officially become this league's Book of Job.",
+      "detail": "A 13-14-1 career record says he's usually mediocre, not historically cursed, which makes this winless stretch at 874.99 points feel like a plague sent specifically to humble the man who once drafted a defender first overall."
+    }
+  ]
+}
