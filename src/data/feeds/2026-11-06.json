@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-06",
+  "season": "2026",
+  "generatedAt": "2026-11-06T14:59:42.881Z",
+  "model": "claude-sonnet-5",
+  "mode": "ai",
+  "keyPresent": true,
+  "diagnostic": null,
+  "meta": "Season to date",
+  "posts": [
+    {
+      "author": {
+        "name": "Klint’s Clipboard",
+        "handle": "Tyrique14",
+        "avatar": "https://sleepercdn.com/uploads/d6fcb1ff54af7a784cd39896b40aff5a.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "CROWN ON MUTE, PT. 48",
+      "headline": "Forty-eight editions deep and Thicks still hasn't earned a syllable of respect — Klint's Clipboard is 6-2 but 934.5 points-for remains the lightest scoring resume ever attached to a ring in this league.",
+      "detail": "A title in 2025 means nothing when your current roster is outscored by half the league; 934.5 points-for is pedestrian for a six-win contender with that kind of pedigree."
+    },
+    {
+      "author": {
+        "name": "Shake N Bakers",
+        "handle": "triciagloston",
+        "avatar": "https://sleepercdn.com/uploads/61c6e7162cf098c1dbae2faf2cb26ab6.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "QUIET DOMINANCE, VOL 34",
+      "headline": "Shake N Bakers just keep climbing — 1128.92 points-for is now the biggest total in Busters Anonymous and triciagloston isn't a sleeper anymore, she's the standard.",
+      "detail": "At 6-2 with a career record that started 6-7-1 just last year, this is the fastest ascent in the league and nobody's talking about it enough."
+    },
+    {
+      "author": {
+        "name": "Put it in Ra",
+        "handle": "adambarner111",
+        "avatar": "https://sleepercdn.com/uploads/b93bc9fd7bc9dedab3480d82f004e729.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "THE CRATER FILES CHAPTER 48",
+      "headline": "One Nut Barner's Put it in Ra is still rotting at 2-6 and the greatest résumé in league history — a 20-8 career record and 1.5 average finish — is now an full-blown embarrassment.",
+      "detail": "Two titles' worth of pedigree and 874.16 points-for can't save a season that's forty-eight editions deep in collapse; the crater just keeps getting deeper."
+    },
+    {
+      "author": {
+        "name": "Sasinci",
+        "handle": "Alxgalvn",
+        "avatar": "https://sleepercdn.com/uploads/6839eeb9c044f4c8cb72e8a84aa5c79b.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "MEGAMIND'S FREE FALL, PT. 31",
+      "headline": "Sasinci is stuck at 4-4 and Big Head's title defense has been dead so long it's basically a cold case file now.",
+      "detail": "A champion with a 13-15 career record and 905.74 points-for this year has no business hovering at .500 — Megamind's reign is officially a memory."
+    },
+    {
+      "author": {
+        "name": "Easy way or the Hard Way",
+        "handle": "Pharaoh23",
+        "avatar": "https://sleepercdn.com/uploads/776598392ae349b7177dcdefd1b1df1e.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "AUNTIE'S SERMON, PT. 1",
+      "headline": "Easy way or the Hard Way is 2-6 with a league-worst 787.26 points-for, and Auntie Thomas is proving there's no easy way out of the bottom-feeder tier.",
+      "detail": "A career 6-8 record and dead-last average finish of 10 set the bar, and this year's 2-6 start with the league's lowest scoring total is right on brand."
+    }
+  ]
+}
