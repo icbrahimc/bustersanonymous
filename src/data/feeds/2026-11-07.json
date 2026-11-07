@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-07",
+  "season": "2026",
+  "generatedAt": "2026-11-07T13:58:30.153Z",
+  "model": "claude-sonnet-5",
+  "mode": "ai",
+  "keyPresent": true,
+  "diagnostic": null,
+  "meta": "Season to date",
+  "posts": [
+    {
+      "author": {
+        "name": "Klint’s Clipboard",
+        "handle": "Tyrique14",
+        "avatar": "https://sleepercdn.com/uploads/d6fcb1ff54af7a784cd39896b40aff5a.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "CROWN ON MUTE, PT. 49",
+      "headline": "Forty-nine editions deep and Thicks still owes this league an explanation — Klint's Clipboard is 6-2 but 934.5 points-for remains the most anemic scoring total ever attached to a championship ring here.",
+      "detail": "A 1-15-1 career record paired with a title win doesn't erase the fact that this roster is winning ugly every single week, and the pedigree says the drop-off is coming."
+    },
+    {
+      "author": {
+        "name": "Shake N Bakers",
+        "handle": "triciagloston",
+        "avatar": "https://sleepercdn.com/uploads/61c6e7162cf098c1dbae2faf2cb26ab6.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "QUIET DOMINANCE, VOL 35",
+      "headline": "Shake N Bakers are no longer a surprise, they're the gold standard, and triciagloston's 1128.92 points-for proves it week after week.",
+      "detail": "A rookie-ish 1-season résumé turned league-leading scoring machine at 6-2 — the quiet dominance storyline just keeps writing itself."
+    },
+    {
+      "author": {
+        "name": "Put it in Ra",
+        "handle": "adambarner111",
+        "avatar": "https://sleepercdn.com/uploads/b93bc9fd7bc9dedab3480d82f004e729.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "THE CRATER FILES CHAPTER 49",
+      "headline": "One Nut Barner's Put it in Ra is still stuck at 2-6 and the greatest résumé in Busters Anonymous history — 20-8 career, 1.5 average finish — is officially a cautionary tale.",
+      "detail": "Two titles' worth of pedigree sitting at 874.16 points-for is the most un-Barner stat line imaginable, and the crater just keeps getting deeper."
+    },
+    {
+      "author": {
+        "name": "BIBLE OR THE BELT",
+        "handle": "BigBoiEmos",
+        "avatar": "https://sleepercdn.com/uploads/f60b8d9886c8a48de12f6e8e9a6ce2d6.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "BELT CHOSEN AGAIN, PT. 24",
+      "headline": "BIBLE OR THE BELT is still winless at 0-8 and Eli's Ultimate Light Skin has become this league's full-blown plague of locusts.",
+      "detail": "874.99 points-for with zero wins to show for it — the man who drafted a defensive player first overall is now living out his own personal Book of Job."
+    },
+    {
+      "author": {
+        "name": "Easy way or the Hard Way",
+        "handle": "Pharaoh23",
+        "avatar": "https://sleepercdn.com/uploads/776598392ae349b7177dcdefd1b1df1e.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "AUNTIE'S SERMON, PT. 2",
+      "headline": "Easy way or the Hard Way is still 2-6 with a league-worst 787.26 points-for, and Auntie Thomas's bottom-feeder pedigree is playing out exactly as scripted.",
+      "detail": "A career 6-8 record with a dead-last 10 average finish set the stage, and this season's scoreboard is just the sequel nobody asked for."
+    }
+  ]
+}
