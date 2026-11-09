@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-09",
+  "season": "2026",
+  "generatedAt": "2026-11-09T17:26:57.953Z",
+  "model": "claude-sonnet-5",
+  "mode": "ai",
+  "keyPresent": true,
+  "diagnostic": null,
+  "meta": "Season to date",
+  "posts": [
+    {
+      "author": {
+        "name": "Klint’s Clipboard",
+        "handle": "Tyrique14",
+        "avatar": "https://sleepercdn.com/uploads/d6fcb1ff54af7a784cd39896b40aff5a.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "CROWN ON MUTE, PT. 51",
+      "headline": "Fifty-one editions in and Thicks still hasn't bought a single receipt — Klint's Clipboard sits 6-2 but 934.5 points-for is the softest resume a ring has ever worn in this league.",
+      "detail": "A career finish average of 5.5 with the title already attached tells you everything: the hardware happened, but the weekly dominance never has."
+    },
+    {
+      "author": {
+        "name": "Shake N Bakers",
+        "handle": "triciagloston",
+        "avatar": "https://sleepercdn.com/uploads/61c6e7162cf098c1dbae2faf2cb26ab6.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "QUIET DOMINANCE, VOL 37",
+      "headline": "Shake N Bakers are no longer the surprise of the league, triciagloston IS the league right now.",
+      "detail": "1128.92 points-for leads everybody and the 6-2 record backs it up — a 5-finish pedigree a year ago means nothing against this current stat line."
+    },
+    {
+      "author": {
+        "name": "BIBLE OR THE BELT",
+        "handle": "BigBoiEmos",
+        "avatar": "https://sleepercdn.com/uploads/f60b8d9886c8a48de12f6e8e9a6ce2d6.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "BELT CHOSEN AGAIN, PT. 25",
+      "headline": "BIBLE OR THE BELT is still winless at 0-8, and Eli's Ultimate Light Skin has become this league's longest-running plague.",
+      "detail": "A 0-8 record with 874.99 points-for means he's not even losing competitively — he's just drafting defensive players first overall and reaping the whirlwind."
+    },
+    {
+      "author": {
+        "name": "Put it in Ra",
+        "handle": "adambarner111",
+        "avatar": "https://sleepercdn.com/uploads/b93bc9fd7bc9dedab3480d82f004e729.jpg"
+      },
+      "meta": "Season to date",
+      "kicker": "THE CRATER FILES CHAPTER 51",
+      "headline": "One Nut Barner's Put it in Ra remains frozen at 2-6, and the greatest résumé this league has ever seen keeps rotting in real time.",
+      "detail": "A 20-8 career record and a 1.5 average finish are now attached to a team scoring 874.16 points — this is the single biggest fall from grace in Busters Anonymous history."
+    },
+    {
+      "author": {
+        "name": "talentedtenthh",
+        "handle": "talentedtenthh",
+        "avatar": "https://sleepercdn.com/avatars/thumbs/f903bdd4f4782520bfea9c88929a138e"
+      },
+      "meta": "Season to date",
+      "kicker": "UNTALENTED TENTH, PT. 25",
+      "headline": "Chauncey's talentedtenthh is still the worst show on TV at 1-7, and the name has never been a crueler joke.",
+      "detail": "798.32 points-for and a career 4-10 record with an average finish of 12th — there's nothing talented here except the branding."
+    }
+  ]
+}
